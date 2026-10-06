@@ -1,0 +1,8 @@
+# Light environment for this project: manifest, download, tiling, driver, tests.
+# No torch here. Embedding runs in the two encoder-or-probe environments (see README).
+numpy
+pillow
+scikit-image
+tiffslide
+imagecodecs
+pytest
