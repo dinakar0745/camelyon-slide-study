@@ -89,6 +89,11 @@ def test_full_cache_is_flushed_to_make_room(project, monkeypatch):
     assert budget.used_bytes() <= 6000 and not list(config.CACHE.glob("*.npy"))
 
 
+def test_limited_run_projects_to_the_whole_manifest(project, monkeypatch, capsys):
+    drive(monkeypatch, ["--limit", "2"])
+    assert f"projected kept data for all {len(ROWS)} slides" in capsys.readouterr().out
+
+
 def test_budget_stops_the_run_cleanly(project, monkeypatch, capsys):
     monkeypatch.setattr(config, "CACHE_GB", 1)
     monkeypatch.setattr(config, "BUDGET_GB", 2600 / budget.GB)   # kept data for about three slides

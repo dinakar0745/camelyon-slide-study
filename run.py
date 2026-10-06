@@ -68,14 +68,15 @@ def purge_cache(models: list[str]) -> None:
             f.unlink()
 
 
-def summary(rows: list[dict], models: list[str]) -> str:
+def summary(rows: list[dict], models: list[str], n_all: int) -> str:
+    """Progress, disk use, and a projection of the kept data to all `n_all` slides."""
     done = [r for r in rows if is_done(r["slide"], models)]
     lines = [f"{len(done)} of {len(rows)} slides finished", budget.report()]
-    if done and len(done) < len(rows):
+    if done and len(done) < n_all:
         emb = budget.folder_bytes(config.EMBEDDINGS) + budget.folder_bytes(config.TILES)
-        projected = emb / len(done) * len(rows) / budget.GB
+        projected = emb / len(done) * n_all / budget.GB
         verdict = "fits" if projected + config.CACHE_GB < config.BUDGET_GB else "DOES NOT FIT"
-        lines.append(f"  projected kept data for all {len(rows)} slides: {projected:.1f} GB, plus up to "
+        lines.append(f"  projected kept data for all {n_all} slides: {projected:.1f} GB, plus up to "
                      f"{config.CACHE_GB} GB of tile cache: {verdict} in {config.BUDGET_GB} GB")
     return "\n".join(lines)
 
@@ -96,7 +97,8 @@ def main() -> None:
                              "copy envs.example.json to envs.json and set the right paths")
     extra = ["--batch-size", str(args.batch_size), "--workers", str(args.workers)] + (["--amp"] * args.amp)
 
-    rows = ordered(fetch_slide.read_manifest())[: args.limit]
+    all_rows = ordered(fetch_slide.read_manifest())
+    rows = all_rows[: args.limit]
     pending = [r for r in rows if not is_done(r["slide"], args.models)]
     print(f"{len(rows) - len(pending)} of {len(rows)} slides already finished")
 
@@ -134,7 +136,7 @@ def main() -> None:
     except KeyboardInterrupt:
         print("\ninterrupted; run again to continue")
     print()
-    print(summary(rows, args.models))
+    print(summary(rows, args.models, len(all_rows)))
 
 
 if __name__ == "__main__":
