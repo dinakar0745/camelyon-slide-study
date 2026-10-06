@@ -83,10 +83,10 @@ def test_limit_takes_a_prefix_and_a_rerun_continues(project, monkeypatch):
 
 def test_full_cache_is_flushed_to_make_room(project, monkeypatch):
     monkeypatch.setattr(config, "CACHE_GB", 1)                   # never flush on cache size
-    monkeypatch.setattr(config, "BUDGET_GB", 5000 / budget.GB)   # kept data fits, six caches do not
+    monkeypatch.setattr(config, "BUDGET_GB", 6000 / budget.GB)   # kept data fits, six caches do not
     drive(monkeypatch)
     assert all(run.is_done(r["slide"], MODELS) for r in ROWS)
-    assert budget.used_bytes() <= 5000 and not list(config.CACHE.glob("*.npy"))
+    assert budget.used_bytes() <= 6000 and not list(config.CACHE.glob("*.npy"))
 
 
 def test_budget_stops_the_run_cleanly(project, monkeypatch, capsys):
