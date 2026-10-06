@@ -8,9 +8,9 @@ This project asks the same question at slide level, on lymph-node metastasis det
 CAMELYON16: when the head is a slide-level aggregator over frozen tile embeddings, does a
 head trained on clean slides still lose more under degradation than one trained on a mix?
 
-**Status:** the extraction pipeline is written and tested on synthetic slides. It has not yet
-been run on real CAMELYON16 slides. Aggregator training and evaluation are not written yet.
-There are no results.
+**Status:** the extraction pipeline has run end to end on the first ten slides with all four
+encoders. The full extraction, aggregator training and evaluation are still to do. There are
+no results.
 
 ## Design
 
@@ -54,7 +54,9 @@ python run.py --limit 10     # ten slides, all four encoders
 python run.py                # the rest
 ```
 
-`run.py` can be stopped and restarted at any point. After the first ten slides it prints a
+`run.py` downloads and tiles in the background while the GPU embeds, so the GPU does not wait
+for downloads. It can be stopped and restarted at any point, and a failed download is retried
+for about an hour and a half before the run gives up. After a limited run it prints a
 projection of the final size; check that it fits before starting the full run.
 
 Embedding runs in the two environments built for encoder-or-probe, found by default in

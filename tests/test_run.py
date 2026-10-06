@@ -57,6 +57,7 @@ def drive(monkeypatch, argv=()):
     monkeypatch.setattr(fetch_slide, "process", fake_process)
     monkeypatch.setattr(run, "embed_batch", fake_embed)
     monkeypatch.setattr(run, "interpreters", lambda: {"main": __file__, "timm": __file__})
+    monkeypatch.setattr(run, "POLL_SECONDS", 0.01)
     monkeypatch.setattr("sys.argv", ["run.py", "--models", *MODELS, *argv])
     run.main()
 
@@ -87,6 +88,84 @@ def test_full_cache_is_flushed_to_make_room(project, monkeypatch):
     drive(monkeypatch)
     assert all(run.is_done(r["slide"], MODELS) for r in ROWS)
     assert budget.used_bytes() <= 6000 and not list(config.CACHE.glob("*.npy"))
+
+
+def test_embedding_overlaps_with_fetching(project, monkeypatch):
+    """While one batch is being embedded, the fetcher keeps tiling the next slides."""
+    import time
+    waiting_at_start = []
+
+    def slow_embed(models, envs, extra):
+        waiting_at_start.append(len(list(config.CACHE.glob("*.npy"))))
+        time.sleep(0.3)
+        return fake_embed(models, envs, extra)
+
+    monkeypatch.setattr(fetch_slide, "read_manifest", lambda: list(ROWS))
+    monkeypatch.setattr(fetch_slide, "process", fake_process)
+    monkeypatch.setattr(run, "embed_batch", slow_embed)
+    monkeypatch.setattr(run, "interpreters", lambda: {"main": __file__, "timm": __file__})
+    monkeypatch.setattr(run, "POLL_SECONDS", 0.01)
+    monkeypatch.setattr("sys.argv", ["run.py", "--models", *MODELS])
+    run.main()
+    assert all(run.is_done(r["slide"], MODELS) for r in ROWS)
+    assert len(waiting_at_start) < len(ROWS) and max(waiting_at_start) > 1   # later batches grew meanwhile
+
+
+def test_cache_limit_pauses_fetching(project, monkeypatch):
+    monkeypatch.setattr(config, "CACHE_GB", 2500 / budget.GB)   # room for about two slides of tiles
+    peak = []
+    real = fake_embed
+
+    def watching_embed(models, envs, extra):
+        peak.append(budget.folder_bytes(config.CACHE))
+        return real(models, envs, extra)
+
+    monkeypatch.setattr(fetch_slide, "read_manifest", lambda: list(ROWS))
+    monkeypatch.setattr(fetch_slide, "process", fake_process)
+    monkeypatch.setattr(run, "embed_batch", watching_embed)
+    monkeypatch.setattr(run, "interpreters", lambda: {"main": __file__, "timm": __file__})
+    monkeypatch.setattr(run, "POLL_SECONDS", 0.01)
+    monkeypatch.setattr("sys.argv", ["run.py", "--models", *MODELS])
+    run.main()
+    assert all(run.is_done(r["slide"], MODELS) for r in ROWS)
+    assert max(peak) <= 3000      # never more than the limit plus the slide that crossed it
+
+
+def test_a_failed_download_is_retried(project, monkeypatch, capsys):
+    calls = {"n": 0}
+
+    def flaky(row):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            raise IOError("connection reset")
+        return fake_process(row)
+
+    monkeypatch.setattr(fetch_slide, "read_manifest", lambda: list(ROWS))
+    monkeypatch.setattr(fetch_slide, "process", flaky)
+    monkeypatch.setattr(run, "embed_batch", fake_embed)
+    monkeypatch.setattr(run, "interpreters", lambda: {"main": __file__, "timm": __file__})
+    monkeypatch.setattr(run, "POLL_SECONDS", 0.01)
+    monkeypatch.setattr(run, "RETRY_STEP_SECONDS", 0.001)
+    monkeypatch.setattr("sys.argv", ["run.py", "--models", *MODELS])
+    run.main()
+    assert "trying again" in capsys.readouterr().out
+    assert all(run.is_done(r["slide"], MODELS) for r in ROWS)
+
+
+def test_repeated_download_failure_stops_with_an_error(project, monkeypatch):
+    def broken(row):
+        raise IOError("no route to host")
+
+    monkeypatch.setattr(fetch_slide, "read_manifest", lambda: list(ROWS))
+    monkeypatch.setattr(fetch_slide, "process", broken)
+    monkeypatch.setattr(run, "embed_batch", fake_embed)
+    monkeypatch.setattr(run, "interpreters", lambda: {"main": __file__, "timm": __file__})
+    monkeypatch.setattr(run, "POLL_SECONDS", 0.01)
+    monkeypatch.setattr(run, "RETRY_STEP_SECONDS", 0.001)
+    monkeypatch.setattr(run, "FETCH_RETRIES", 3)
+    monkeypatch.setattr("sys.argv", ["run.py", "--models", *MODELS])
+    with pytest.raises(SystemExit, match="repeated failures"):
+        run.main()
 
 
 def test_limited_run_projects_to_the_whole_manifest(project, monkeypatch, capsys):
