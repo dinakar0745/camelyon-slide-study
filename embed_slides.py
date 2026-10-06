@@ -157,4 +157,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except budget.BudgetError as e:
+        print(f"stopped: {e}")
+        raise SystemExit(3)

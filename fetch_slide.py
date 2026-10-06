@@ -144,6 +144,7 @@ def tile_slide(slide_file: Path, row: dict) -> int:
             del out
             os.replace(tmp, cache_path(name))
 
+        budget.reserve(4 << 20, f"tile index and thumbnail for {name}")
         thumb = Image.fromarray(low)
         thumb.thumbnail((low.shape[1] // 2, low.shape[0] // 2))
         thumb.save(config.TILES / f"{name}.jpg", quality=85)
