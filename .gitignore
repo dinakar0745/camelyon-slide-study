@@ -1,0 +1,12 @@
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Everything the pipeline downloads or writes (slides, tile cache, embeddings).
+# Capped at 50 GB by budget.py; regenerate with the scripts.
+data/
+
+# Local interpreter paths
+envs.json
