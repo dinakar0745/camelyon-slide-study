@@ -56,7 +56,7 @@ python run.py                # the rest
 
 `run.py` downloads and tiles in the background while the GPU embeds, so the GPU does not wait
 for downloads. It can be stopped and restarted at any point, and a failed download is retried
-for about an hour and a half before the run gives up. After a limited run it prints a
+for a couple of hours before the run gives up. After a limited run it prints a
 projection of the final size; check that it fits before starting the full run.
 
 Embedding runs in the two environments built for encoder-or-probe, found by default in
