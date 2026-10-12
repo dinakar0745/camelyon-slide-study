@@ -5,6 +5,8 @@ import pytest
 
 import attention_analysis as aa
 import config
+import evaluate
+import tile_probe_slides as tps
 import train_heads
 
 DIM = 16
@@ -120,3 +122,21 @@ def test_analysis_end_to_end(project):
     for section in ("Refitted heads", "Attention tile AUC", "Drift", "Tile probe"):
         assert section in md
     assert "| toy | mixed |" in md
+
+
+def test_topk_scores():
+    s = [np.array([0.0, 5.0, 1.0, 3.0]), np.array([2.0])]
+    assert tps.topk_scores(s, 1).tolist() == [5.0, 2.0]
+    assert tps.topk_scores(s, 2).tolist() == [4.0, 2.0]      # a slide with fewer tiles uses all of them
+
+
+def test_tile_probe_slide_head_end_to_end(project):
+    rows = train_heads.read_manifest()
+    preds, sel = tps.run_encoder("toy", rows, [0, 1])
+    assert len(sel) == 4 and all(s["choice"] in tps.K_GRID for s in sel)
+    assert len(preds) == 4 * len(config.TEST_CONDITIONS) * 30 and {p["head"] for p in preds} == {"tileprobe"}
+    train_heads.write_csv(config.RESULTS / "predictions_tileprobe_toy.csv", train_heads.PRED_COLUMNS, preds)
+    by_seed, summary, gaps = evaluate.evaluate(evaluate.load())
+    clean = [r for r in summary if r["head"] == "tileprobe" and r["condition"] == "clean" and r["subset"] == "all"]
+    assert len(clean) == 2 and all(r["auc_mean"] > 0.95 for r in clean)
+    assert "## tileprobe: AUC, all test slides" in evaluate.markdown(summary, gaps)

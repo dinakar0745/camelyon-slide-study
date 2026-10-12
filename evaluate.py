@@ -146,7 +146,8 @@ def markdown(summary: list[dict], gaps: list[dict]) -> str:
              "Mean over seeds, in percent, with the standard deviation over seeds. "
              "Gains are mixed minus clean, paired by seed, averaged over seeds; the interval is a "
              "stratified bootstrap over test slides of that average.", ""]
-    for head in config.HEADS:
+    extra = sorted({r["head"] for r in summary} - set(config.HEADS))  # e.g. tileprobe
+    for head in config.HEADS + extra:
         rows = {(r["model"], r["train_set"], r["condition"]): r for r in summary
                 if r["head"] == head and r["subset"] == "all"}
         if not rows:

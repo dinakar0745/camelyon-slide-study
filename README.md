@@ -31,6 +31,7 @@ Slide-level heads, each fitted on the clean and on the mixed training embeddings
 | mean | logistic regression on the mean of the standardised tile embeddings |
 | max | logistic regression on their per-dimension maximum |
 | abmil | gated attention MIL (Ilse et al., 2018) |
+| tileprobe | mean of the slide's top-k tile scores from a tile classifier trained on the lesion annotations (k picked on validation) |
 
 Each of 5 seeds fits on a random 80% of the 270 training slides and picks its one
 hyperparameter (C, or the training epoch) on the other 20%. The split depends only on the
@@ -73,6 +74,7 @@ Then, in the main encoder-or-probe environment (it has PyTorch and scikit-learn)
 python train_heads.py        # all encoders, heads, training sets and seeds
 python evaluate.py           # results/summary.md, plus CSVs with every number
 python attention_analysis.py # where attention lands, tile drift, tile probes: results/attention_summary.md
+python tile_probe_slides.py  # the tileprobe head; rerun evaluate.py afterwards to add it to the tables
 ```
 
 `run.py` downloads and tiles in the background while the GPU embeds, so the GPU does not wait
@@ -98,6 +100,7 @@ heads.py           the slide-level heads
 train_heads.py     fits them and scores the test set under every condition
 evaluate.py        AUC per condition with seed spread and bootstrap intervals
 attention_analysis.py  attention on tumour tiles, embedding drift and tile probes per condition
+tile_probe_slides.py   slide head from tile-level supervision (top-k tile scores)
 degradations.py    blur, JPEG and stain shift, unchanged from encoder-or-probe
 tests/             run with `python -m pytest tests`
 ```
