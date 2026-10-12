@@ -72,6 +72,7 @@ Then, in the main encoder-or-probe environment (it has PyTorch and scikit-learn)
 ```
 python train_heads.py        # all encoders, heads, training sets and seeds
 python evaluate.py           # results/summary.md, plus CSVs with every number
+python attention_analysis.py # where attention lands, tile drift, tile probes: results/attention_summary.md
 ```
 
 `run.py` downloads and tiles in the background while the GPU embeds, so the GPU does not wait
@@ -96,6 +97,7 @@ run.py             drives the above in batches
 heads.py           the slide-level heads
 train_heads.py     fits them and scores the test set under every condition
 evaluate.py        AUC per condition with seed spread and bootstrap intervals
+attention_analysis.py  attention on tumour tiles, embedding drift and tile probes per condition
 degradations.py    blur, JPEG and stain shift, unchanged from encoder-or-probe
 tests/             run with `python -m pytest tests`
 ```
