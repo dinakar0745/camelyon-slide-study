@@ -1,16 +1,52 @@
-# CAMELYON16 slide-level robustness study
+# Is it the encoder or the head?
 
-Follow-up to [encoder-or-probe](https://github.com/dinakar0745/encoder-or-probe). That study
-found that much of the accuracy a pathology foundation model loses under image degradation
-belongs to the linear probe, not the frozen encoder. It was limited to patch classification.
+Slide-level robustness of pathology foundation models to acquisition artifacts, on lymph-node
+metastasis detection in CAMELYON16.
 
-This project asks the same question at slide level, on lymph-node metastasis detection in
-CAMELYON16: when the head is a slide-level aggregator over frozen tile embeddings, does a
-head trained on clean slides still lose more under degradation than one trained on a mix?
+**Report:** [`paper/camelyon_slide_report.pdf`](paper/camelyon_slide_report.pdf) (technical report, version 1, 12 October 2026)
 
-**Status:** embeddings are extracted for all 399 slides with all four encoders (871,867
-tiles, 21 GB). The slide-level training and evaluation code is written and tested on synthetic
-bags but has not yet been run on the real embeddings. There are no results.
+Follow-up to [encoder-or-probe](https://github.com/dinakar0745/encoder-or-probe)
+([report](https://doi.org/10.5281/zenodo.23162508)), which found at patch level that much of
+the accuracy a frozen pathology encoder loses under image degradation belongs to the linear
+probe, not the encoder. This repository asks the same question when the head is a slide-level
+aggregator over thousands of frozen tile embeddings.
+
+**Short answer:** for compression, mostly the head again, but supervision matters. Training an
+attention head on a mix of clean and degraded tiles recovers much of the slide AUC lost to
+JPEG for Phikon and Kaiko B/16, at no cost on clean slides; it does not help Phikon-v2. The
+tumour signal is still in the embeddings: tile-level probes separate tumour under every
+degradation tested, and a head given tile labels recovers where the attention head does not.
+Pooled AUC hides the clinical cost: at 95% specificity the loss falls on small metastases, and
+under heavy blur slide scores mostly track which hospital a slide came from.
+
+![Slide AUC per condition for heads trained on clean and on mixed embeddings](paper/fig1_slide_auc.png)
+
+## Main results
+
+Slide AUC in %, all 129 test slides, mean of five seeds, head trained on clean embeddings ->
+head trained on mixed embeddings. JPEG quality 10 was never seen in training.
+
+| Head | Condition | Phikon | Kaiko B/16 | Phikon-v2 | DINOv2-L |
+| --- | --- | --- | --- | --- | --- |
+| Attention MIL | Clean | 98.9 -> 98.8 | 98.6 -> 98.5 | 96.4 -> 93.8 | 77.3 -> 76.4 |
+| Attention MIL | JPEG Q15 | 74.0 -> 86.2 | 75.3 -> 89.7 | 72.7 -> 75.0 | 70.5 -> 74.6 |
+| Attention MIL | JPEG Q10 | 63.1 -> 79.7 | 67.9 -> 81.1 | 68.1 -> 67.8 | 70.0 -> 74.4 |
+| Attention MIL | Blur sigma 4 | 51.0 -> 53.9 | 55.6 -> 60.0 | 56.2 -> 54.8 | 53.0 -> 58.9 |
+| Tile head | JPEG Q10 | 71.0 -> 88.2 | 82.1 -> 89.6 | 75.8 -> 81.9 | 77.6 -> 77.3 |
+| Tile head | Blur sigma 4 | 59.3 -> 69.8 | 52.4 -> 70.8 | 58.0 -> 69.6 | 53.9 -> 59.0 |
+
+- **The attention head loses the signal; the encoder keeps it.** Mixed training makes Phikon-v2's
+  attention land on tumour less often at JPEG quality 10, while a tile probe on the same
+  embeddings still reaches a tile AUC of 96.9. The tile head uses the lesion annotations, so it
+  is a diagnostic of where the signal is, not a fair competitor.
+- **Small metastases go first.** At 95% specificity, Phikon's attention head detects 93% of the
+  slides whose tumour touches only 1 to 10 tiles on clean images, and 14% (clean-trained) or 41%
+  (mixed-trained) at JPEG quality 10.
+- **Hospital.** Under blur sigma 4, clean-trained attention scores separate the two hospitals
+  almost perfectly among normal slides, which can hide or invert a pooled result.
+
+Every number, with seed spread and bootstrap intervals, is in `results/`; the report's figures
+and tables are generated from those files by `paper/make_paper.py`.
 
 ## Design
 
@@ -34,12 +70,12 @@ Slide-level heads, each fitted on the clean and on the mixed training embeddings
 | tileprobe | mean of the slide's top-k tile scores from a tile classifier trained on the lesion annotations (k picked on validation) |
 
 Each of 5 seeds fits on a random 80% of the 270 training slides and picks its one
-hyperparameter (C, or the training epoch) on the other 20%. The split depends only on the
+hyperparameter (C, the training epoch, or k) on the other 20%. The split depends only on the
 seed, so clean and mixed training are compared pairwise. Test AUC is reported on all 129 test
 slides, and separately for macro- and micro-metastasis slides against all normal slides.
 
-Working at 10x keeps the study inside a laptop's disk and GPU. The cost is sensitivity to
-micrometastases and isolated tumour cells, which any results will have to be read against.
+Working at 10x keeps the study inside a laptop's disk and GPU. On clean slides it still finds
+most micrometastases; under degradation, small metastases are what is lost first.
 
 ## Disk use
 
@@ -118,9 +154,32 @@ data/embeddings/<model>/<slide>.npz  one [n_tiles, dim] float16 array per condit
 Written under `results/` (in git): per-slide test predictions, the chosen hyperparameters, and
 the evaluation tables.
 
+## Limitations
+
+- One test set: 129 slides, 49 with tumour, from two centres; subset intervals are wide.
+- 10x only, and synthetic degradations applied per tile, not calibrated to a scanner.
+- The tile head and the attention, tumour-size and hospital analyses were designed after the
+  first results, to explain them. Their settings were fixed before they were run.
+- Sensitivity at 95% specificity uses a threshold set on the test normal slides.
+- Four encoders; larger and more recent ones were not accessible.
+
 ## Licence and data terms
 
-Code: MIT. CAMELYON16 is released under CC0. The encoders keep their own licences, as listed
-in the encoder-or-probe README; Phikon, Phikon-v2 and the Kaiko encoder are non-commercial.
+Code: MIT. CAMELYON16 is released under CC0. Phikon and Phikon-v2 (Owkin) and the Kaiko ViT-B/16
+weights are under non-commercial licences; DINOv2 is Apache 2.0. This work is non-commercial
+research; check each model card before any other use.
 
-AI assistance: Claude (Anthropic) was used to help write the code.
+## Citation
+
+```
+Pathakota, D. (2026). Is It the Encoder or the Head? Slide-Level Robustness of Pathology
+Foundation Models to Acquisition Artifacts on CAMELYON16. Technical report.
+```
+
+## Author
+
+Dinakar Pathakota, independent researcher, Hyderabad, India. Questions and corrections are
+welcome through GitHub issues.
+
+AI assistance: Claude (Anthropic) was used to help write the code and the report and to check
+the analysis. The experiments were run by the author.
