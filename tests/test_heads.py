@@ -20,6 +20,16 @@ def test_auc_matches_sklearn_including_ties():
     assert np.isnan(evaluate.auc(np.zeros(5, dtype=int), s[:5]))
 
 
+def test_boot_auc_matches_the_plain_auc_on_each_resample():
+    rng = np.random.default_rng(3)
+    y = np.array([1] * 12 + [0] * 30)
+    scores = rng.normal(size=(2, 42)) + y
+    idx = evaluate.boot_indices(y, rng)[:50]
+    b = evaluate.boot_auc(scores, idx, 12)
+    want = [[evaluate.auc(y[i], s[i]) for i in idx] for s in scores]
+    assert b.shape == (2, 50) and np.allclose(b, want)
+
+
 def test_tile_stats_match_numpy():
     rng = np.random.default_rng(1)
     bags = [rng.normal(3, 2, size=(n, 8)).astype(np.float16) for n in (5, 50, 500)]
@@ -109,8 +119,10 @@ def test_train_and_evaluate_end_to_end(project):
     assert get[("abmil", "clean", "clean", "all")]["auc_mean"] > 0.95
     assert get[("abmil", "clean", "clean", "micro")]["auc_mean"] > get[("mean", "clean", "clean", "micro")]["auc_mean"]
     assert get[("max", "clean", "clean", "macro")]["auc_mean"] > 0.95
-    r = get[("abmil", "clean", "clean", "all")]
-    assert r["ci_low"] <= r["auc_ensemble"] <= r["ci_high"]
+    for r in summary:
+        assert r["ci_low"] - 0.02 <= r["auc_mean"] <= r["ci_high"] + 0.02
+    for r in gaps:
+        assert r["ci_low"] - 0.02 <= r["gain_mean"] <= r["ci_high"] + 0.02
     assert len(gaps) == len(config.HEADS) * len(config.TEST_CONDITIONS) * len(evaluate.SUBSETS)
     assert len(by_seed) == len(config.HEADS) * 2 * len(config.TEST_CONDITIONS) * len(evaluate.SUBSETS) * 2
 

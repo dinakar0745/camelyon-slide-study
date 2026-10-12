@@ -4,8 +4,8 @@ Reads results/predictions_*.csv and writes
     results/auc_by_seed.csv   AUC for every encoder, head, training set, condition and seed,
                               on all test slides and on macro- and micro-metastasis slides
                               (each against all normal slides)
-    results/summary.csv       mean and sd over seeds, plus the AUC of the seed-averaged
-                              score with a bootstrap 95% interval
+    results/summary.csv       mean and sd over seeds with a bootstrap 95% interval for the
+                              mean, plus the AUC of the seed-averaged score
     results/gap.csv           mixed minus clean, paired by seed and by bootstrap resample
     results/summary.md        the same as readable tables
 
@@ -65,9 +65,23 @@ def load() -> dict:
 
 
 def boot_indices(labels: np.ndarray, rng) -> np.ndarray:
-    """N_BOOT stratified resamples of slide indices, shape [N_BOOT, n]."""
+    """N_BOOT stratified resamples of slide indices, shape [N_BOOT, n], positives first."""
     pos, neg = np.flatnonzero(labels == 1), np.flatnonzero(labels == 0)
     return np.concatenate([rng.choice(pos, (N_BOOT, len(pos))), rng.choice(neg, (N_BOOT, len(neg)))], axis=1)
+
+
+def boot_auc(scores: np.ndarray, idx: np.ndarray, n_pos: int) -> np.ndarray:
+    """AUC of each seed's scores on each resample, shape [n_seeds, N_BOOT].
+
+    `idx` comes from boot_indices, so the first n_pos columns of every resample are the
+    positives; that lets every resample be ranked at once.
+    """
+    n_neg = idx.shape[1] - n_pos
+    out = []
+    for s in scores:
+        r = rankdata(s[idx], axis=1)
+        out.append((r[:, :n_pos].sum(1) - n_pos * (n_pos + 1) / 2) / (n_pos * n_neg))
+    return np.array(out)
 
 
 def ensemble(scores: np.ndarray) -> np.ndarray:
@@ -76,46 +90,52 @@ def ensemble(scores: np.ndarray) -> np.ndarray:
     return z.mean(0)
 
 
+def interval(values: np.ndarray) -> tuple[float, float]:
+    return round(float(np.percentile(values, 2.5)), 4), round(float(np.percentile(values, 97.5)), 4)
+
+
 def evaluate(data: dict, seed: int = 0):
+    """Every interval is a stratified bootstrap over test slides of the statistic it is
+    printed next to: the mean over seeds of the AUC, or of the mixed-minus-clean gain.
+    The same resamples are used for every encoder, head, training set and condition."""
     by_seed, summary, gaps = [], [], []
-    boot_cache = {}
+    boots, boot_cache = {}, {}
     for (model, head, train_set, condition), d in sorted(data.items()):
         for subset in SUBSETS:
             m = subset_mask(d["labels"], d["lesions"], subset)
-            y = d["labels"][m]
-            per_seed = [auc(y, s[m]) for s in d["scores"]]
+            order = np.argsort(-d["labels"][m], kind="stable")  # positives first, as boot_indices assumes
+            y, scores = d["labels"][m][order], d["scores"][:, m][:, order]
+            per_seed = [auc(y, s) for s in scores]
             for k, a in zip(d["seeds"], per_seed):
                 by_seed.append(dict(model=model, head=head, train_set=train_set, condition=condition,
                                     subset=subset, seed=k, auc=round(a, 4)))
-            ens = ensemble(d["scores"][:, m])
-            bkey = (subset, tuple(d["slides"]))  # same resamples for every encoder, head and condition
+            bkey = (subset, tuple(d["slides"]))
             if bkey not in boot_cache:
                 boot_cache[bkey] = boot_indices(y, np.random.default_rng(seed))
-            idx = boot_cache[bkey]
-            boots = np.array([auc(y[i], ens[i]) for i in idx])
+            b = boot_auc(scores, boot_cache[bkey], int(y.sum()))
+            boots[(model, head, train_set, condition, subset)] = b
+            low, high = interval(b.mean(0))
             summary.append(dict(model=model, head=head, train_set=train_set, condition=condition, subset=subset,
                                 auc_mean=round(float(np.mean(per_seed)), 4), auc_sd=round(float(np.std(per_seed)), 4),
-                                auc_ensemble=round(auc(y, ens), 4),
-                                ci_low=round(float(np.percentile(boots, 2.5)), 4),
-                                ci_high=round(float(np.percentile(boots, 97.5)), 4)))
+                                ci_low=low, ci_high=high, auc_ensemble=round(auc(y, ensemble(scores)), 4)))
 
     for (model, head, train_set, condition), d in sorted(data.items()):
         if train_set != "clean" or (model, head, "mixed", condition) not in data:
             continue
-        c, mx = d, data[(model, head, "mixed", condition)]
-        assert c["slides"] == mx["slides"] and c["seeds"] == mx["seeds"]
+        mx = data[(model, head, "mixed", condition)]
+        assert d["slides"] == mx["slides"] and d["seeds"] == mx["seeds"]
         for subset in SUBSETS:
-            m = subset_mask(c["labels"], c["lesions"], subset)
-            y = c["labels"][m]
-            diff = [auc(y, b[m]) - auc(y, a[m]) for a, b in zip(c["scores"], mx["scores"])]
-            ec, em = ensemble(c["scores"][:, m]), ensemble(mx["scores"][:, m])
-            idx = boot_cache[(subset, tuple(c["slides"]))]
-            boots = np.array([auc(y[i], em[i]) - auc(y[i], ec[i]) for i in idx])
+            c_rows = [r for r in by_seed if (r["model"], r["head"], r["train_set"], r["condition"], r["subset"])
+                      == (model, head, "clean", condition, subset)]
+            m_rows = [r for r in by_seed if (r["model"], r["head"], r["train_set"], r["condition"], r["subset"])
+                      == (model, head, "mixed", condition, subset)]
+            diff = [b["auc"] - a["auc"] for a, b in zip(c_rows, m_rows)]
+            gain_boot = (boots[(model, head, "mixed", condition, subset)]
+                         - boots[(model, head, "clean", condition, subset)]).mean(0)
+            low, high = interval(gain_boot)
             gaps.append(dict(model=model, head=head, condition=condition, subset=subset,
                              gain_mean=round(float(np.mean(diff)), 4), gain_sd=round(float(np.std(diff)), 4),
-                             gain_ensemble=round(auc(y, em) - auc(y, ec), 4),
-                             ci_low=round(float(np.percentile(boots, 2.5)), 4),
-                             ci_high=round(float(np.percentile(boots, 97.5)), 4)))
+                             ci_low=low, ci_high=high))
     return by_seed, summary, gaps
 
 
@@ -124,7 +144,8 @@ def markdown(summary: list[dict], gaps: list[dict]) -> str:
     models = sorted({r["model"] for r in summary})
     lines = ["# Slide-level AUC on the CAMELYON16 test set", "",
              "Mean over seeds, in percent, with the standard deviation over seeds. "
-             "Gains are mixed minus clean, paired by seed.", ""]
+             "Gains are mixed minus clean, paired by seed, averaged over seeds; the interval is a "
+             "stratified bootstrap over test slides of that average.", ""]
     for head in config.HEADS:
         rows = {(r["model"], r["train_set"], r["condition"]): r for r in summary
                 if r["head"] == head and r["subset"] == "all"}
