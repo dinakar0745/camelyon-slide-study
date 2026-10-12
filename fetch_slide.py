@@ -47,6 +47,13 @@ def cache_path(slide: str) -> Path:
     return config.CACHE / f"{slide}.npy"
 
 
+def reserve_tiles(n_bytes: int, name: str) -> None:
+    """Check there is room for `n_bytes` of new tile pixels and, on top, for embedding the
+    whole cache including them (config.EMBED_HEADROOM)."""
+    cache = budget.folder_bytes(config.CACHE)
+    budget.reserve(n_bytes + int(config.EMBED_HEADROOM * (cache + n_bytes)), f"tile cache for {name}")
+
+
 def download(url: str, dest: Path, size: int, md5: str = "", attempts: int = 8) -> None:
     """Download `url` to `dest`, resuming a partial file, then check its size and checksum."""
     part = dest.with_name(dest.name + ".part")
@@ -132,7 +139,7 @@ def tile_slide(slide_file: Path, row: dict) -> int:
         level_ds = float(slide.level_downsamples[level])
         src = round(tile0 / level_ds)
         if n:
-            budget.reserve(n * TILE_BYTES, f"tile cache for {name}")
+            reserve_tiles(n * TILE_BYTES, name)
             tmp = cache_path(name).with_suffix(".tmp")
             out = np.lib.format.open_memmap(tmp, mode="w+", dtype=np.uint8, shape=(n, config.TILE, config.TILE, 3))
             for i, (x, y) in enumerate(coords):

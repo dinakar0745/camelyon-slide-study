@@ -19,6 +19,10 @@ BUDGET_GB = 50
 CACHE_GB = 8
 # Stop if the drive itself has less than this free, whatever the budget says.
 DISK_FLOOR_GB = 2
+# Room kept free for embedding the cached tiles, as a fraction of the cache's size. Their
+# embeddings take up to about a third of it (7 conditions, all four encoders), so new tiles
+# can never fill the budget in a way that leaves the cache unable to be embedded and cleared.
+EMBED_HEADROOM = 0.5
 
 # --- Source ----------------------------------------------------------------------------
 # Public bucket from the Registry of Open Data on AWS (no account needed).

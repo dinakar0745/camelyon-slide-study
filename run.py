@@ -105,6 +105,7 @@ class Fetcher(threading.Thread):
         self.pending = pending
         self.stop = threading.Event()
         self.purges = 0      # incremented by the main thread after each cache purge
+        self.purge_lock = threading.Lock()  # held while purging, so a purge is seen whole or not at all
         self.error: BaseException | None = None
 
     def _pause(self, seconds: float) -> bool:
@@ -116,10 +117,15 @@ class Fetcher(threading.Thread):
         while not self.stop.is_set():
             seen = self.purges
             try:
+                if not fetch_slide.is_cached(row["slide"]):
+                    room = int(config.EMBED_HEADROOM * budget.folder_bytes(config.CACHE))
+                    budget.reserve(room + int(row["bytes"]), f"slide {row['slide']}, keeping room to embed the cache")
                 fetch_slide.process(row)
                 return
             except budget.BudgetError:
-                if self.purges == seen and not any(config.CACHE.glob("*.npy")):
+                with self.purge_lock:
+                    nothing_to_clear = self.purges == seen and not any(config.CACHE.glob("*.npy"))
+                if nothing_to_clear:
                     raise
                 while self.purges == seen:  # room will appear when the cache is cleared
                     if self._pause(POLL_SECONDS):
@@ -174,8 +180,9 @@ def main() -> None:
         while True:
             if cache_waiting():
                 ok = embed_batch(args.models, envs, extra)
-                purge_cache(args.models)
-                fetcher.purges += 1
+                with fetcher.purge_lock:
+                    purge_cache(args.models)
+                    fetcher.purges += 1
                 if not ok:
                     print("\nstopped by the disk budget while embedding")
                     break

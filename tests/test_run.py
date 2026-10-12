@@ -30,7 +30,8 @@ def fake_process(row, n=2):
     slide = row["slide"]
     if fetch_slide.is_cached(slide):
         return n
-    budget.reserve(1500, f"tiles for {slide}")
+    budget.reserve(500, f"tile index for {slide}")
+    fetch_slide.reserve_tiles(1000, slide)
     np.savez(fetch_slide.tiles_path(slide), coords=np.zeros((n, 2)), meta=json.dumps(dict(split=row["split"])))
     fetch_slide.cache_path(slide).write_bytes(b"0" * 1000)
     return n
@@ -97,7 +98,7 @@ def test_embedding_overlaps_with_fetching(project, monkeypatch):
 
     def slow_embed(models, envs, extra):
         waiting_at_start.append(len(list(config.CACHE.glob("*.npy"))))
-        time.sleep(0.3)
+        time.sleep(1.0)
         return fake_embed(models, envs, extra)
 
     monkeypatch.setattr(fetch_slide, "read_manifest", lambda: list(ROWS))
@@ -171,6 +172,27 @@ def test_repeated_download_failure_stops_with_an_error(project, monkeypatch):
 def test_limited_run_projects_to_the_whole_manifest(project, monkeypatch, capsys):
     drive(monkeypatch, ["--limit", "2"])
     assert f"projected kept data for all {len(ROWS)} slides" in capsys.readouterr().out
+
+
+def test_downloads_leave_room_to_embed_the_cache(project, monkeypatch):
+    """With no cache limit, tiles alone must not fill the budget so that nothing can be embedded."""
+    monkeypatch.setattr(config, "CACHE_GB", 1)                   # effectively unlimited
+    monkeypatch.setattr(config, "BUDGET_GB", 6000 / budget.GB)
+    calls = []
+    real = fake_embed
+
+    def counting_embed(models, envs, extra):
+        calls.append(real(models, envs, extra))
+        return calls[-1]
+
+    monkeypatch.setattr(fetch_slide, "read_manifest", lambda: list(ROWS))
+    monkeypatch.setattr(fetch_slide, "process", fake_process)
+    monkeypatch.setattr(run, "embed_batch", counting_embed)
+    monkeypatch.setattr(run, "interpreters", lambda: {"main": __file__, "timm": __file__})
+    monkeypatch.setattr(run, "POLL_SECONDS", 0.01)
+    monkeypatch.setattr("sys.argv", ["run.py", "--models", *MODELS])
+    run.main()
+    assert all(calls) and all(run.is_done(r["slide"], MODELS) for r in ROWS)
 
 
 def test_budget_stops_the_run_cleanly(project, monkeypatch, capsys):
