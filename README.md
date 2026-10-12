@@ -75,6 +75,7 @@ python train_heads.py        # all encoders, heads, training sets and seeds
 python evaluate.py           # results/summary.md, plus CSVs with every number
 python attention_analysis.py # where attention lands, tile drift, tile probes: results/attention_summary.md
 python tile_probe_slides.py  # the tileprobe head; rerun evaluate.py afterwards to add it to the tables
+python deep_dive.py          # sensitivity by tumour size, hospital and slide-size effects: results/deep_dive.md
 ```
 
 `run.py` downloads and tiles in the background while the GPU embeds, so the GPU does not wait
@@ -101,6 +102,7 @@ train_heads.py     fits them and scores the test set under every condition
 evaluate.py        AUC per condition with seed spread and bootstrap intervals
 attention_analysis.py  attention on tumour tiles, embedding drift and tile probes per condition
 tile_probe_slides.py   slide head from tile-level supervision (top-k tile scores)
+deep_dive.py           sensitivity at 95% specificity by tumour size, per-hospital AUC, shared failures
 degradations.py    blur, JPEG and stain shift, unchanged from encoder-or-probe
 tests/             run with `python -m pytest tests`
 ```
