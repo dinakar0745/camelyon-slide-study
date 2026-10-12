@@ -46,7 +46,8 @@ head trained on mixed embeddings. JPEG quality 10 was never seen in training.
   almost perfectly among normal slides, which can hide or invert a pooled result.
 
 Every number, with seed spread and bootstrap intervals, is in `results/`; the report's figures
-and tables are generated from those files by `paper/make_paper.py`.
+and tables are generated from those files by `paper/make_paper.py`, and
+`paper/check_claims.py` checks every number quoted in its text against them.
 
 ## Design
 
