@@ -1,0 +1,11 @@
+model,head,train_set,seed,choice,val_auc,n_fit,n_val
+phikon,tileprobe,clean,0,1,0.9886,216,54
+phikon,tileprobe,clean,1,1,0.9616,216,54
+phikon,tileprobe,clean,2,1,1.0,216,54
+phikon,tileprobe,clean,3,5,0.9744,216,54
+phikon,tileprobe,clean,4,3,1.0,216,54
+phikon,tileprobe,mixed,0,1,0.9787,216,54
+phikon,tileprobe,mixed,1,1,0.9446,216,54
+phikon,tileprobe,mixed,2,1,0.9943,216,54
+phikon,tileprobe,mixed,3,1,0.9517,216,54
+phikon,tileprobe,mixed,4,1,0.9886,216,54

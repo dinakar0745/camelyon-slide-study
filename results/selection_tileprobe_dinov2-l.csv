@@ -1,0 +1,11 @@
+model,head,train_set,seed,choice,val_auc,n_fit,n_val
+dinov2-l,tileprobe,clean,0,25,0.902,216,54
+dinov2-l,tileprobe,clean,1,3,0.8509,216,54
+dinov2-l,tileprobe,clean,2,10,0.9531,216,54
+dinov2-l,tileprobe,clean,3,5,0.9119,216,54
+dinov2-l,tileprobe,clean,4,5,0.892,216,54
+dinov2-l,tileprobe,mixed,0,25,0.8636,216,54
+dinov2-l,tileprobe,mixed,1,1,0.7784,216,54
+dinov2-l,tileprobe,mixed,2,25,0.8622,216,54
+dinov2-l,tileprobe,mixed,3,25,0.8494,216,54
+dinov2-l,tileprobe,mixed,4,25,0.8537,216,54

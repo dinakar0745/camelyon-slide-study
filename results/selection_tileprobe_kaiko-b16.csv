@@ -1,0 +1,11 @@
+model,head,train_set,seed,choice,val_auc,n_fit,n_val
+kaiko-b16,tileprobe,clean,0,1,0.9716,216,54
+kaiko-b16,tileprobe,clean,1,1,0.9815,216,54
+kaiko-b16,tileprobe,clean,2,1,1.0,216,54
+kaiko-b16,tileprobe,clean,3,10,0.973,216,54
+kaiko-b16,tileprobe,clean,4,1,0.9986,216,54
+kaiko-b16,tileprobe,mixed,0,1,0.9531,216,54
+kaiko-b16,tileprobe,mixed,1,1,0.9233,216,54
+kaiko-b16,tileprobe,mixed,2,1,1.0,216,54
+kaiko-b16,tileprobe,mixed,3,3,0.9659,216,54
+kaiko-b16,tileprobe,mixed,4,3,0.9801,216,54
