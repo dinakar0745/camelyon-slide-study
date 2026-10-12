@@ -142,3 +142,27 @@ class ABMILHead:
         self.model.eval()
         with torch.inference_mode():
             return np.array([float(self.model(self._x(b))[0]) for b in bags])
+
+    def attention(self, bag) -> np.ndarray:
+        """Attention weight of every tile of one bag (sums to 1)."""
+        torch = _torch()
+        self.model.eval()
+        with torch.inference_mode():
+            return self.model(self._x(bag))[1].float().cpu().numpy()
+
+    def save(self, path) -> None:
+        torch = _torch()
+        torch.save(dict(state=self.model.state_dict(), mean=self.mean.cpu(), std=self.std.cpu(),
+                        choice=self.choice, val_auc=self.val_auc), path)
+
+    @classmethod
+    def load(cls, path, device: str = "cpu") -> "ABMILHead":
+        torch = _torch()
+        saved = torch.load(path, map_location=device, weights_only=True)
+        head = cls(device)
+        head.mean, head.std = saved["mean"].to(device), saved["std"].to(device)
+        head.choice, head.val_auc = saved["choice"], saved["val_auc"]
+        head.model = build_abmil(len(head.mean)).to(device)
+        head.model.load_state_dict(saved["state"])
+        head.model.eval()
+        return head
