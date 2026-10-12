@@ -3,6 +3,8 @@
 numpy
 pillow
 scikit-image
+scikit-learn
+scipy
 tiffslide
 imagecodecs
 pytest

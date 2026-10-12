@@ -8,9 +8,9 @@ This project asks the same question at slide level, on lymph-node metastasis det
 CAMELYON16: when the head is a slide-level aggregator over frozen tile embeddings, does a
 head trained on clean slides still lose more under degradation than one trained on a mix?
 
-**Status:** the extraction pipeline has run end to end on the first ten slides with all four
-encoders. The full extraction, aggregator training and evaluation are still to do. There are
-no results.
+**Status:** embeddings are extracted for all 399 slides with all four encoders (871,867
+tiles, 21 GB). The slide-level training and evaluation code is written and tested on synthetic
+bags but has not yet been run on the real embeddings. There are no results.
 
 ## Design
 
@@ -23,6 +23,19 @@ no results.
 | Training sets | clean; and mixed, where each tile is drawn at random from clean, blur 2 and 4, JPEG 30 and 15, stain 0.3 |
 
 JPEG quality 10 is never seen in training. Every setting is in `config.py`.
+
+Slide-level heads, each fitted on the clean and on the mixed training embeddings:
+
+| Head | |
+| --- | --- |
+| mean | logistic regression on the mean of the standardised tile embeddings |
+| max | logistic regression on their per-dimension maximum |
+| abmil | gated attention MIL (Ilse et al., 2018) |
+
+Each of 5 seeds fits on a random 80% of the 270 training slides and picks its one
+hyperparameter (C, or the training epoch) on the other 20%. The split depends only on the
+seed, so clean and mixed training are compared pairwise. Test AUC is reported on all 129 test
+slides, and separately for macro- and micro-metastasis slides against all normal slides.
 
 Working at 10x keeps the study inside a laptop's disk and GPU. The cost is sensitivity to
 micrometastases and isolated tumour cells, which any results will have to be read against.
@@ -54,6 +67,13 @@ python run.py --limit 10     # ten slides, all four encoders
 python run.py                # the rest
 ```
 
+Then, in the main encoder-or-probe environment (it has PyTorch and scikit-learn):
+
+```
+python train_heads.py        # all encoders, heads, training sets and seeds
+python evaluate.py           # results/summary.md, plus CSVs with every number
+```
+
 `run.py` downloads and tiles in the background while the GPU embeds, so the GPU does not wait
 for downloads. It can be stopped and restarted at any point, and a failed download is retried
 for a couple of hours before the run gives up. After a limited run it prints a
@@ -73,6 +93,9 @@ tiling.py          tissue mask, tile grid, annotation rasterising
 fetch_slide.py     download one slide, tile it, delete it
 embed_slides.py    embed cached tiles with one encoder (runs in that encoder's environment)
 run.py             drives the above in batches
+heads.py           the slide-level heads
+train_heads.py     fits them and scores the test set under every condition
+evaluate.py        AUC per condition with seed spread and bootstrap intervals
 degradations.py    blur, JPEG and stain shift, unchanged from encoder-or-probe
 tests/             run with `python -m pytest tests`
 ```
@@ -84,6 +107,9 @@ data/tiles/<slide>.npz               coords, tissue, tumour (fraction per tile),
 data/tiles/<slide>.jpg               thumbnail
 data/embeddings/<model>/<slide>.npz  one [n_tiles, dim] float16 array per condition
 ```
+
+Written under `results/` (in git): per-slide test predictions, the chosen hyperparameters, and
+the evaluation tables.
 
 ## Licence and data terms
 
