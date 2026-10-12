@@ -3,7 +3,9 @@
 Slide-level robustness of pathology foundation models to acquisition artifacts, on lymph-node
 metastasis detection in CAMELYON16.
 
-**Report:** [`paper/camelyon_slide_report.pdf`](paper/camelyon_slide_report.pdf) (technical report, version 1, 12 October 2026)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23323558.svg)](https://doi.org/10.5281/zenodo.23323558)
+
+**Report:** [doi:10.5281/zenodo.23323558](https://doi.org/10.5281/zenodo.23323558) (technical report, version 1, 12 October 2026; also in [`paper/camelyon_slide_report.pdf`](paper/camelyon_slide_report.pdf))
 
 Follow-up to [encoder-or-probe](https://github.com/dinakar0745/encoder-or-probe)
 ([report](https://doi.org/10.5281/zenodo.23162508)), which found at patch level that much of
@@ -174,7 +176,20 @@ research; check each model card before any other use.
 
 ```
 Pathakota, D. (2026). Is It the Encoder or the Head? Slide-Level Robustness of Pathology
-Foundation Models to Acquisition Artifacts on CAMELYON16. Technical report.
+Foundation Models to Acquisition Artifacts on CAMELYON16. Technical report, Zenodo.
+https://doi.org/10.5281/zenodo.23323558
+```
+
+```bibtex
+@techreport{pathakota2026camelyon,
+  author      = {Pathakota, Dinakar},
+  title       = {Is It the Encoder or the Head? Slide-Level Robustness of Pathology
+                 Foundation Models to Acquisition Artifacts on {CAMELYON16}},
+  institution = {Zenodo},
+  year        = {2026},
+  doi         = {10.5281/zenodo.23323558},
+  url         = {https://doi.org/10.5281/zenodo.23323558}
+}
 ```
 
 ## Author
