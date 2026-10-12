@@ -47,3 +47,17 @@ ENCODERS = {
     "dinov2-l": ("hf", "facebook/dinov2-large", "main"),
     "kaiko-b16": ("timm", "hf_hub:1aurent/vit_base_patch16_224.kaiko_ai_towards_large_pathology_fms", "timm"),
 }
+
+# --- Slide-level heads -----------------------------------------------------------------
+# Fixed before any test result was seen. Each seed trains on a random 80% of the training
+# slides and picks its hyperparameter (C, or the epoch) on the other 20%. The split is the
+# same for the clean and the mixed training set, so the two are compared pairwise.
+RESULTS = ROOT / "results"
+SEEDS = [0, 1, 2, 3, 4]
+VAL_FRACTION = 0.2
+TRAIN_SETS = ["clean", "mixed"]
+HEADS = ["mean", "max", "abmil"]
+# mean, max: logistic regression on the slide's mean- or max-pooled standardised embedding.
+LR_C_GRID = [1e-4, 1e-3, 1e-2, 1e-1, 1.0, 10.0]
+# abmil: gated attention MIL (Ilse et al., 2018) on standardised tile embeddings.
+ABMIL = dict(hidden=256, attention=128, dropout=0.25, lr=1e-4, weight_decay=1e-4, epochs=40)
