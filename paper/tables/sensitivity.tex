@@ -1,0 +1,20 @@
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+Encoder & Head & Clean & JPEG Q15 & JPEG Q10 (unseen) & Blur $\sigma$ 4\\
+\midrule
+Phikon & Attention, clean-trained & 96 & 49 & 37 & 21\\
+ & Attention, mixed-trained & 95 & 73 & 60 & 27\\
+ & Tile head, clean-trained & 76 & 52 & 44 & 13\\
+ & Tile head, mixed-trained & 74 & 68 & 61 & 44\\
+\addlinespace
+Phikon-v2 & Attention, clean-trained & 86 & 44 & 31 & 16\\
+ & Attention, mixed-trained & 80 & 51 & 37 & 22\\
+ & Tile head, clean-trained & 83 & 42 & 40 & 13\\
+ & Tile head, mixed-trained & 76 & 63 & 56 & 46\\
+\addlinespace
+Kaiko B/16 & Attention, clean-trained & 93 & 55 & 45 & 28\\
+ & Attention, mixed-trained & 92 & 73 & 57 & 31\\
+ & Tile head, clean-trained & 79 & 66 & 49 & 11\\
+ & Tile head, mixed-trained & 73 & 74 & 69 & 47\\
+\bottomrule
+\end{tabular}
