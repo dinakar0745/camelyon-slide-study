@@ -1,0 +1,1569 @@
+model,head,train_set,condition,group,n_slides,sensitivity
+dinov2-l,abmil,clean,blur:2,all,49,0.449
+dinov2-l,abmil,clean,blur:2,tumour tiles 1-10,14,0.2143
+dinov2-l,abmil,clean,blur:2,tumour tiles 11-50,11,0.0545
+dinov2-l,abmil,clean,blur:2,tumour tiles 51-200,11,0.5273
+dinov2-l,abmil,clean,blur:2,tumour tiles >200,13,0.9692
+dinov2-l,abmil,clean,blur:2,macro,22,0.8273
+dinov2-l,abmil,clean,blur:2,micro,27,0.1407
+dinov2-l,abmil,clean,blur:4,all,49,0.1633
+dinov2-l,abmil,clean,blur:4,tumour tiles 1-10,14,0.0857
+dinov2-l,abmil,clean,blur:4,tumour tiles 11-50,11,0.0364
+dinov2-l,abmil,clean,blur:4,tumour tiles 51-200,11,0.1455
+dinov2-l,abmil,clean,blur:4,tumour tiles >200,13,0.3692
+dinov2-l,abmil,clean,blur:4,macro,22,0.2909
+dinov2-l,abmil,clean,blur:4,micro,27,0.0593
+dinov2-l,abmil,clean,clean,all,49,0.5306
+dinov2-l,abmil,clean,clean,tumour tiles 1-10,14,0.1
+dinov2-l,abmil,clean,clean,tumour tiles 11-50,11,0.2909
+dinov2-l,abmil,clean,clean,tumour tiles 51-200,11,0.7636
+dinov2-l,abmil,clean,clean,tumour tiles >200,13,1.0
+dinov2-l,abmil,clean,clean,macro,22,0.9545
+dinov2-l,abmil,clean,clean,micro,27,0.1852
+dinov2-l,abmil,clean,jpeg:10,all,49,0.4367
+dinov2-l,abmil,clean,jpeg:10,tumour tiles 1-10,14,0.1571
+dinov2-l,abmil,clean,jpeg:10,tumour tiles 11-50,11,0.1091
+dinov2-l,abmil,clean,jpeg:10,tumour tiles 51-200,11,0.4909
+dinov2-l,abmil,clean,jpeg:10,tumour tiles >200,13,0.9692
+dinov2-l,abmil,clean,jpeg:10,macro,22,0.8182
+dinov2-l,abmil,clean,jpeg:10,micro,27,0.1259
+dinov2-l,abmil,clean,jpeg:15,all,49,0.4694
+dinov2-l,abmil,clean,jpeg:15,tumour tiles 1-10,14,0.1714
+dinov2-l,abmil,clean,jpeg:15,tumour tiles 11-50,11,0.1818
+dinov2-l,abmil,clean,jpeg:15,tumour tiles 51-200,11,0.5273
+dinov2-l,abmil,clean,jpeg:15,tumour tiles >200,13,0.9846
+dinov2-l,abmil,clean,jpeg:15,macro,22,0.8455
+dinov2-l,abmil,clean,jpeg:15,micro,27,0.163
+dinov2-l,abmil,clean,jpeg:30,all,49,0.4857
+dinov2-l,abmil,clean,jpeg:30,tumour tiles 1-10,14,0.1429
+dinov2-l,abmil,clean,jpeg:30,tumour tiles 11-50,11,0.1273
+dinov2-l,abmil,clean,jpeg:30,tumour tiles 51-200,11,0.6727
+dinov2-l,abmil,clean,jpeg:30,tumour tiles >200,13,1.0
+dinov2-l,abmil,clean,jpeg:30,macro,22,0.9273
+dinov2-l,abmil,clean,jpeg:30,micro,27,0.1259
+dinov2-l,abmil,clean,stain:0.3,all,49,0.5551
+dinov2-l,abmil,clean,stain:0.3,tumour tiles 1-10,14,0.1286
+dinov2-l,abmil,clean,stain:0.3,tumour tiles 11-50,11,0.3455
+dinov2-l,abmil,clean,stain:0.3,tumour tiles 51-200,11,0.7818
+dinov2-l,abmil,clean,stain:0.3,tumour tiles >200,13,1.0
+dinov2-l,abmil,clean,stain:0.3,macro,22,0.9545
+dinov2-l,abmil,clean,stain:0.3,micro,27,0.2296
+dinov2-l,abmil,mixed,blur:2,all,49,0.4531
+dinov2-l,abmil,mixed,blur:2,tumour tiles 1-10,14,0.1857
+dinov2-l,abmil,mixed,blur:2,tumour tiles 11-50,11,0.0909
+dinov2-l,abmil,mixed,blur:2,tumour tiles 51-200,11,0.5455
+dinov2-l,abmil,mixed,blur:2,tumour tiles >200,13,0.9692
+dinov2-l,abmil,mixed,blur:2,macro,22,0.8455
+dinov2-l,abmil,mixed,blur:2,micro,27,0.1333
+dinov2-l,abmil,mixed,blur:4,all,49,0.3102
+dinov2-l,abmil,mixed,blur:4,tumour tiles 1-10,14,0.1714
+dinov2-l,abmil,mixed,blur:4,tumour tiles 11-50,11,0.0909
+dinov2-l,abmil,mixed,blur:4,tumour tiles 51-200,11,0.3273
+dinov2-l,abmil,mixed,blur:4,tumour tiles >200,13,0.6308
+dinov2-l,abmil,mixed,blur:4,macro,22,0.5364
+dinov2-l,abmil,mixed,blur:4,micro,27,0.1259
+dinov2-l,abmil,mixed,clean,all,49,0.4939
+dinov2-l,abmil,mixed,clean,tumour tiles 1-10,14,0.1429
+dinov2-l,abmil,mixed,clean,tumour tiles 11-50,11,0.1818
+dinov2-l,abmil,mixed,clean,tumour tiles 51-200,11,0.6545
+dinov2-l,abmil,mixed,clean,tumour tiles >200,13,1.0
+dinov2-l,abmil,mixed,clean,macro,22,0.9182
+dinov2-l,abmil,mixed,clean,micro,27,0.1481
+dinov2-l,abmil,mixed,jpeg:10,all,49,0.4898
+dinov2-l,abmil,mixed,jpeg:10,tumour tiles 1-10,14,0.1429
+dinov2-l,abmil,mixed,jpeg:10,tumour tiles 11-50,11,0.2364
+dinov2-l,abmil,mixed,jpeg:10,tumour tiles 51-200,11,0.5818
+dinov2-l,abmil,mixed,jpeg:10,tumour tiles >200,13,1.0
+dinov2-l,abmil,mixed,jpeg:10,macro,22,0.8818
+dinov2-l,abmil,mixed,jpeg:10,micro,27,0.1704
+dinov2-l,abmil,mixed,jpeg:15,all,49,0.498
+dinov2-l,abmil,mixed,jpeg:15,tumour tiles 1-10,14,0.1429
+dinov2-l,abmil,mixed,jpeg:15,tumour tiles 11-50,11,0.2182
+dinov2-l,abmil,mixed,jpeg:15,tumour tiles 51-200,11,0.6364
+dinov2-l,abmil,mixed,jpeg:15,tumour tiles >200,13,1.0
+dinov2-l,abmil,mixed,jpeg:15,macro,22,0.9091
+dinov2-l,abmil,mixed,jpeg:15,micro,27,0.163
+dinov2-l,abmil,mixed,jpeg:30,all,49,0.4857
+dinov2-l,abmil,mixed,jpeg:30,tumour tiles 1-10,14,0.1
+dinov2-l,abmil,mixed,jpeg:30,tumour tiles 11-50,11,0.2
+dinov2-l,abmil,mixed,jpeg:30,tumour tiles 51-200,11,0.6545
+dinov2-l,abmil,mixed,jpeg:30,tumour tiles >200,13,1.0
+dinov2-l,abmil,mixed,jpeg:30,macro,22,0.9182
+dinov2-l,abmil,mixed,jpeg:30,micro,27,0.1333
+dinov2-l,abmil,mixed,stain:0.3,all,49,0.498
+dinov2-l,abmil,mixed,stain:0.3,tumour tiles 1-10,14,0.1429
+dinov2-l,abmil,mixed,stain:0.3,tumour tiles 11-50,11,0.2182
+dinov2-l,abmil,mixed,stain:0.3,tumour tiles 51-200,11,0.6364
+dinov2-l,abmil,mixed,stain:0.3,tumour tiles >200,13,1.0
+dinov2-l,abmil,mixed,stain:0.3,macro,22,0.9091
+dinov2-l,abmil,mixed,stain:0.3,micro,27,0.163
+dinov2-l,max,clean,blur:2,all,49,0.1673
+dinov2-l,max,clean,blur:2,tumour tiles 1-10,14,0.1857
+dinov2-l,max,clean,blur:2,tumour tiles 11-50,11,0.0727
+dinov2-l,max,clean,blur:2,tumour tiles 51-200,11,0.2364
+dinov2-l,max,clean,blur:2,tumour tiles >200,13,0.1692
+dinov2-l,max,clean,blur:2,macro,22,0.1818
+dinov2-l,max,clean,blur:2,micro,27,0.1556
+dinov2-l,max,clean,blur:4,all,49,0.1102
+dinov2-l,max,clean,blur:4,tumour tiles 1-10,14,0.1143
+dinov2-l,max,clean,blur:4,tumour tiles 11-50,11,0.0545
+dinov2-l,max,clean,blur:4,tumour tiles 51-200,11,0.1091
+dinov2-l,max,clean,blur:4,tumour tiles >200,13,0.1538
+dinov2-l,max,clean,blur:4,macro,22,0.1091
+dinov2-l,max,clean,blur:4,micro,27,0.1111
+dinov2-l,max,clean,clean,all,49,0.2286
+dinov2-l,max,clean,clean,tumour tiles 1-10,14,0.2143
+dinov2-l,max,clean,clean,tumour tiles 11-50,11,0.2
+dinov2-l,max,clean,clean,tumour tiles 51-200,11,0.2182
+dinov2-l,max,clean,clean,tumour tiles >200,13,0.2769
+dinov2-l,max,clean,clean,macro,22,0.2636
+dinov2-l,max,clean,clean,micro,27,0.2
+dinov2-l,max,clean,jpeg:10,all,49,0.0939
+dinov2-l,max,clean,jpeg:10,tumour tiles 1-10,14,0.1286
+dinov2-l,max,clean,jpeg:10,tumour tiles 11-50,11,0.0545
+dinov2-l,max,clean,jpeg:10,tumour tiles 51-200,11,0.0545
+dinov2-l,max,clean,jpeg:10,tumour tiles >200,13,0.1231
+dinov2-l,max,clean,jpeg:10,macro,22,0.0909
+dinov2-l,max,clean,jpeg:10,micro,27,0.0963
+dinov2-l,max,clean,jpeg:15,all,49,0.1102
+dinov2-l,max,clean,jpeg:15,tumour tiles 1-10,14,0.1286
+dinov2-l,max,clean,jpeg:15,tumour tiles 11-50,11,0.0182
+dinov2-l,max,clean,jpeg:15,tumour tiles 51-200,11,0.1273
+dinov2-l,max,clean,jpeg:15,tumour tiles >200,13,0.1538
+dinov2-l,max,clean,jpeg:15,macro,22,0.1364
+dinov2-l,max,clean,jpeg:15,micro,27,0.0889
+dinov2-l,max,clean,jpeg:30,all,49,0.1429
+dinov2-l,max,clean,jpeg:30,tumour tiles 1-10,14,0.1429
+dinov2-l,max,clean,jpeg:30,tumour tiles 11-50,11,0.0727
+dinov2-l,max,clean,jpeg:30,tumour tiles 51-200,11,0.2364
+dinov2-l,max,clean,jpeg:30,tumour tiles >200,13,0.1231
+dinov2-l,max,clean,jpeg:30,macro,22,0.1455
+dinov2-l,max,clean,jpeg:30,micro,27,0.1407
+dinov2-l,max,clean,stain:0.3,all,49,0.151
+dinov2-l,max,clean,stain:0.3,tumour tiles 1-10,14,0.1714
+dinov2-l,max,clean,stain:0.3,tumour tiles 11-50,11,0.0364
+dinov2-l,max,clean,stain:0.3,tumour tiles 51-200,11,0.2182
+dinov2-l,max,clean,stain:0.3,tumour tiles >200,13,0.1692
+dinov2-l,max,clean,stain:0.3,macro,22,0.2091
+dinov2-l,max,clean,stain:0.3,micro,27,0.1037
+dinov2-l,max,mixed,blur:2,all,49,0.1633
+dinov2-l,max,mixed,blur:2,tumour tiles 1-10,14,0.1857
+dinov2-l,max,mixed,blur:2,tumour tiles 11-50,11,0.0182
+dinov2-l,max,mixed,blur:2,tumour tiles 51-200,11,0.2727
+dinov2-l,max,mixed,blur:2,tumour tiles >200,13,0.1692
+dinov2-l,max,mixed,blur:2,macro,22,0.2
+dinov2-l,max,mixed,blur:2,micro,27,0.1333
+dinov2-l,max,mixed,blur:4,all,49,0.2163
+dinov2-l,max,mixed,blur:4,tumour tiles 1-10,14,0.1429
+dinov2-l,max,mixed,blur:4,tumour tiles 11-50,11,0.1636
+dinov2-l,max,mixed,blur:4,tumour tiles 51-200,11,0.2364
+dinov2-l,max,mixed,blur:4,tumour tiles >200,13,0.3231
+dinov2-l,max,mixed,blur:4,macro,22,0.2636
+dinov2-l,max,mixed,blur:4,micro,27,0.1778
+dinov2-l,max,mixed,clean,all,49,0.1633
+dinov2-l,max,mixed,clean,tumour tiles 1-10,14,0.2429
+dinov2-l,max,mixed,clean,tumour tiles 11-50,11,0.0
+dinov2-l,max,mixed,clean,tumour tiles 51-200,11,0.2182
+dinov2-l,max,mixed,clean,tumour tiles >200,13,0.1692
+dinov2-l,max,mixed,clean,macro,22,0.2
+dinov2-l,max,mixed,clean,micro,27,0.1333
+dinov2-l,max,mixed,jpeg:10,all,49,0.1469
+dinov2-l,max,mixed,jpeg:10,tumour tiles 1-10,14,0.1857
+dinov2-l,max,mixed,jpeg:10,tumour tiles 11-50,11,0.0909
+dinov2-l,max,mixed,jpeg:10,tumour tiles 51-200,11,0.1091
+dinov2-l,max,mixed,jpeg:10,tumour tiles >200,13,0.1846
+dinov2-l,max,mixed,jpeg:10,macro,22,0.1545
+dinov2-l,max,mixed,jpeg:10,micro,27,0.1407
+dinov2-l,max,mixed,jpeg:15,all,49,0.151
+dinov2-l,max,mixed,jpeg:15,tumour tiles 1-10,14,0.1714
+dinov2-l,max,mixed,jpeg:15,tumour tiles 11-50,11,0.0364
+dinov2-l,max,mixed,jpeg:15,tumour tiles 51-200,11,0.2
+dinov2-l,max,mixed,jpeg:15,tumour tiles >200,13,0.1846
+dinov2-l,max,mixed,jpeg:15,macro,22,0.1909
+dinov2-l,max,mixed,jpeg:15,micro,27,0.1185
+dinov2-l,max,mixed,jpeg:30,all,49,0.1796
+dinov2-l,max,mixed,jpeg:30,tumour tiles 1-10,14,0.2286
+dinov2-l,max,mixed,jpeg:30,tumour tiles 11-50,11,0.0182
+dinov2-l,max,mixed,jpeg:30,tumour tiles 51-200,11,0.2545
+dinov2-l,max,mixed,jpeg:30,tumour tiles >200,13,0.2
+dinov2-l,max,mixed,jpeg:30,macro,22,0.2091
+dinov2-l,max,mixed,jpeg:30,micro,27,0.1556
+dinov2-l,max,mixed,stain:0.3,all,49,0.151
+dinov2-l,max,mixed,stain:0.3,tumour tiles 1-10,14,0.1857
+dinov2-l,max,mixed,stain:0.3,tumour tiles 11-50,11,0.0909
+dinov2-l,max,mixed,stain:0.3,tumour tiles 51-200,11,0.1636
+dinov2-l,max,mixed,stain:0.3,tumour tiles >200,13,0.1538
+dinov2-l,max,mixed,stain:0.3,macro,22,0.1727
+dinov2-l,max,mixed,stain:0.3,micro,27,0.1333
+dinov2-l,mean,clean,blur:2,all,49,0.2082
+dinov2-l,mean,clean,blur:2,tumour tiles 1-10,14,0.0714
+dinov2-l,mean,clean,blur:2,tumour tiles 11-50,11,0.1455
+dinov2-l,mean,clean,blur:2,tumour tiles 51-200,11,0.1818
+dinov2-l,mean,clean,blur:2,tumour tiles >200,13,0.4308
+dinov2-l,mean,clean,blur:2,macro,22,0.3182
+dinov2-l,mean,clean,blur:2,micro,27,0.1185
+dinov2-l,mean,clean,blur:4,all,49,0.0408
+dinov2-l,mean,clean,blur:4,tumour tiles 1-10,14,0.0857
+dinov2-l,mean,clean,blur:4,tumour tiles 11-50,11,0.0545
+dinov2-l,mean,clean,blur:4,tumour tiles 51-200,11,0.0
+dinov2-l,mean,clean,blur:4,tumour tiles >200,13,0.0154
+dinov2-l,mean,clean,blur:4,macro,22,0.0091
+dinov2-l,mean,clean,blur:4,micro,27,0.0667
+dinov2-l,mean,clean,clean,all,49,0.2531
+dinov2-l,mean,clean,clean,tumour tiles 1-10,14,0.0143
+dinov2-l,mean,clean,clean,tumour tiles 11-50,11,0.1636
+dinov2-l,mean,clean,clean,tumour tiles 51-200,11,0.1818
+dinov2-l,mean,clean,clean,tumour tiles >200,13,0.6462
+dinov2-l,mean,clean,clean,macro,22,0.4727
+dinov2-l,mean,clean,clean,micro,27,0.0741
+dinov2-l,mean,clean,jpeg:10,all,49,0.2204
+dinov2-l,mean,clean,jpeg:10,tumour tiles 1-10,14,0.1571
+dinov2-l,mean,clean,jpeg:10,tumour tiles 11-50,11,0.1091
+dinov2-l,mean,clean,jpeg:10,tumour tiles 51-200,11,0.2
+dinov2-l,mean,clean,jpeg:10,tumour tiles >200,13,0.4
+dinov2-l,mean,clean,jpeg:10,macro,22,0.3182
+dinov2-l,mean,clean,jpeg:10,micro,27,0.1407
+dinov2-l,mean,clean,jpeg:15,all,49,0.2122
+dinov2-l,mean,clean,jpeg:15,tumour tiles 1-10,14,0.1286
+dinov2-l,mean,clean,jpeg:15,tumour tiles 11-50,11,0.0909
+dinov2-l,mean,clean,jpeg:15,tumour tiles 51-200,11,0.1455
+dinov2-l,mean,clean,jpeg:15,tumour tiles >200,13,0.4615
+dinov2-l,mean,clean,jpeg:15,macro,22,0.3273
+dinov2-l,mean,clean,jpeg:15,micro,27,0.1185
+dinov2-l,mean,clean,jpeg:30,all,49,0.2327
+dinov2-l,mean,clean,jpeg:30,tumour tiles 1-10,14,0.0857
+dinov2-l,mean,clean,jpeg:30,tumour tiles 11-50,11,0.0909
+dinov2-l,mean,clean,jpeg:30,tumour tiles 51-200,11,0.2182
+dinov2-l,mean,clean,jpeg:30,tumour tiles >200,13,0.5231
+dinov2-l,mean,clean,jpeg:30,macro,22,0.4
+dinov2-l,mean,clean,jpeg:30,micro,27,0.0963
+dinov2-l,mean,clean,stain:0.3,all,49,0.2694
+dinov2-l,mean,clean,stain:0.3,tumour tiles 1-10,14,0.0
+dinov2-l,mean,clean,stain:0.3,tumour tiles 11-50,11,0.1636
+dinov2-l,mean,clean,stain:0.3,tumour tiles 51-200,11,0.2545
+dinov2-l,mean,clean,stain:0.3,tumour tiles >200,13,0.6615
+dinov2-l,mean,clean,stain:0.3,macro,22,0.5091
+dinov2-l,mean,clean,stain:0.3,micro,27,0.0741
+dinov2-l,mean,mixed,blur:2,all,49,0.2204
+dinov2-l,mean,mixed,blur:2,tumour tiles 1-10,14,0.0571
+dinov2-l,mean,mixed,blur:2,tumour tiles 11-50,11,0.2
+dinov2-l,mean,mixed,blur:2,tumour tiles 51-200,11,0.1636
+dinov2-l,mean,mixed,blur:2,tumour tiles >200,13,0.4615
+dinov2-l,mean,mixed,blur:2,macro,22,0.3545
+dinov2-l,mean,mixed,blur:2,micro,27,0.1111
+dinov2-l,mean,mixed,blur:4,all,49,0.0694
+dinov2-l,mean,mixed,blur:4,tumour tiles 1-10,14,0.0714
+dinov2-l,mean,mixed,blur:4,tumour tiles 11-50,11,0.0909
+dinov2-l,mean,mixed,blur:4,tumour tiles 51-200,11,0.0545
+dinov2-l,mean,mixed,blur:4,tumour tiles >200,13,0.0615
+dinov2-l,mean,mixed,blur:4,macro,22,0.0636
+dinov2-l,mean,mixed,blur:4,micro,27,0.0741
+dinov2-l,mean,mixed,clean,all,49,0.1959
+dinov2-l,mean,mixed,clean,tumour tiles 1-10,14,0.0
+dinov2-l,mean,mixed,clean,tumour tiles 11-50,11,0.1455
+dinov2-l,mean,mixed,clean,tumour tiles 51-200,11,0.1273
+dinov2-l,mean,mixed,clean,tumour tiles >200,13,0.5077
+dinov2-l,mean,mixed,clean,macro,22,0.3636
+dinov2-l,mean,mixed,clean,micro,27,0.0593
+dinov2-l,mean,mixed,jpeg:10,all,49,0.2449
+dinov2-l,mean,mixed,jpeg:10,tumour tiles 1-10,14,0.1
+dinov2-l,mean,mixed,jpeg:10,tumour tiles 11-50,11,0.0
+dinov2-l,mean,mixed,jpeg:10,tumour tiles 51-200,11,0.2364
+dinov2-l,mean,mixed,jpeg:10,tumour tiles >200,13,0.6154
+dinov2-l,mean,mixed,jpeg:10,macro,22,0.4818
+dinov2-l,mean,mixed,jpeg:10,micro,27,0.0519
+dinov2-l,mean,mixed,jpeg:15,all,49,0.2857
+dinov2-l,mean,mixed,jpeg:15,tumour tiles 1-10,14,0.1143
+dinov2-l,mean,mixed,jpeg:15,tumour tiles 11-50,11,0.0182
+dinov2-l,mean,mixed,jpeg:15,tumour tiles 51-200,11,0.3091
+dinov2-l,mean,mixed,jpeg:15,tumour tiles >200,13,0.6769
+dinov2-l,mean,mixed,jpeg:15,macro,22,0.5545
+dinov2-l,mean,mixed,jpeg:15,micro,27,0.0667
+dinov2-l,mean,mixed,jpeg:30,all,49,0.2531
+dinov2-l,mean,mixed,jpeg:30,tumour tiles 1-10,14,0.0143
+dinov2-l,mean,mixed,jpeg:30,tumour tiles 11-50,11,0.0182
+dinov2-l,mean,mixed,jpeg:30,tumour tiles 51-200,11,0.3273
+dinov2-l,mean,mixed,jpeg:30,tumour tiles >200,13,0.6462
+dinov2-l,mean,mixed,jpeg:30,macro,22,0.5455
+dinov2-l,mean,mixed,jpeg:30,micro,27,0.0148
+dinov2-l,mean,mixed,stain:0.3,all,49,0.2041
+dinov2-l,mean,mixed,stain:0.3,tumour tiles 1-10,14,0.0
+dinov2-l,mean,mixed,stain:0.3,tumour tiles 11-50,11,0.1455
+dinov2-l,mean,mixed,stain:0.3,tumour tiles 51-200,11,0.1455
+dinov2-l,mean,mixed,stain:0.3,tumour tiles >200,13,0.5231
+dinov2-l,mean,mixed,stain:0.3,macro,22,0.3818
+dinov2-l,mean,mixed,stain:0.3,micro,27,0.0593
+dinov2-l,tileprobe,clean,blur:2,all,49,0.4082
+dinov2-l,tileprobe,clean,blur:2,tumour tiles 1-10,14,0.0429
+dinov2-l,tileprobe,clean,blur:2,tumour tiles 11-50,11,0.1818
+dinov2-l,tileprobe,clean,blur:2,tumour tiles 51-200,11,0.5455
+dinov2-l,tileprobe,clean,blur:2,tumour tiles >200,13,0.8769
+dinov2-l,tileprobe,clean,blur:2,macro,22,0.7455
+dinov2-l,tileprobe,clean,blur:2,micro,27,0.1333
+dinov2-l,tileprobe,clean,blur:4,all,49,0.102
+dinov2-l,tileprobe,clean,blur:4,tumour tiles 1-10,14,0.0286
+dinov2-l,tileprobe,clean,blur:4,tumour tiles 11-50,11,0.0364
+dinov2-l,tileprobe,clean,blur:4,tumour tiles 51-200,11,0.0364
+dinov2-l,tileprobe,clean,blur:4,tumour tiles >200,13,0.2923
+dinov2-l,tileprobe,clean,blur:4,macro,22,0.1818
+dinov2-l,tileprobe,clean,blur:4,micro,27,0.037
+dinov2-l,tileprobe,clean,clean,all,49,0.5429
+dinov2-l,tileprobe,clean,clean,tumour tiles 1-10,14,0.1
+dinov2-l,tileprobe,clean,clean,tumour tiles 11-50,11,0.3636
+dinov2-l,tileprobe,clean,clean,tumour tiles 51-200,11,0.7455
+dinov2-l,tileprobe,clean,clean,tumour tiles >200,13,1.0
+dinov2-l,tileprobe,clean,clean,macro,22,0.9182
+dinov2-l,tileprobe,clean,clean,micro,27,0.237
+dinov2-l,tileprobe,clean,jpeg:10,all,49,0.3551
+dinov2-l,tileprobe,clean,jpeg:10,tumour tiles 1-10,14,0.0286
+dinov2-l,tileprobe,clean,jpeg:10,tumour tiles 11-50,11,0.1091
+dinov2-l,tileprobe,clean,jpeg:10,tumour tiles 51-200,11,0.4
+dinov2-l,tileprobe,clean,jpeg:10,tumour tiles >200,13,0.8769
+dinov2-l,tileprobe,clean,jpeg:10,macro,22,0.6818
+dinov2-l,tileprobe,clean,jpeg:10,micro,27,0.0889
+dinov2-l,tileprobe,clean,jpeg:15,all,49,0.4735
+dinov2-l,tileprobe,clean,jpeg:15,tumour tiles 1-10,14,0.0714
+dinov2-l,tileprobe,clean,jpeg:15,tumour tiles 11-50,11,0.1818
+dinov2-l,tileprobe,clean,jpeg:15,tumour tiles 51-200,11,0.6727
+dinov2-l,tileprobe,clean,jpeg:15,tumour tiles >200,13,0.9846
+dinov2-l,tileprobe,clean,jpeg:15,macro,22,0.8818
+dinov2-l,tileprobe,clean,jpeg:15,micro,27,0.1407
+dinov2-l,tileprobe,clean,jpeg:30,all,49,0.5184
+dinov2-l,tileprobe,clean,jpeg:30,tumour tiles 1-10,14,0.0143
+dinov2-l,tileprobe,clean,jpeg:30,tumour tiles 11-50,11,0.2727
+dinov2-l,tileprobe,clean,jpeg:30,tumour tiles 51-200,11,0.8364
+dinov2-l,tileprobe,clean,jpeg:30,tumour tiles >200,13,1.0
+dinov2-l,tileprobe,clean,jpeg:30,macro,22,0.9636
+dinov2-l,tileprobe,clean,jpeg:30,micro,27,0.1556
+dinov2-l,tileprobe,clean,stain:0.3,all,49,0.5388
+dinov2-l,tileprobe,clean,stain:0.3,tumour tiles 1-10,14,0.0857
+dinov2-l,tileprobe,clean,stain:0.3,tumour tiles 11-50,11,0.3636
+dinov2-l,tileprobe,clean,stain:0.3,tumour tiles 51-200,11,0.7455
+dinov2-l,tileprobe,clean,stain:0.3,tumour tiles >200,13,1.0
+dinov2-l,tileprobe,clean,stain:0.3,macro,22,0.9182
+dinov2-l,tileprobe,clean,stain:0.3,micro,27,0.2296
+dinov2-l,tileprobe,mixed,blur:2,all,49,0.4816
+dinov2-l,tileprobe,mixed,blur:2,tumour tiles 1-10,14,0.0571
+dinov2-l,tileprobe,mixed,blur:2,tumour tiles 11-50,11,0.1273
+dinov2-l,tileprobe,mixed,blur:2,tumour tiles 51-200,11,0.7636
+dinov2-l,tileprobe,mixed,blur:2,tumour tiles >200,13,1.0
+dinov2-l,tileprobe,mixed,blur:2,macro,22,0.9273
+dinov2-l,tileprobe,mixed,blur:2,micro,27,0.1185
+dinov2-l,tileprobe,mixed,blur:4,all,49,0.249
+dinov2-l,tileprobe,mixed,blur:4,tumour tiles 1-10,14,0.0143
+dinov2-l,tileprobe,mixed,blur:4,tumour tiles 11-50,11,0.0364
+dinov2-l,tileprobe,mixed,blur:4,tumour tiles 51-200,11,0.1636
+dinov2-l,tileprobe,mixed,blur:4,tumour tiles >200,13,0.7538
+dinov2-l,tileprobe,mixed,blur:4,macro,22,0.5273
+dinov2-l,tileprobe,mixed,blur:4,micro,27,0.0222
+dinov2-l,tileprobe,mixed,clean,all,49,0.4939
+dinov2-l,tileprobe,mixed,clean,tumour tiles 1-10,14,0.0429
+dinov2-l,tileprobe,mixed,clean,tumour tiles 11-50,11,0.2182
+dinov2-l,tileprobe,mixed,clean,tumour tiles 51-200,11,0.7455
+dinov2-l,tileprobe,mixed,clean,tumour tiles >200,13,1.0
+dinov2-l,tileprobe,mixed,clean,macro,22,0.9182
+dinov2-l,tileprobe,mixed,clean,micro,27,0.1481
+dinov2-l,tileprobe,mixed,jpeg:10,all,49,0.4735
+dinov2-l,tileprobe,mixed,jpeg:10,tumour tiles 1-10,14,0.0714
+dinov2-l,tileprobe,mixed,jpeg:10,tumour tiles 11-50,11,0.1636
+dinov2-l,tileprobe,mixed,jpeg:10,tumour tiles 51-200,11,0.6727
+dinov2-l,tileprobe,mixed,jpeg:10,tumour tiles >200,13,1.0
+dinov2-l,tileprobe,mixed,jpeg:10,macro,22,0.9
+dinov2-l,tileprobe,mixed,jpeg:10,micro,27,0.1259
+dinov2-l,tileprobe,mixed,jpeg:15,all,49,0.4776
+dinov2-l,tileprobe,mixed,jpeg:15,tumour tiles 1-10,14,0.0429
+dinov2-l,tileprobe,mixed,jpeg:15,tumour tiles 11-50,11,0.2
+dinov2-l,tileprobe,mixed,jpeg:15,tumour tiles 51-200,11,0.6909
+dinov2-l,tileprobe,mixed,jpeg:15,tumour tiles >200,13,1.0
+dinov2-l,tileprobe,mixed,jpeg:15,macro,22,0.9091
+dinov2-l,tileprobe,mixed,jpeg:15,micro,27,0.1259
+dinov2-l,tileprobe,mixed,jpeg:30,all,49,0.4939
+dinov2-l,tileprobe,mixed,jpeg:30,tumour tiles 1-10,14,0.0
+dinov2-l,tileprobe,mixed,jpeg:30,tumour tiles 11-50,11,0.1818
+dinov2-l,tileprobe,mixed,jpeg:30,tumour tiles 51-200,11,0.8364
+dinov2-l,tileprobe,mixed,jpeg:30,tumour tiles >200,13,1.0
+dinov2-l,tileprobe,mixed,jpeg:30,macro,22,0.9636
+dinov2-l,tileprobe,mixed,jpeg:30,micro,27,0.1111
+dinov2-l,tileprobe,mixed,stain:0.3,all,49,0.5306
+dinov2-l,tileprobe,mixed,stain:0.3,tumour tiles 1-10,14,0.0714
+dinov2-l,tileprobe,mixed,stain:0.3,tumour tiles 11-50,11,0.3455
+dinov2-l,tileprobe,mixed,stain:0.3,tumour tiles 51-200,11,0.7455
+dinov2-l,tileprobe,mixed,stain:0.3,tumour tiles >200,13,1.0
+dinov2-l,tileprobe,mixed,stain:0.3,macro,22,0.9182
+dinov2-l,tileprobe,mixed,stain:0.3,micro,27,0.2148
+kaiko-b16,abmil,clean,blur:2,all,49,0.898
+kaiko-b16,abmil,clean,blur:2,tumour tiles 1-10,14,0.7857
+kaiko-b16,abmil,clean,blur:2,tumour tiles 11-50,11,0.8545
+kaiko-b16,abmil,clean,blur:2,tumour tiles 51-200,11,0.9636
+kaiko-b16,abmil,clean,blur:2,tumour tiles >200,13,1.0
+kaiko-b16,abmil,clean,blur:2,macro,22,0.9818
+kaiko-b16,abmil,clean,blur:2,micro,27,0.8296
+kaiko-b16,abmil,clean,blur:4,all,49,0.2776
+kaiko-b16,abmil,clean,blur:4,tumour tiles 1-10,14,0.0857
+kaiko-b16,abmil,clean,blur:4,tumour tiles 11-50,11,0.0545
+kaiko-b16,abmil,clean,blur:4,tumour tiles 51-200,11,0.2545
+kaiko-b16,abmil,clean,blur:4,tumour tiles >200,13,0.6923
+kaiko-b16,abmil,clean,blur:4,macro,22,0.5182
+kaiko-b16,abmil,clean,blur:4,micro,27,0.0815
+kaiko-b16,abmil,clean,clean,all,49,0.9347
+kaiko-b16,abmil,clean,clean,tumour tiles 1-10,14,0.7857
+kaiko-b16,abmil,clean,clean,tumour tiles 11-50,11,0.9818
+kaiko-b16,abmil,clean,clean,tumour tiles 51-200,11,1.0
+kaiko-b16,abmil,clean,clean,tumour tiles >200,13,1.0
+kaiko-b16,abmil,clean,clean,macro,22,1.0
+kaiko-b16,abmil,clean,clean,micro,27,0.8815
+kaiko-b16,abmil,clean,jpeg:10,all,49,0.449
+kaiko-b16,abmil,clean,jpeg:10,tumour tiles 1-10,14,0.3286
+kaiko-b16,abmil,clean,jpeg:10,tumour tiles 11-50,11,0.0909
+kaiko-b16,abmil,clean,jpeg:10,tumour tiles 51-200,11,0.5455
+kaiko-b16,abmil,clean,jpeg:10,tumour tiles >200,13,0.8
+kaiko-b16,abmil,clean,jpeg:10,macro,22,0.7455
+kaiko-b16,abmil,clean,jpeg:10,micro,27,0.2074
+kaiko-b16,abmil,clean,jpeg:15,all,49,0.5469
+kaiko-b16,abmil,clean,jpeg:15,tumour tiles 1-10,14,0.4286
+kaiko-b16,abmil,clean,jpeg:15,tumour tiles 11-50,11,0.2182
+kaiko-b16,abmil,clean,jpeg:15,tumour tiles 51-200,11,0.6
+kaiko-b16,abmil,clean,jpeg:15,tumour tiles >200,13,0.9077
+kaiko-b16,abmil,clean,jpeg:15,macro,22,0.8273
+kaiko-b16,abmil,clean,jpeg:15,micro,27,0.3185
+kaiko-b16,abmil,clean,jpeg:30,all,49,0.8204
+kaiko-b16,abmil,clean,jpeg:30,tumour tiles 1-10,14,0.6571
+kaiko-b16,abmil,clean,jpeg:30,tumour tiles 11-50,11,0.7091
+kaiko-b16,abmil,clean,jpeg:30,tumour tiles 51-200,11,0.9455
+kaiko-b16,abmil,clean,jpeg:30,tumour tiles >200,13,0.9846
+kaiko-b16,abmil,clean,jpeg:30,macro,22,0.9636
+kaiko-b16,abmil,clean,jpeg:30,micro,27,0.7037
+kaiko-b16,abmil,clean,stain:0.3,all,49,0.9469
+kaiko-b16,abmil,clean,stain:0.3,tumour tiles 1-10,14,0.8286
+kaiko-b16,abmil,clean,stain:0.3,tumour tiles 11-50,11,0.9818
+kaiko-b16,abmil,clean,stain:0.3,tumour tiles 51-200,11,1.0
+kaiko-b16,abmil,clean,stain:0.3,tumour tiles >200,13,1.0
+kaiko-b16,abmil,clean,stain:0.3,macro,22,1.0
+kaiko-b16,abmil,clean,stain:0.3,micro,27,0.9037
+kaiko-b16,abmil,mixed,blur:2,all,49,0.902
+kaiko-b16,abmil,mixed,blur:2,tumour tiles 1-10,14,0.7857
+kaiko-b16,abmil,mixed,blur:2,tumour tiles 11-50,11,0.8364
+kaiko-b16,abmil,mixed,blur:2,tumour tiles 51-200,11,1.0
+kaiko-b16,abmil,mixed,blur:2,tumour tiles >200,13,1.0
+kaiko-b16,abmil,mixed,blur:2,macro,22,1.0
+kaiko-b16,abmil,mixed,blur:2,micro,27,0.8222
+kaiko-b16,abmil,mixed,blur:4,all,49,0.3061
+kaiko-b16,abmil,mixed,blur:4,tumour tiles 1-10,14,0.2286
+kaiko-b16,abmil,mixed,blur:4,tumour tiles 11-50,11,0.0182
+kaiko-b16,abmil,mixed,blur:4,tumour tiles 51-200,11,0.3818
+kaiko-b16,abmil,mixed,blur:4,tumour tiles >200,13,0.5692
+kaiko-b16,abmil,mixed,blur:4,macro,22,0.5
+kaiko-b16,abmil,mixed,blur:4,micro,27,0.1481
+kaiko-b16,abmil,mixed,clean,all,49,0.9224
+kaiko-b16,abmil,mixed,clean,tumour tiles 1-10,14,0.7857
+kaiko-b16,abmil,mixed,clean,tumour tiles 11-50,11,0.9273
+kaiko-b16,abmil,mixed,clean,tumour tiles 51-200,11,1.0
+kaiko-b16,abmil,mixed,clean,tumour tiles >200,13,1.0
+kaiko-b16,abmil,mixed,clean,macro,22,1.0
+kaiko-b16,abmil,mixed,clean,micro,27,0.8593
+kaiko-b16,abmil,mixed,jpeg:10,all,49,0.5673
+kaiko-b16,abmil,mixed,jpeg:10,tumour tiles 1-10,14,0.3429
+kaiko-b16,abmil,mixed,jpeg:10,tumour tiles 11-50,11,0.2727
+kaiko-b16,abmil,mixed,jpeg:10,tumour tiles 51-200,11,0.6909
+kaiko-b16,abmil,mixed,jpeg:10,tumour tiles >200,13,0.9538
+kaiko-b16,abmil,mixed,jpeg:10,macro,22,0.8727
+kaiko-b16,abmil,mixed,jpeg:10,micro,27,0.3185
+kaiko-b16,abmil,mixed,jpeg:15,all,49,0.7347
+kaiko-b16,abmil,mixed,jpeg:15,tumour tiles 1-10,14,0.5429
+kaiko-b16,abmil,mixed,jpeg:15,tumour tiles 11-50,11,0.5273
+kaiko-b16,abmil,mixed,jpeg:15,tumour tiles 51-200,11,0.8727
+kaiko-b16,abmil,mixed,jpeg:15,tumour tiles >200,13,1.0
+kaiko-b16,abmil,mixed,jpeg:15,macro,22,0.9364
+kaiko-b16,abmil,mixed,jpeg:15,micro,27,0.5704
+kaiko-b16,abmil,mixed,jpeg:30,all,49,0.8898
+kaiko-b16,abmil,mixed,jpeg:30,tumour tiles 1-10,14,0.7857
+kaiko-b16,abmil,mixed,jpeg:30,tumour tiles 11-50,11,0.7818
+kaiko-b16,abmil,mixed,jpeg:30,tumour tiles 51-200,11,1.0
+kaiko-b16,abmil,mixed,jpeg:30,tumour tiles >200,13,1.0
+kaiko-b16,abmil,mixed,jpeg:30,macro,22,1.0
+kaiko-b16,abmil,mixed,jpeg:30,micro,27,0.8
+kaiko-b16,abmil,mixed,stain:0.3,all,49,0.9347
+kaiko-b16,abmil,mixed,stain:0.3,tumour tiles 1-10,14,0.8
+kaiko-b16,abmil,mixed,stain:0.3,tumour tiles 11-50,11,0.9636
+kaiko-b16,abmil,mixed,stain:0.3,tumour tiles 51-200,11,1.0
+kaiko-b16,abmil,mixed,stain:0.3,tumour tiles >200,13,1.0
+kaiko-b16,abmil,mixed,stain:0.3,macro,22,1.0
+kaiko-b16,abmil,mixed,stain:0.3,micro,27,0.8815
+kaiko-b16,max,clean,blur:2,all,49,0.3143
+kaiko-b16,max,clean,blur:2,tumour tiles 1-10,14,0.0571
+kaiko-b16,max,clean,blur:2,tumour tiles 11-50,11,0.0364
+kaiko-b16,max,clean,blur:2,tumour tiles 51-200,11,0.3636
+kaiko-b16,max,clean,blur:2,tumour tiles >200,13,0.7846
+kaiko-b16,max,clean,blur:2,macro,22,0.6273
+kaiko-b16,max,clean,blur:2,micro,27,0.0593
+kaiko-b16,max,clean,blur:4,all,49,0.2735
+kaiko-b16,max,clean,blur:4,tumour tiles 1-10,14,0.2143
+kaiko-b16,max,clean,blur:4,tumour tiles 11-50,11,0.0364
+kaiko-b16,max,clean,blur:4,tumour tiles 51-200,11,0.2364
+kaiko-b16,max,clean,blur:4,tumour tiles >200,13,0.5692
+kaiko-b16,max,clean,blur:4,macro,22,0.4455
+kaiko-b16,max,clean,blur:4,micro,27,0.1333
+kaiko-b16,max,clean,clean,all,49,0.3796
+kaiko-b16,max,clean,clean,tumour tiles 1-10,14,0.1
+kaiko-b16,max,clean,clean,tumour tiles 11-50,11,0.0909
+kaiko-b16,max,clean,clean,tumour tiles 51-200,11,0.4182
+kaiko-b16,max,clean,clean,tumour tiles >200,13,0.8923
+kaiko-b16,max,clean,clean,macro,22,0.7273
+kaiko-b16,max,clean,clean,micro,27,0.0963
+kaiko-b16,max,clean,jpeg:10,all,49,0.302
+kaiko-b16,max,clean,jpeg:10,tumour tiles 1-10,14,0.1714
+kaiko-b16,max,clean,jpeg:10,tumour tiles 11-50,11,0.1273
+kaiko-b16,max,clean,jpeg:10,tumour tiles 51-200,11,0.2545
+kaiko-b16,max,clean,jpeg:10,tumour tiles >200,13,0.6308
+kaiko-b16,max,clean,jpeg:10,macro,22,0.5
+kaiko-b16,max,clean,jpeg:10,micro,27,0.1407
+kaiko-b16,max,clean,jpeg:15,all,49,0.3347
+kaiko-b16,max,clean,jpeg:15,tumour tiles 1-10,14,0.1
+kaiko-b16,max,clean,jpeg:15,tumour tiles 11-50,11,0.0909
+kaiko-b16,max,clean,jpeg:15,tumour tiles 51-200,11,0.2909
+kaiko-b16,max,clean,jpeg:15,tumour tiles >200,13,0.8308
+kaiko-b16,max,clean,jpeg:15,macro,22,0.6273
+kaiko-b16,max,clean,jpeg:15,micro,27,0.0963
+kaiko-b16,max,clean,jpeg:30,all,49,0.3755
+kaiko-b16,max,clean,jpeg:30,tumour tiles 1-10,14,0.1143
+kaiko-b16,max,clean,jpeg:30,tumour tiles 11-50,11,0.0545
+kaiko-b16,max,clean,jpeg:30,tumour tiles 51-200,11,0.4182
+kaiko-b16,max,clean,jpeg:30,tumour tiles >200,13,0.8923
+kaiko-b16,max,clean,jpeg:30,macro,22,0.7364
+kaiko-b16,max,clean,jpeg:30,micro,27,0.0815
+kaiko-b16,max,clean,stain:0.3,all,49,0.3592
+kaiko-b16,max,clean,stain:0.3,tumour tiles 1-10,14,0.1
+kaiko-b16,max,clean,stain:0.3,tumour tiles 11-50,11,0.0364
+kaiko-b16,max,clean,stain:0.3,tumour tiles 51-200,11,0.2909
+kaiko-b16,max,clean,stain:0.3,tumour tiles >200,13,0.9692
+kaiko-b16,max,clean,stain:0.3,macro,22,0.7091
+kaiko-b16,max,clean,stain:0.3,micro,27,0.0741
+kaiko-b16,max,mixed,blur:2,all,49,0.3102
+kaiko-b16,max,mixed,blur:2,tumour tiles 1-10,14,0.0286
+kaiko-b16,max,mixed,blur:2,tumour tiles 11-50,11,0.0545
+kaiko-b16,max,mixed,blur:2,tumour tiles 51-200,11,0.3818
+kaiko-b16,max,mixed,blur:2,tumour tiles >200,13,0.7692
+kaiko-b16,max,mixed,blur:2,macro,22,0.6091
+kaiko-b16,max,mixed,blur:2,micro,27,0.0667
+kaiko-b16,max,mixed,blur:4,all,49,0.2041
+kaiko-b16,max,mixed,blur:4,tumour tiles 1-10,14,0.1857
+kaiko-b16,max,mixed,blur:4,tumour tiles 11-50,11,0.0182
+kaiko-b16,max,mixed,blur:4,tumour tiles 51-200,11,0.2
+kaiko-b16,max,mixed,blur:4,tumour tiles >200,13,0.3846
+kaiko-b16,max,mixed,blur:4,macro,22,0.3273
+kaiko-b16,max,mixed,blur:4,micro,27,0.1037
+kaiko-b16,max,mixed,clean,all,49,0.3347
+kaiko-b16,max,mixed,clean,tumour tiles 1-10,14,0.0286
+kaiko-b16,max,mixed,clean,tumour tiles 11-50,11,0.1818
+kaiko-b16,max,mixed,clean,tumour tiles 51-200,11,0.4545
+kaiko-b16,max,mixed,clean,tumour tiles >200,13,0.6923
+kaiko-b16,max,mixed,clean,macro,22,0.6
+kaiko-b16,max,mixed,clean,micro,27,0.1185
+kaiko-b16,max,mixed,jpeg:10,all,49,0.2816
+kaiko-b16,max,mixed,jpeg:10,tumour tiles 1-10,14,0.1429
+kaiko-b16,max,mixed,jpeg:10,tumour tiles 11-50,11,0.0727
+kaiko-b16,max,mixed,jpeg:10,tumour tiles 51-200,11,0.2
+kaiko-b16,max,mixed,jpeg:10,tumour tiles >200,13,0.6769
+kaiko-b16,max,mixed,jpeg:10,macro,22,0.5
+kaiko-b16,max,mixed,jpeg:10,micro,27,0.1037
+kaiko-b16,max,mixed,jpeg:15,all,49,0.3837
+kaiko-b16,max,mixed,jpeg:15,tumour tiles 1-10,14,0.1714
+kaiko-b16,max,mixed,jpeg:15,tumour tiles 11-50,11,0.0727
+kaiko-b16,max,mixed,jpeg:15,tumour tiles 51-200,11,0.3818
+kaiko-b16,max,mixed,jpeg:15,tumour tiles >200,13,0.8769
+kaiko-b16,max,mixed,jpeg:15,macro,22,0.7091
+kaiko-b16,max,mixed,jpeg:15,micro,27,0.1185
+kaiko-b16,max,mixed,jpeg:30,all,49,0.3592
+kaiko-b16,max,mixed,jpeg:30,tumour tiles 1-10,14,0.1143
+kaiko-b16,max,mixed,jpeg:30,tumour tiles 11-50,11,0.0182
+kaiko-b16,max,mixed,jpeg:30,tumour tiles 51-200,11,0.4545
+kaiko-b16,max,mixed,jpeg:30,tumour tiles >200,13,0.8308
+kaiko-b16,max,mixed,jpeg:30,macro,22,0.7091
+kaiko-b16,max,mixed,jpeg:30,micro,27,0.0741
+kaiko-b16,max,mixed,stain:0.3,all,49,0.3347
+kaiko-b16,max,mixed,stain:0.3,tumour tiles 1-10,14,0.0571
+kaiko-b16,max,mixed,stain:0.3,tumour tiles 11-50,11,0.1091
+kaiko-b16,max,mixed,stain:0.3,tumour tiles 51-200,11,0.3455
+kaiko-b16,max,mixed,stain:0.3,tumour tiles >200,13,0.8154
+kaiko-b16,max,mixed,stain:0.3,macro,22,0.6182
+kaiko-b16,max,mixed,stain:0.3,micro,27,0.1037
+kaiko-b16,mean,clean,blur:2,all,49,0.2898
+kaiko-b16,mean,clean,blur:2,tumour tiles 1-10,14,0.1143
+kaiko-b16,mean,clean,blur:2,tumour tiles 11-50,11,0.0364
+kaiko-b16,mean,clean,blur:2,tumour tiles 51-200,11,0.2
+kaiko-b16,mean,clean,blur:2,tumour tiles >200,13,0.7692
+kaiko-b16,mean,clean,blur:2,macro,22,0.5545
+kaiko-b16,mean,clean,blur:2,micro,27,0.0741
+kaiko-b16,mean,clean,blur:4,all,49,0.0735
+kaiko-b16,mean,clean,blur:4,tumour tiles 1-10,14,0.0714
+kaiko-b16,mean,clean,blur:4,tumour tiles 11-50,11,0.0364
+kaiko-b16,mean,clean,blur:4,tumour tiles 51-200,11,0.1273
+kaiko-b16,mean,clean,blur:4,tumour tiles >200,13,0.0615
+kaiko-b16,mean,clean,blur:4,macro,22,0.1
+kaiko-b16,mean,clean,blur:4,micro,27,0.0519
+kaiko-b16,mean,clean,clean,all,49,0.3224
+kaiko-b16,mean,clean,clean,tumour tiles 1-10,14,0.0571
+kaiko-b16,mean,clean,clean,tumour tiles 11-50,11,0.0364
+kaiko-b16,mean,clean,clean,tumour tiles 51-200,11,0.3273
+kaiko-b16,mean,clean,clean,tumour tiles >200,13,0.8462
+kaiko-b16,mean,clean,clean,macro,22,0.6636
+kaiko-b16,mean,clean,clean,micro,27,0.0444
+kaiko-b16,mean,clean,jpeg:10,all,49,0.2163
+kaiko-b16,mean,clean,jpeg:10,tumour tiles 1-10,14,0.0714
+kaiko-b16,mean,clean,jpeg:10,tumour tiles 11-50,11,0.0545
+kaiko-b16,mean,clean,jpeg:10,tumour tiles 51-200,11,0.0727
+kaiko-b16,mean,clean,jpeg:10,tumour tiles >200,13,0.6308
+kaiko-b16,mean,clean,jpeg:10,macro,22,0.4091
+kaiko-b16,mean,clean,jpeg:10,micro,27,0.0593
+kaiko-b16,mean,clean,jpeg:15,all,49,0.2286
+kaiko-b16,mean,clean,jpeg:15,tumour tiles 1-10,14,0.0286
+kaiko-b16,mean,clean,jpeg:15,tumour tiles 11-50,11,0.0364
+kaiko-b16,mean,clean,jpeg:15,tumour tiles 51-200,11,0.1455
+kaiko-b16,mean,clean,jpeg:15,tumour tiles >200,13,0.6769
+kaiko-b16,mean,clean,jpeg:15,macro,22,0.4636
+kaiko-b16,mean,clean,jpeg:15,micro,27,0.037
+kaiko-b16,mean,clean,jpeg:30,all,49,0.2939
+kaiko-b16,mean,clean,jpeg:30,tumour tiles 1-10,14,0.0714
+kaiko-b16,mean,clean,jpeg:30,tumour tiles 11-50,11,0.0182
+kaiko-b16,mean,clean,jpeg:30,tumour tiles 51-200,11,0.3273
+kaiko-b16,mean,clean,jpeg:30,tumour tiles >200,13,0.7385
+kaiko-b16,mean,clean,jpeg:30,macro,22,0.5909
+kaiko-b16,mean,clean,jpeg:30,micro,27,0.0519
+kaiko-b16,mean,clean,stain:0.3,all,49,0.3388
+kaiko-b16,mean,clean,stain:0.3,tumour tiles 1-10,14,0.1571
+kaiko-b16,mean,clean,stain:0.3,tumour tiles 11-50,11,0.0182
+kaiko-b16,mean,clean,stain:0.3,tumour tiles 51-200,11,0.2545
+kaiko-b16,mean,clean,stain:0.3,tumour tiles >200,13,0.8769
+kaiko-b16,mean,clean,stain:0.3,macro,22,0.6455
+kaiko-b16,mean,clean,stain:0.3,micro,27,0.0889
+kaiko-b16,mean,mixed,blur:2,all,49,0.3143
+kaiko-b16,mean,mixed,blur:2,tumour tiles 1-10,14,0.0714
+kaiko-b16,mean,mixed,blur:2,tumour tiles 11-50,11,0.1091
+kaiko-b16,mean,mixed,blur:2,tumour tiles 51-200,11,0.2182
+kaiko-b16,mean,mixed,blur:2,tumour tiles >200,13,0.8308
+kaiko-b16,mean,mixed,blur:2,macro,22,0.6
+kaiko-b16,mean,mixed,blur:2,micro,27,0.0815
+kaiko-b16,mean,mixed,blur:4,all,49,0.0898
+kaiko-b16,mean,mixed,blur:4,tumour tiles 1-10,14,0.0714
+kaiko-b16,mean,mixed,blur:4,tumour tiles 11-50,11,0.0182
+kaiko-b16,mean,mixed,blur:4,tumour tiles 51-200,11,0.1818
+kaiko-b16,mean,mixed,blur:4,tumour tiles >200,13,0.0923
+kaiko-b16,mean,mixed,blur:4,macro,22,0.1455
+kaiko-b16,mean,mixed,blur:4,micro,27,0.0444
+kaiko-b16,mean,mixed,clean,all,49,0.3551
+kaiko-b16,mean,mixed,clean,tumour tiles 1-10,14,0.1
+kaiko-b16,mean,mixed,clean,tumour tiles 11-50,11,0.0545
+kaiko-b16,mean,mixed,clean,tumour tiles 51-200,11,0.3455
+kaiko-b16,mean,mixed,clean,tumour tiles >200,13,0.8923
+kaiko-b16,mean,mixed,clean,macro,22,0.7
+kaiko-b16,mean,mixed,clean,micro,27,0.0741
+kaiko-b16,mean,mixed,jpeg:10,all,49,0.2367
+kaiko-b16,mean,mixed,jpeg:10,tumour tiles 1-10,14,0.0429
+kaiko-b16,mean,mixed,jpeg:10,tumour tiles 11-50,11,0.0364
+kaiko-b16,mean,mixed,jpeg:10,tumour tiles 51-200,11,0.1818
+kaiko-b16,mean,mixed,jpeg:10,tumour tiles >200,13,0.6615
+kaiko-b16,mean,mixed,jpeg:10,macro,22,0.4727
+kaiko-b16,mean,mixed,jpeg:10,micro,27,0.0444
+kaiko-b16,mean,mixed,jpeg:15,all,49,0.2816
+kaiko-b16,mean,mixed,jpeg:15,tumour tiles 1-10,14,0.0857
+kaiko-b16,mean,mixed,jpeg:15,tumour tiles 11-50,11,0.0182
+kaiko-b16,mean,mixed,jpeg:15,tumour tiles 51-200,11,0.2545
+kaiko-b16,mean,mixed,jpeg:15,tumour tiles >200,13,0.7385
+kaiko-b16,mean,mixed,jpeg:15,macro,22,0.5636
+kaiko-b16,mean,mixed,jpeg:15,micro,27,0.0519
+kaiko-b16,mean,mixed,jpeg:30,all,49,0.3061
+kaiko-b16,mean,mixed,jpeg:30,tumour tiles 1-10,14,0.1429
+kaiko-b16,mean,mixed,jpeg:30,tumour tiles 11-50,11,0.0
+kaiko-b16,mean,mixed,jpeg:30,tumour tiles 51-200,11,0.2909
+kaiko-b16,mean,mixed,jpeg:30,tumour tiles >200,13,0.7538
+kaiko-b16,mean,mixed,jpeg:30,macro,22,0.5909
+kaiko-b16,mean,mixed,jpeg:30,micro,27,0.0741
+kaiko-b16,mean,mixed,stain:0.3,all,49,0.3388
+kaiko-b16,mean,mixed,stain:0.3,tumour tiles 1-10,14,0.1143
+kaiko-b16,mean,mixed,stain:0.3,tumour tiles 11-50,11,0.0727
+kaiko-b16,mean,mixed,stain:0.3,tumour tiles 51-200,11,0.2545
+kaiko-b16,mean,mixed,stain:0.3,tumour tiles >200,13,0.8769
+kaiko-b16,mean,mixed,stain:0.3,macro,22,0.6455
+kaiko-b16,mean,mixed,stain:0.3,micro,27,0.0889
+kaiko-b16,tileprobe,clean,blur:2,all,49,0.6163
+kaiko-b16,tileprobe,clean,blur:2,tumour tiles 1-10,14,0.3
+kaiko-b16,tileprobe,clean,blur:2,tumour tiles 11-50,11,0.3455
+kaiko-b16,tileprobe,clean,blur:2,tumour tiles 51-200,11,0.8364
+kaiko-b16,tileprobe,clean,blur:2,tumour tiles >200,13,1.0
+kaiko-b16,tileprobe,clean,blur:2,macro,22,0.9182
+kaiko-b16,tileprobe,clean,blur:2,micro,27,0.3704
+kaiko-b16,tileprobe,clean,blur:4,all,49,0.1061
+kaiko-b16,tileprobe,clean,blur:4,tumour tiles 1-10,14,0.1
+kaiko-b16,tileprobe,clean,blur:4,tumour tiles 11-50,11,0.0182
+kaiko-b16,tileprobe,clean,blur:4,tumour tiles 51-200,11,0.0364
+kaiko-b16,tileprobe,clean,blur:4,tumour tiles >200,13,0.2462
+kaiko-b16,tileprobe,clean,blur:4,macro,22,0.1636
+kaiko-b16,tileprobe,clean,blur:4,micro,27,0.0593
+kaiko-b16,tileprobe,clean,clean,all,49,0.7878
+kaiko-b16,tileprobe,clean,clean,tumour tiles 1-10,14,0.4857
+kaiko-b16,tileprobe,clean,clean,tumour tiles 11-50,11,0.7636
+kaiko-b16,tileprobe,clean,clean,tumour tiles 51-200,11,0.9455
+kaiko-b16,tileprobe,clean,clean,tumour tiles >200,13,1.0
+kaiko-b16,tileprobe,clean,clean,macro,22,0.9727
+kaiko-b16,tileprobe,clean,clean,micro,27,0.637
+kaiko-b16,tileprobe,clean,jpeg:10,all,49,0.4857
+kaiko-b16,tileprobe,clean,jpeg:10,tumour tiles 1-10,14,0.2571
+kaiko-b16,tileprobe,clean,jpeg:10,tumour tiles 11-50,11,0.2182
+kaiko-b16,tileprobe,clean,jpeg:10,tumour tiles 51-200,11,0.5091
+kaiko-b16,tileprobe,clean,jpeg:10,tumour tiles >200,13,0.9385
+kaiko-b16,tileprobe,clean,jpeg:10,macro,22,0.7636
+kaiko-b16,tileprobe,clean,jpeg:10,micro,27,0.2593
+kaiko-b16,tileprobe,clean,jpeg:15,all,49,0.6612
+kaiko-b16,tileprobe,clean,jpeg:15,tumour tiles 1-10,14,0.5571
+kaiko-b16,tileprobe,clean,jpeg:15,tumour tiles 11-50,11,0.4182
+kaiko-b16,tileprobe,clean,jpeg:15,tumour tiles 51-200,11,0.7273
+kaiko-b16,tileprobe,clean,jpeg:15,tumour tiles >200,13,0.9231
+kaiko-b16,tileprobe,clean,jpeg:15,macro,22,0.8182
+kaiko-b16,tileprobe,clean,jpeg:15,micro,27,0.5333
+kaiko-b16,tileprobe,clean,jpeg:30,all,49,0.7796
+kaiko-b16,tileprobe,clean,jpeg:30,tumour tiles 1-10,14,0.5571
+kaiko-b16,tileprobe,clean,jpeg:30,tumour tiles 11-50,11,0.7091
+kaiko-b16,tileprobe,clean,jpeg:30,tumour tiles 51-200,11,0.8909
+kaiko-b16,tileprobe,clean,jpeg:30,tumour tiles >200,13,0.9846
+kaiko-b16,tileprobe,clean,jpeg:30,macro,22,0.9364
+kaiko-b16,tileprobe,clean,jpeg:30,micro,27,0.6519
+kaiko-b16,tileprobe,clean,stain:0.3,all,49,0.8082
+kaiko-b16,tileprobe,clean,stain:0.3,tumour tiles 1-10,14,0.5
+kaiko-b16,tileprobe,clean,stain:0.3,tumour tiles 11-50,11,0.8182
+kaiko-b16,tileprobe,clean,stain:0.3,tumour tiles 51-200,11,0.9636
+kaiko-b16,tileprobe,clean,stain:0.3,tumour tiles >200,13,1.0
+kaiko-b16,tileprobe,clean,stain:0.3,macro,22,0.9818
+kaiko-b16,tileprobe,clean,stain:0.3,micro,27,0.6667
+kaiko-b16,tileprobe,mixed,blur:2,all,49,0.6776
+kaiko-b16,tileprobe,mixed,blur:2,tumour tiles 1-10,14,0.3286
+kaiko-b16,tileprobe,mixed,blur:2,tumour tiles 11-50,11,0.5091
+kaiko-b16,tileprobe,mixed,blur:2,tumour tiles 51-200,11,0.9273
+kaiko-b16,tileprobe,mixed,blur:2,tumour tiles >200,13,0.9846
+kaiko-b16,tileprobe,mixed,blur:2,macro,22,0.9545
+kaiko-b16,tileprobe,mixed,blur:2,micro,27,0.4519
+kaiko-b16,tileprobe,mixed,blur:4,all,49,0.4653
+kaiko-b16,tileprobe,mixed,blur:4,tumour tiles 1-10,14,0.1857
+kaiko-b16,tileprobe,mixed,blur:4,tumour tiles 11-50,11,0.2182
+kaiko-b16,tileprobe,mixed,blur:4,tumour tiles 51-200,11,0.5273
+kaiko-b16,tileprobe,mixed,blur:4,tumour tiles >200,13,0.9231
+kaiko-b16,tileprobe,mixed,blur:4,macro,22,0.7727
+kaiko-b16,tileprobe,mixed,blur:4,micro,27,0.2148
+kaiko-b16,tileprobe,mixed,clean,all,49,0.7306
+kaiko-b16,tileprobe,mixed,clean,tumour tiles 1-10,14,0.3857
+kaiko-b16,tileprobe,mixed,clean,tumour tiles 11-50,11,0.6727
+kaiko-b16,tileprobe,mixed,clean,tumour tiles 51-200,11,0.9091
+kaiko-b16,tileprobe,mixed,clean,tumour tiles >200,13,1.0
+kaiko-b16,tileprobe,mixed,clean,macro,22,0.9545
+kaiko-b16,tileprobe,mixed,clean,micro,27,0.5481
+kaiko-b16,tileprobe,mixed,jpeg:10,all,49,0.6898
+kaiko-b16,tileprobe,mixed,jpeg:10,tumour tiles 1-10,14,0.2857
+kaiko-b16,tileprobe,mixed,jpeg:10,tumour tiles 11-50,11,0.6909
+kaiko-b16,tileprobe,mixed,jpeg:10,tumour tiles 51-200,11,0.8545
+kaiko-b16,tileprobe,mixed,jpeg:10,tumour tiles >200,13,0.9846
+kaiko-b16,tileprobe,mixed,jpeg:10,macro,22,0.9182
+kaiko-b16,tileprobe,mixed,jpeg:10,micro,27,0.5037
+kaiko-b16,tileprobe,mixed,jpeg:15,all,49,0.7429
+kaiko-b16,tileprobe,mixed,jpeg:15,tumour tiles 1-10,14,0.4714
+kaiko-b16,tileprobe,mixed,jpeg:15,tumour tiles 11-50,11,0.6909
+kaiko-b16,tileprobe,mixed,jpeg:15,tumour tiles 51-200,11,0.8545
+kaiko-b16,tileprobe,mixed,jpeg:15,tumour tiles >200,13,0.9846
+kaiko-b16,tileprobe,mixed,jpeg:15,macro,22,0.9182
+kaiko-b16,tileprobe,mixed,jpeg:15,micro,27,0.6
+kaiko-b16,tileprobe,mixed,jpeg:30,all,49,0.7918
+kaiko-b16,tileprobe,mixed,jpeg:30,tumour tiles 1-10,14,0.4857
+kaiko-b16,tileprobe,mixed,jpeg:30,tumour tiles 11-50,11,0.7636
+kaiko-b16,tileprobe,mixed,jpeg:30,tumour tiles 51-200,11,0.9636
+kaiko-b16,tileprobe,mixed,jpeg:30,tumour tiles >200,13,1.0
+kaiko-b16,tileprobe,mixed,jpeg:30,macro,22,0.9818
+kaiko-b16,tileprobe,mixed,jpeg:30,micro,27,0.637
+kaiko-b16,tileprobe,mixed,stain:0.3,all,49,0.7224
+kaiko-b16,tileprobe,mixed,stain:0.3,tumour tiles 1-10,14,0.3286
+kaiko-b16,tileprobe,mixed,stain:0.3,tumour tiles 11-50,11,0.7455
+kaiko-b16,tileprobe,mixed,stain:0.3,tumour tiles 51-200,11,0.8909
+kaiko-b16,tileprobe,mixed,stain:0.3,tumour tiles >200,13,0.9846
+kaiko-b16,tileprobe,mixed,stain:0.3,macro,22,0.9364
+kaiko-b16,tileprobe,mixed,stain:0.3,micro,27,0.5481
+phikon,abmil,clean,blur:2,all,49,0.7469
+phikon,abmil,clean,blur:2,tumour tiles 1-10,14,0.6714
+phikon,abmil,clean,blur:2,tumour tiles 11-50,11,0.5818
+phikon,abmil,clean,blur:2,tumour tiles 51-200,11,0.7818
+phikon,abmil,clean,blur:2,tumour tiles >200,13,0.9385
+phikon,abmil,clean,blur:2,macro,22,0.8545
+phikon,abmil,clean,blur:2,micro,27,0.6593
+phikon,abmil,clean,blur:4,all,49,0.2122
+phikon,abmil,clean,blur:4,tumour tiles 1-10,14,0.0857
+phikon,abmil,clean,blur:4,tumour tiles 11-50,11,0.0545
+phikon,abmil,clean,blur:4,tumour tiles 51-200,11,0.2545
+phikon,abmil,clean,blur:4,tumour tiles >200,13,0.4462
+phikon,abmil,clean,blur:4,macro,22,0.3909
+phikon,abmil,clean,blur:4,micro,27,0.0667
+phikon,abmil,clean,clean,all,49,0.9633
+phikon,abmil,clean,clean,tumour tiles 1-10,14,0.9286
+phikon,abmil,clean,clean,tumour tiles 11-50,11,0.9273
+phikon,abmil,clean,clean,tumour tiles 51-200,11,1.0
+phikon,abmil,clean,clean,tumour tiles >200,13,1.0
+phikon,abmil,clean,clean,macro,22,1.0
+phikon,abmil,clean,clean,micro,27,0.9333
+phikon,abmil,clean,jpeg:10,all,49,0.3714
+phikon,abmil,clean,jpeg:10,tumour tiles 1-10,14,0.1429
+phikon,abmil,clean,jpeg:10,tumour tiles 11-50,11,0.0727
+phikon,abmil,clean,jpeg:10,tumour tiles 51-200,11,0.4545
+phikon,abmil,clean,jpeg:10,tumour tiles >200,13,0.8
+phikon,abmil,clean,jpeg:10,macro,22,0.7
+phikon,abmil,clean,jpeg:10,micro,27,0.1037
+phikon,abmil,clean,jpeg:15,all,49,0.4939
+phikon,abmil,clean,jpeg:15,tumour tiles 1-10,14,0.2286
+phikon,abmil,clean,jpeg:15,tumour tiles 11-50,11,0.2
+phikon,abmil,clean,jpeg:15,tumour tiles 51-200,11,0.6
+phikon,abmil,clean,jpeg:15,tumour tiles >200,13,0.9385
+phikon,abmil,clean,jpeg:15,macro,22,0.7909
+phikon,abmil,clean,jpeg:15,micro,27,0.2519
+phikon,abmil,clean,jpeg:30,all,49,0.8
+phikon,abmil,clean,jpeg:30,tumour tiles 1-10,14,0.6857
+phikon,abmil,clean,jpeg:30,tumour tiles 11-50,11,0.6364
+phikon,abmil,clean,jpeg:30,tumour tiles 51-200,11,0.8727
+phikon,abmil,clean,jpeg:30,tumour tiles >200,13,1.0
+phikon,abmil,clean,jpeg:30,macro,22,0.9364
+phikon,abmil,clean,jpeg:30,micro,27,0.6889
+phikon,abmil,clean,stain:0.3,all,49,0.9755
+phikon,abmil,clean,stain:0.3,tumour tiles 1-10,14,0.9429
+phikon,abmil,clean,stain:0.3,tumour tiles 11-50,11,0.9636
+phikon,abmil,clean,stain:0.3,tumour tiles 51-200,11,1.0
+phikon,abmil,clean,stain:0.3,tumour tiles >200,13,1.0
+phikon,abmil,clean,stain:0.3,macro,22,1.0
+phikon,abmil,clean,stain:0.3,micro,27,0.9556
+phikon,abmil,mixed,blur:2,all,49,0.8367
+phikon,abmil,mixed,blur:2,tumour tiles 1-10,14,0.7143
+phikon,abmil,mixed,blur:2,tumour tiles 11-50,11,0.7455
+phikon,abmil,mixed,blur:2,tumour tiles 51-200,11,0.8909
+phikon,abmil,mixed,blur:2,tumour tiles >200,13,1.0
+phikon,abmil,mixed,blur:2,macro,22,0.9455
+phikon,abmil,mixed,blur:2,micro,27,0.7481
+phikon,abmil,mixed,blur:4,all,49,0.2653
+phikon,abmil,mixed,blur:4,tumour tiles 1-10,14,0.2
+phikon,abmil,mixed,blur:4,tumour tiles 11-50,11,0.1091
+phikon,abmil,mixed,blur:4,tumour tiles 51-200,11,0.3273
+phikon,abmil,mixed,blur:4,tumour tiles >200,13,0.4154
+phikon,abmil,mixed,blur:4,macro,22,0.4091
+phikon,abmil,mixed,blur:4,micro,27,0.1481
+phikon,abmil,mixed,clean,all,49,0.9469
+phikon,abmil,mixed,clean,tumour tiles 1-10,14,0.8857
+phikon,abmil,mixed,clean,tumour tiles 11-50,11,0.9091
+phikon,abmil,mixed,clean,tumour tiles 51-200,11,1.0
+phikon,abmil,mixed,clean,tumour tiles >200,13,1.0
+phikon,abmil,mixed,clean,macro,22,1.0
+phikon,abmil,mixed,clean,micro,27,0.9037
+phikon,abmil,mixed,jpeg:10,all,49,0.5959
+phikon,abmil,mixed,jpeg:10,tumour tiles 1-10,14,0.4143
+phikon,abmil,mixed,jpeg:10,tumour tiles 11-50,11,0.3636
+phikon,abmil,mixed,jpeg:10,tumour tiles 51-200,11,0.6545
+phikon,abmil,mixed,jpeg:10,tumour tiles >200,13,0.9385
+phikon,abmil,mixed,jpeg:10,macro,22,0.8455
+phikon,abmil,mixed,jpeg:10,micro,27,0.3926
+phikon,abmil,mixed,jpeg:15,all,49,0.7265
+phikon,abmil,mixed,jpeg:15,tumour tiles 1-10,14,0.4714
+phikon,abmil,mixed,jpeg:15,tumour tiles 11-50,11,0.5636
+phikon,abmil,mixed,jpeg:15,tumour tiles 51-200,11,0.8909
+phikon,abmil,mixed,jpeg:15,tumour tiles >200,13,1.0
+phikon,abmil,mixed,jpeg:15,macro,22,0.9455
+phikon,abmil,mixed,jpeg:15,micro,27,0.5481
+phikon,abmil,mixed,jpeg:30,all,49,0.8449
+phikon,abmil,mixed,jpeg:30,tumour tiles 1-10,14,0.6714
+phikon,abmil,mixed,jpeg:30,tumour tiles 11-50,11,0.7273
+phikon,abmil,mixed,jpeg:30,tumour tiles 51-200,11,1.0
+phikon,abmil,mixed,jpeg:30,tumour tiles >200,13,1.0
+phikon,abmil,mixed,jpeg:30,macro,22,1.0
+phikon,abmil,mixed,jpeg:30,micro,27,0.7185
+phikon,abmil,mixed,stain:0.3,all,49,0.9592
+phikon,abmil,mixed,stain:0.3,tumour tiles 1-10,14,0.9
+phikon,abmil,mixed,stain:0.3,tumour tiles 11-50,11,0.9455
+phikon,abmil,mixed,stain:0.3,tumour tiles 51-200,11,1.0
+phikon,abmil,mixed,stain:0.3,tumour tiles >200,13,1.0
+phikon,abmil,mixed,stain:0.3,macro,22,1.0
+phikon,abmil,mixed,stain:0.3,micro,27,0.9259
+phikon,max,clean,blur:2,all,49,0.4531
+phikon,max,clean,blur:2,tumour tiles 1-10,14,0.1714
+phikon,max,clean,blur:2,tumour tiles 11-50,11,0.1091
+phikon,max,clean,blur:2,tumour tiles 51-200,11,0.6909
+phikon,max,clean,blur:2,tumour tiles >200,13,0.8462
+phikon,max,clean,blur:2,macro,22,0.8
+phikon,max,clean,blur:2,micro,27,0.1704
+phikon,max,clean,blur:4,all,49,0.098
+phikon,max,clean,blur:4,tumour tiles 1-10,14,0.0429
+phikon,max,clean,blur:4,tumour tiles 11-50,11,0.0
+phikon,max,clean,blur:4,tumour tiles 51-200,11,0.0182
+phikon,max,clean,blur:4,tumour tiles >200,13,0.3077
+phikon,max,clean,blur:4,macro,22,0.1909
+phikon,max,clean,blur:4,micro,27,0.0222
+phikon,max,clean,clean,all,49,0.4653
+phikon,max,clean,clean,tumour tiles 1-10,14,0.1571
+phikon,max,clean,clean,tumour tiles 11-50,11,0.1273
+phikon,max,clean,clean,tumour tiles 51-200,11,0.6364
+phikon,max,clean,clean,tumour tiles >200,13,0.9385
+phikon,max,clean,clean,macro,22,0.8455
+phikon,max,clean,clean,micro,27,0.1556
+phikon,max,clean,jpeg:10,all,49,0.2776
+phikon,max,clean,jpeg:10,tumour tiles 1-10,14,0.1
+phikon,max,clean,jpeg:10,tumour tiles 11-50,11,0.0545
+phikon,max,clean,jpeg:10,tumour tiles 51-200,11,0.3636
+phikon,max,clean,jpeg:10,tumour tiles >200,13,0.5846
+phikon,max,clean,jpeg:10,macro,22,0.5273
+phikon,max,clean,jpeg:10,micro,27,0.0741
+phikon,max,clean,jpeg:15,all,49,0.3143
+phikon,max,clean,jpeg:15,tumour tiles 1-10,14,0.0857
+phikon,max,clean,jpeg:15,tumour tiles 11-50,11,0.0727
+phikon,max,clean,jpeg:15,tumour tiles 51-200,11,0.4
+phikon,max,clean,jpeg:15,tumour tiles >200,13,0.6923
+phikon,max,clean,jpeg:15,macro,22,0.6091
+phikon,max,clean,jpeg:15,micro,27,0.0741
+phikon,max,clean,jpeg:30,all,49,0.3796
+phikon,max,clean,jpeg:30,tumour tiles 1-10,14,0.1
+phikon,max,clean,jpeg:30,tumour tiles 11-50,11,0.0545
+phikon,max,clean,jpeg:30,tumour tiles 51-200,11,0.4909
+phikon,max,clean,jpeg:30,tumour tiles >200,13,0.8615
+phikon,max,clean,jpeg:30,macro,22,0.7545
+phikon,max,clean,jpeg:30,micro,27,0.0741
+phikon,max,clean,stain:0.3,all,49,0.4327
+phikon,max,clean,stain:0.3,tumour tiles 1-10,14,0.1857
+phikon,max,clean,stain:0.3,tumour tiles 11-50,11,0.0727
+phikon,max,clean,stain:0.3,tumour tiles 51-200,11,0.5818
+phikon,max,clean,stain:0.3,tumour tiles >200,13,0.8769
+phikon,max,clean,stain:0.3,macro,22,0.8
+phikon,max,clean,stain:0.3,micro,27,0.1333
+phikon,max,mixed,blur:2,all,49,0.3796
+phikon,max,mixed,blur:2,tumour tiles 1-10,14,0.0857
+phikon,max,mixed,blur:2,tumour tiles 11-50,11,0.1636
+phikon,max,mixed,blur:2,tumour tiles 51-200,11,0.4364
+phikon,max,mixed,blur:2,tumour tiles >200,13,0.8308
+phikon,max,mixed,blur:2,macro,22,0.6636
+phikon,max,mixed,blur:2,micro,27,0.1481
+phikon,max,mixed,blur:4,all,49,0.1061
+phikon,max,mixed,blur:4,tumour tiles 1-10,14,0.0286
+phikon,max,mixed,blur:4,tumour tiles 11-50,11,0.0727
+phikon,max,mixed,blur:4,tumour tiles 51-200,11,0.0182
+phikon,max,mixed,blur:4,tumour tiles >200,13,0.2923
+phikon,max,mixed,blur:4,macro,22,0.1818
+phikon,max,mixed,blur:4,micro,27,0.0444
+phikon,max,mixed,clean,all,49,0.4327
+phikon,max,mixed,clean,tumour tiles 1-10,14,0.1286
+phikon,max,mixed,clean,tumour tiles 11-50,11,0.1455
+phikon,max,mixed,clean,tumour tiles 51-200,11,0.5273
+phikon,max,mixed,clean,tumour tiles >200,13,0.9231
+phikon,max,mixed,clean,macro,22,0.7727
+phikon,max,mixed,clean,micro,27,0.1556
+phikon,max,mixed,jpeg:10,all,49,0.3429
+phikon,max,mixed,jpeg:10,tumour tiles 1-10,14,0.1143
+phikon,max,mixed,jpeg:10,tumour tiles 11-50,11,0.0909
+phikon,max,mixed,jpeg:10,tumour tiles 51-200,11,0.3455
+phikon,max,mixed,jpeg:10,tumour tiles >200,13,0.8
+phikon,max,mixed,jpeg:10,macro,22,0.6455
+phikon,max,mixed,jpeg:10,micro,27,0.0963
+phikon,max,mixed,jpeg:15,all,49,0.4
+phikon,max,mixed,jpeg:15,tumour tiles 1-10,14,0.1286
+phikon,max,mixed,jpeg:15,tumour tiles 11-50,11,0.0727
+phikon,max,mixed,jpeg:15,tumour tiles 51-200,11,0.5273
+phikon,max,mixed,jpeg:15,tumour tiles >200,13,0.8615
+phikon,max,mixed,jpeg:15,macro,22,0.7636
+phikon,max,mixed,jpeg:15,micro,27,0.1037
+phikon,max,mixed,jpeg:30,all,49,0.4449
+phikon,max,mixed,jpeg:30,tumour tiles 1-10,14,0.1571
+phikon,max,mixed,jpeg:30,tumour tiles 11-50,11,0.1273
+phikon,max,mixed,jpeg:30,tumour tiles 51-200,11,0.6
+phikon,max,mixed,jpeg:30,tumour tiles >200,13,0.8923
+phikon,max,mixed,jpeg:30,macro,22,0.8
+phikon,max,mixed,jpeg:30,micro,27,0.1556
+phikon,max,mixed,stain:0.3,all,49,0.4531
+phikon,max,mixed,stain:0.3,tumour tiles 1-10,14,0.2
+phikon,max,mixed,stain:0.3,tumour tiles 11-50,11,0.1636
+phikon,max,mixed,stain:0.3,tumour tiles 51-200,11,0.5455
+phikon,max,mixed,stain:0.3,tumour tiles >200,13,0.8923
+phikon,max,mixed,stain:0.3,macro,22,0.7636
+phikon,max,mixed,stain:0.3,micro,27,0.2
+phikon,mean,clean,blur:2,all,49,0.249
+phikon,mean,clean,blur:2,tumour tiles 1-10,14,0.2
+phikon,mean,clean,blur:2,tumour tiles 11-50,11,0.0909
+phikon,mean,clean,blur:2,tumour tiles 51-200,11,0.1455
+phikon,mean,clean,blur:2,tumour tiles >200,13,0.5231
+phikon,mean,clean,blur:2,macro,22,0.3818
+phikon,mean,clean,blur:2,micro,27,0.1407
+phikon,mean,clean,blur:4,all,49,0.0898
+phikon,mean,clean,blur:4,tumour tiles 1-10,14,0.1
+phikon,mean,clean,blur:4,tumour tiles 11-50,11,0.0545
+phikon,mean,clean,blur:4,tumour tiles 51-200,11,0.0909
+phikon,mean,clean,blur:4,tumour tiles >200,13,0.1077
+phikon,mean,clean,blur:4,macro,22,0.1091
+phikon,mean,clean,blur:4,micro,27,0.0741
+phikon,mean,clean,clean,all,49,0.2939
+phikon,mean,clean,clean,tumour tiles 1-10,14,0.1286
+phikon,mean,clean,clean,tumour tiles 11-50,11,0.0727
+phikon,mean,clean,clean,tumour tiles 51-200,11,0.2182
+phikon,mean,clean,clean,tumour tiles >200,13,0.7231
+phikon,mean,clean,clean,macro,22,0.5273
+phikon,mean,clean,clean,micro,27,0.1037
+phikon,mean,clean,jpeg:10,all,49,0.151
+phikon,mean,clean,jpeg:10,tumour tiles 1-10,14,0.1143
+phikon,mean,clean,jpeg:10,tumour tiles 11-50,11,0.0182
+phikon,mean,clean,jpeg:10,tumour tiles 51-200,11,0.0727
+phikon,mean,clean,jpeg:10,tumour tiles >200,13,0.3692
+phikon,mean,clean,jpeg:10,macro,22,0.2545
+phikon,mean,clean,jpeg:10,micro,27,0.0667
+phikon,mean,clean,jpeg:15,all,49,0.2367
+phikon,mean,clean,jpeg:15,tumour tiles 1-10,14,0.1714
+phikon,mean,clean,jpeg:15,tumour tiles 11-50,11,0.0182
+phikon,mean,clean,jpeg:15,tumour tiles 51-200,11,0.0909
+phikon,mean,clean,jpeg:15,tumour tiles >200,13,0.6154
+phikon,mean,clean,jpeg:15,macro,22,0.4091
+phikon,mean,clean,jpeg:15,micro,27,0.0963
+phikon,mean,clean,jpeg:30,all,49,0.2776
+phikon,mean,clean,jpeg:30,tumour tiles 1-10,14,0.1143
+phikon,mean,clean,jpeg:30,tumour tiles 11-50,11,0.0545
+phikon,mean,clean,jpeg:30,tumour tiles 51-200,11,0.1636
+phikon,mean,clean,jpeg:30,tumour tiles >200,13,0.7385
+phikon,mean,clean,jpeg:30,macro,22,0.5182
+phikon,mean,clean,jpeg:30,micro,27,0.0815
+phikon,mean,clean,stain:0.3,all,49,0.3061
+phikon,mean,clean,stain:0.3,tumour tiles 1-10,14,0.2
+phikon,mean,clean,stain:0.3,tumour tiles 11-50,11,0.0182
+phikon,mean,clean,stain:0.3,tumour tiles 51-200,11,0.2
+phikon,mean,clean,stain:0.3,tumour tiles >200,13,0.7538
+phikon,mean,clean,stain:0.3,macro,22,0.5455
+phikon,mean,clean,stain:0.3,micro,27,0.1111
+phikon,mean,mixed,blur:2,all,49,0.2531
+phikon,mean,mixed,blur:2,tumour tiles 1-10,14,0.1
+phikon,mean,mixed,blur:2,tumour tiles 11-50,11,0.2
+phikon,mean,mixed,blur:2,tumour tiles 51-200,11,0.1273
+phikon,mean,mixed,blur:2,tumour tiles >200,13,0.5692
+phikon,mean,mixed,blur:2,macro,22,0.4
+phikon,mean,mixed,blur:2,micro,27,0.1333
+phikon,mean,mixed,blur:4,all,49,0.1061
+phikon,mean,mixed,blur:4,tumour tiles 1-10,14,0.1
+phikon,mean,mixed,blur:4,tumour tiles 11-50,11,0.1273
+phikon,mean,mixed,blur:4,tumour tiles 51-200,11,0.1273
+phikon,mean,mixed,blur:4,tumour tiles >200,13,0.0769
+phikon,mean,mixed,blur:4,macro,22,0.1091
+phikon,mean,mixed,blur:4,micro,27,0.1037
+phikon,mean,mixed,clean,all,49,0.3184
+phikon,mean,mixed,clean,tumour tiles 1-10,14,0.1429
+phikon,mean,mixed,clean,tumour tiles 11-50,11,0.0909
+phikon,mean,mixed,clean,tumour tiles 51-200,11,0.2545
+phikon,mean,mixed,clean,tumour tiles >200,13,0.7538
+phikon,mean,mixed,clean,macro,22,0.5636
+phikon,mean,mixed,clean,micro,27,0.1185
+phikon,mean,mixed,jpeg:10,all,49,0.1878
+phikon,mean,mixed,jpeg:10,tumour tiles 1-10,14,0.0571
+phikon,mean,mixed,jpeg:10,tumour tiles 11-50,11,0.0909
+phikon,mean,mixed,jpeg:10,tumour tiles 51-200,11,0.1455
+phikon,mean,mixed,jpeg:10,tumour tiles >200,13,0.4462
+phikon,mean,mixed,jpeg:10,macro,22,0.3364
+phikon,mean,mixed,jpeg:10,micro,27,0.0667
+phikon,mean,mixed,jpeg:15,all,49,0.2898
+phikon,mean,mixed,jpeg:15,tumour tiles 1-10,14,0.1143
+phikon,mean,mixed,jpeg:15,tumour tiles 11-50,11,0.1091
+phikon,mean,mixed,jpeg:15,tumour tiles 51-200,11,0.2727
+phikon,mean,mixed,jpeg:15,tumour tiles >200,13,0.6462
+phikon,mean,mixed,jpeg:15,macro,22,0.5091
+phikon,mean,mixed,jpeg:15,micro,27,0.1111
+phikon,mean,mixed,jpeg:30,all,49,0.2571
+phikon,mean,mixed,jpeg:30,tumour tiles 1-10,14,0.0286
+phikon,mean,mixed,jpeg:30,tumour tiles 11-50,11,0.0545
+phikon,mean,mixed,jpeg:30,tumour tiles 51-200,11,0.2364
+phikon,mean,mixed,jpeg:30,tumour tiles >200,13,0.6923
+phikon,mean,mixed,jpeg:30,macro,22,0.5273
+phikon,mean,mixed,jpeg:30,micro,27,0.037
+phikon,mean,mixed,stain:0.3,all,49,0.3102
+phikon,mean,mixed,stain:0.3,tumour tiles 1-10,14,0.1857
+phikon,mean,mixed,stain:0.3,tumour tiles 11-50,11,0.0545
+phikon,mean,mixed,stain:0.3,tumour tiles 51-200,11,0.1818
+phikon,mean,mixed,stain:0.3,tumour tiles >200,13,0.7692
+phikon,mean,mixed,stain:0.3,macro,22,0.5364
+phikon,mean,mixed,stain:0.3,micro,27,0.1259
+phikon,tileprobe,clean,blur:2,all,49,0.4857
+phikon,tileprobe,clean,blur:2,tumour tiles 1-10,14,0.1571
+phikon,tileprobe,clean,blur:2,tumour tiles 11-50,11,0.2364
+phikon,tileprobe,clean,blur:2,tumour tiles 51-200,11,0.6545
+phikon,tileprobe,clean,blur:2,tumour tiles >200,13,0.9077
+phikon,tileprobe,clean,blur:2,macro,22,0.8091
+phikon,tileprobe,clean,blur:2,micro,27,0.2222
+phikon,tileprobe,clean,blur:4,all,49,0.1306
+phikon,tileprobe,clean,blur:4,tumour tiles 1-10,14,0.1143
+phikon,tileprobe,clean,blur:4,tumour tiles 11-50,11,0.0182
+phikon,tileprobe,clean,blur:4,tumour tiles 51-200,11,0.1273
+phikon,tileprobe,clean,blur:4,tumour tiles >200,13,0.2462
+phikon,tileprobe,clean,blur:4,macro,22,0.2091
+phikon,tileprobe,clean,blur:4,micro,27,0.0667
+phikon,tileprobe,clean,clean,all,49,0.7633
+phikon,tileprobe,clean,clean,tumour tiles 1-10,14,0.4714
+phikon,tileprobe,clean,clean,tumour tiles 11-50,11,0.6364
+phikon,tileprobe,clean,clean,tumour tiles 51-200,11,0.9818
+phikon,tileprobe,clean,clean,tumour tiles >200,13,1.0
+phikon,tileprobe,clean,clean,macro,22,0.9909
+phikon,tileprobe,clean,clean,micro,27,0.5778
+phikon,tileprobe,clean,jpeg:10,all,49,0.4367
+phikon,tileprobe,clean,jpeg:10,tumour tiles 1-10,14,0.1714
+phikon,tileprobe,clean,jpeg:10,tumour tiles 11-50,11,0.1818
+phikon,tileprobe,clean,jpeg:10,tumour tiles 51-200,11,0.5273
+phikon,tileprobe,clean,jpeg:10,tumour tiles >200,13,0.8615
+phikon,tileprobe,clean,jpeg:10,macro,22,0.7545
+phikon,tileprobe,clean,jpeg:10,micro,27,0.1778
+phikon,tileprobe,clean,jpeg:15,all,49,0.5184
+phikon,tileprobe,clean,jpeg:15,tumour tiles 1-10,14,0.2714
+phikon,tileprobe,clean,jpeg:15,tumour tiles 11-50,11,0.2
+phikon,tileprobe,clean,jpeg:15,tumour tiles 51-200,11,0.6909
+phikon,tileprobe,clean,jpeg:15,tumour tiles >200,13,0.9077
+phikon,tileprobe,clean,jpeg:15,macro,22,0.8182
+phikon,tileprobe,clean,jpeg:15,micro,27,0.2741
+phikon,tileprobe,clean,jpeg:30,all,49,0.6204
+phikon,tileprobe,clean,jpeg:30,tumour tiles 1-10,14,0.3571
+phikon,tileprobe,clean,jpeg:30,tumour tiles 11-50,11,0.3273
+phikon,tileprobe,clean,jpeg:30,tumour tiles 51-200,11,0.8182
+phikon,tileprobe,clean,jpeg:30,tumour tiles >200,13,0.9846
+phikon,tileprobe,clean,jpeg:30,macro,22,0.9091
+phikon,tileprobe,clean,jpeg:30,micro,27,0.3852
+phikon,tileprobe,clean,stain:0.3,all,49,0.7429
+phikon,tileprobe,clean,stain:0.3,tumour tiles 1-10,14,0.4143
+phikon,tileprobe,clean,stain:0.3,tumour tiles 11-50,11,0.6
+phikon,tileprobe,clean,stain:0.3,tumour tiles 51-200,11,1.0
+phikon,tileprobe,clean,stain:0.3,tumour tiles >200,13,1.0
+phikon,tileprobe,clean,stain:0.3,macro,22,1.0
+phikon,tileprobe,clean,stain:0.3,micro,27,0.5333
+phikon,tileprobe,mixed,blur:2,all,49,0.6898
+phikon,tileprobe,mixed,blur:2,tumour tiles 1-10,14,0.3857
+phikon,tileprobe,mixed,blur:2,tumour tiles 11-50,11,0.5091
+phikon,tileprobe,mixed,blur:2,tumour tiles 51-200,11,0.9273
+phikon,tileprobe,mixed,blur:2,tumour tiles >200,13,0.9692
+phikon,tileprobe,mixed,blur:2,macro,22,0.9727
+phikon,tileprobe,mixed,blur:2,micro,27,0.4593
+phikon,tileprobe,mixed,blur:4,all,49,0.4367
+phikon,tileprobe,mixed,blur:4,tumour tiles 1-10,14,0.0857
+phikon,tileprobe,mixed,blur:4,tumour tiles 11-50,11,0.3455
+phikon,tileprobe,mixed,blur:4,tumour tiles 51-200,11,0.5091
+phikon,tileprobe,mixed,blur:4,tumour tiles >200,13,0.8308
+phikon,tileprobe,mixed,blur:4,macro,22,0.7091
+phikon,tileprobe,mixed,blur:4,micro,27,0.2148
+phikon,tileprobe,mixed,clean,all,49,0.7429
+phikon,tileprobe,mixed,clean,tumour tiles 1-10,14,0.5286
+phikon,tileprobe,mixed,clean,tumour tiles 11-50,11,0.5091
+phikon,tileprobe,mixed,clean,tumour tiles 51-200,11,0.9455
+phikon,tileprobe,mixed,clean,tumour tiles >200,13,1.0
+phikon,tileprobe,mixed,clean,macro,22,0.9818
+phikon,tileprobe,mixed,clean,micro,27,0.5481
+phikon,tileprobe,mixed,jpeg:10,all,49,0.6122
+phikon,tileprobe,mixed,jpeg:10,tumour tiles 1-10,14,0.2714
+phikon,tileprobe,mixed,jpeg:10,tumour tiles 11-50,11,0.4545
+phikon,tileprobe,mixed,jpeg:10,tumour tiles 51-200,11,0.8364
+phikon,tileprobe,mixed,jpeg:10,tumour tiles >200,13,0.9231
+phikon,tileprobe,mixed,jpeg:10,macro,22,0.8727
+phikon,tileprobe,mixed,jpeg:10,micro,27,0.4
+phikon,tileprobe,mixed,jpeg:15,all,49,0.6816
+phikon,tileprobe,mixed,jpeg:15,tumour tiles 1-10,14,0.3571
+phikon,tileprobe,mixed,jpeg:15,tumour tiles 11-50,11,0.5455
+phikon,tileprobe,mixed,jpeg:15,tumour tiles 51-200,11,0.8727
+phikon,tileprobe,mixed,jpeg:15,tumour tiles >200,13,0.9846
+phikon,tileprobe,mixed,jpeg:15,macro,22,0.9273
+phikon,tileprobe,mixed,jpeg:15,micro,27,0.4815
+phikon,tileprobe,mixed,jpeg:30,all,49,0.7143
+phikon,tileprobe,mixed,jpeg:30,tumour tiles 1-10,14,0.4143
+phikon,tileprobe,mixed,jpeg:30,tumour tiles 11-50,11,0.5636
+phikon,tileprobe,mixed,jpeg:30,tumour tiles 51-200,11,0.9091
+phikon,tileprobe,mixed,jpeg:30,tumour tiles >200,13,1.0
+phikon,tileprobe,mixed,jpeg:30,macro,22,0.9545
+phikon,tileprobe,mixed,jpeg:30,micro,27,0.5185
+phikon,tileprobe,mixed,stain:0.3,all,49,0.7633
+phikon,tileprobe,mixed,stain:0.3,tumour tiles 1-10,14,0.4857
+phikon,tileprobe,mixed,stain:0.3,tumour tiles 11-50,11,0.6
+phikon,tileprobe,mixed,stain:0.3,tumour tiles 51-200,11,1.0
+phikon,tileprobe,mixed,stain:0.3,tumour tiles >200,13,1.0
+phikon,tileprobe,mixed,stain:0.3,macro,22,1.0
+phikon,tileprobe,mixed,stain:0.3,micro,27,0.5704
+phikon-v2,abmil,clean,blur:2,all,49,0.7184
+phikon-v2,abmil,clean,blur:2,tumour tiles 1-10,14,0.5286
+phikon-v2,abmil,clean,blur:2,tumour tiles 11-50,11,0.5273
+phikon-v2,abmil,clean,blur:2,tumour tiles 51-200,11,0.8364
+phikon-v2,abmil,clean,blur:2,tumour tiles >200,13,0.9846
+phikon-v2,abmil,clean,blur:2,macro,22,0.9091
+phikon-v2,abmil,clean,blur:2,micro,27,0.563
+phikon-v2,abmil,clean,blur:4,all,49,0.1633
+phikon-v2,abmil,clean,blur:4,tumour tiles 1-10,14,0.0143
+phikon-v2,abmil,clean,blur:4,tumour tiles 11-50,11,0.0182
+phikon-v2,abmil,clean,blur:4,tumour tiles 51-200,11,0.1636
+phikon-v2,abmil,clean,blur:4,tumour tiles >200,13,0.4462
+phikon-v2,abmil,clean,blur:4,macro,22,0.3455
+phikon-v2,abmil,clean,blur:4,micro,27,0.0148
+phikon-v2,abmil,clean,clean,all,49,0.8612
+phikon-v2,abmil,clean,clean,tumour tiles 1-10,14,0.6714
+phikon-v2,abmil,clean,clean,tumour tiles 11-50,11,0.8182
+phikon-v2,abmil,clean,clean,tumour tiles 51-200,11,0.9818
+phikon-v2,abmil,clean,clean,tumour tiles >200,13,1.0
+phikon-v2,abmil,clean,clean,macro,22,0.9909
+phikon-v2,abmil,clean,clean,micro,27,0.7556
+phikon-v2,abmil,clean,jpeg:10,all,49,0.3102
+phikon-v2,abmil,clean,jpeg:10,tumour tiles 1-10,14,0.1143
+phikon-v2,abmil,clean,jpeg:10,tumour tiles 11-50,11,0.0909
+phikon-v2,abmil,clean,jpeg:10,tumour tiles 51-200,11,0.3455
+phikon-v2,abmil,clean,jpeg:10,tumour tiles >200,13,0.6769
+phikon-v2,abmil,clean,jpeg:10,macro,22,0.5727
+phikon-v2,abmil,clean,jpeg:10,micro,27,0.0963
+phikon-v2,abmil,clean,jpeg:15,all,49,0.4408
+phikon-v2,abmil,clean,jpeg:15,tumour tiles 1-10,14,0.2571
+phikon-v2,abmil,clean,jpeg:15,tumour tiles 11-50,11,0.2
+phikon-v2,abmil,clean,jpeg:15,tumour tiles 51-200,11,0.4727
+phikon-v2,abmil,clean,jpeg:15,tumour tiles >200,13,0.8154
+phikon-v2,abmil,clean,jpeg:15,macro,22,0.6909
+phikon-v2,abmil,clean,jpeg:15,micro,27,0.237
+phikon-v2,abmil,clean,jpeg:30,all,49,0.6531
+phikon-v2,abmil,clean,jpeg:30,tumour tiles 1-10,14,0.4143
+phikon-v2,abmil,clean,jpeg:30,tumour tiles 11-50,11,0.4364
+phikon-v2,abmil,clean,jpeg:30,tumour tiles 51-200,11,0.7818
+phikon-v2,abmil,clean,jpeg:30,tumour tiles >200,13,0.9846
+phikon-v2,abmil,clean,jpeg:30,macro,22,0.8909
+phikon-v2,abmil,clean,jpeg:30,micro,27,0.4593
+phikon-v2,abmil,clean,stain:0.3,all,49,0.8857
+phikon-v2,abmil,clean,stain:0.3,tumour tiles 1-10,14,0.6714
+phikon-v2,abmil,clean,stain:0.3,tumour tiles 11-50,11,0.9273
+phikon-v2,abmil,clean,stain:0.3,tumour tiles 51-200,11,0.9818
+phikon-v2,abmil,clean,stain:0.3,tumour tiles >200,13,1.0
+phikon-v2,abmil,clean,stain:0.3,macro,22,0.9909
+phikon-v2,abmil,clean,stain:0.3,micro,27,0.8
+phikon-v2,abmil,mixed,blur:2,all,49,0.751
+phikon-v2,abmil,mixed,blur:2,tumour tiles 1-10,14,0.5
+phikon-v2,abmil,mixed,blur:2,tumour tiles 11-50,11,0.6182
+phikon-v2,abmil,mixed,blur:2,tumour tiles 51-200,11,0.9091
+phikon-v2,abmil,mixed,blur:2,tumour tiles >200,13,1.0
+phikon-v2,abmil,mixed,blur:2,macro,22,0.9545
+phikon-v2,abmil,mixed,blur:2,micro,27,0.5852
+phikon-v2,abmil,mixed,blur:4,all,49,0.2204
+phikon-v2,abmil,mixed,blur:4,tumour tiles 1-10,14,0.1286
+phikon-v2,abmil,mixed,blur:4,tumour tiles 11-50,11,0.0
+phikon-v2,abmil,mixed,blur:4,tumour tiles 51-200,11,0.2545
+phikon-v2,abmil,mixed,blur:4,tumour tiles >200,13,0.4769
+phikon-v2,abmil,mixed,blur:4,macro,22,0.4091
+phikon-v2,abmil,mixed,blur:4,micro,27,0.0667
+phikon-v2,abmil,mixed,clean,all,49,0.8
+phikon-v2,abmil,mixed,clean,tumour tiles 1-10,14,0.5714
+phikon-v2,abmil,mixed,clean,tumour tiles 11-50,11,0.7273
+phikon-v2,abmil,mixed,clean,tumour tiles 51-200,11,0.9273
+phikon-v2,abmil,mixed,clean,tumour tiles >200,13,1.0
+phikon-v2,abmil,mixed,clean,macro,22,0.9636
+phikon-v2,abmil,mixed,clean,micro,27,0.6667
+phikon-v2,abmil,mixed,jpeg:10,all,49,0.3714
+phikon-v2,abmil,mixed,jpeg:10,tumour tiles 1-10,14,0.1571
+phikon-v2,abmil,mixed,jpeg:10,tumour tiles 11-50,11,0.1091
+phikon-v2,abmil,mixed,jpeg:10,tumour tiles 51-200,11,0.5091
+phikon-v2,abmil,mixed,jpeg:10,tumour tiles >200,13,0.7077
+phikon-v2,abmil,mixed,jpeg:10,macro,22,0.6545
+phikon-v2,abmil,mixed,jpeg:10,micro,27,0.1407
+phikon-v2,abmil,mixed,jpeg:15,all,49,0.5102
+phikon-v2,abmil,mixed,jpeg:15,tumour tiles 1-10,14,0.3
+phikon-v2,abmil,mixed,jpeg:15,tumour tiles 11-50,11,0.2909
+phikon-v2,abmil,mixed,jpeg:15,tumour tiles 51-200,11,0.6
+phikon-v2,abmil,mixed,jpeg:15,tumour tiles >200,13,0.8462
+phikon-v2,abmil,mixed,jpeg:15,macro,22,0.7455
+phikon-v2,abmil,mixed,jpeg:15,micro,27,0.3185
+phikon-v2,abmil,mixed,jpeg:30,all,49,0.7143
+phikon-v2,abmil,mixed,jpeg:30,tumour tiles 1-10,14,0.4714
+phikon-v2,abmil,mixed,jpeg:30,tumour tiles 11-50,11,0.5818
+phikon-v2,abmil,mixed,jpeg:30,tumour tiles 51-200,11,0.8182
+phikon-v2,abmil,mixed,jpeg:30,tumour tiles >200,13,1.0
+phikon-v2,abmil,mixed,jpeg:30,macro,22,0.9182
+phikon-v2,abmil,mixed,jpeg:30,micro,27,0.5481
+phikon-v2,abmil,mixed,stain:0.3,all,49,0.8612
+phikon-v2,abmil,mixed,stain:0.3,tumour tiles 1-10,14,0.6714
+phikon-v2,abmil,mixed,stain:0.3,tumour tiles 11-50,11,0.8545
+phikon-v2,abmil,mixed,stain:0.3,tumour tiles 51-200,11,0.9455
+phikon-v2,abmil,mixed,stain:0.3,tumour tiles >200,13,1.0
+phikon-v2,abmil,mixed,stain:0.3,macro,22,0.9727
+phikon-v2,abmil,mixed,stain:0.3,micro,27,0.7704
+phikon-v2,max,clean,blur:2,all,49,0.2
+phikon-v2,max,clean,blur:2,tumour tiles 1-10,14,0.0143
+phikon-v2,max,clean,blur:2,tumour tiles 11-50,11,0.0545
+phikon-v2,max,clean,blur:2,tumour tiles 51-200,11,0.3091
+phikon-v2,max,clean,blur:2,tumour tiles >200,13,0.4308
+phikon-v2,max,clean,blur:2,macro,22,0.4091
+phikon-v2,max,clean,blur:2,micro,27,0.0296
+phikon-v2,max,clean,blur:4,all,49,0.1102
+phikon-v2,max,clean,blur:4,tumour tiles 1-10,14,0.1
+phikon-v2,max,clean,blur:4,tumour tiles 11-50,11,0.0182
+phikon-v2,max,clean,blur:4,tumour tiles 51-200,11,0.0727
+phikon-v2,max,clean,blur:4,tumour tiles >200,13,0.2308
+phikon-v2,max,clean,blur:4,macro,22,0.1727
+phikon-v2,max,clean,blur:4,micro,27,0.0593
+phikon-v2,max,clean,clean,all,49,0.3878
+phikon-v2,max,clean,clean,tumour tiles 1-10,14,0.0571
+phikon-v2,max,clean,clean,tumour tiles 11-50,11,0.1273
+phikon-v2,max,clean,clean,tumour tiles 51-200,11,0.5273
+phikon-v2,max,clean,clean,tumour tiles >200,13,0.8462
+phikon-v2,max,clean,clean,macro,22,0.7455
+phikon-v2,max,clean,clean,micro,27,0.0963
+phikon-v2,max,clean,jpeg:10,all,49,0.2408
+phikon-v2,max,clean,jpeg:10,tumour tiles 1-10,14,0.0857
+phikon-v2,max,clean,jpeg:10,tumour tiles 11-50,11,0.2364
+phikon-v2,max,clean,jpeg:10,tumour tiles 51-200,11,0.1455
+phikon-v2,max,clean,jpeg:10,tumour tiles >200,13,0.4923
+phikon-v2,max,clean,jpeg:10,macro,22,0.3455
+phikon-v2,max,clean,jpeg:10,micro,27,0.1556
+phikon-v2,max,clean,jpeg:15,all,49,0.3306
+phikon-v2,max,clean,jpeg:15,tumour tiles 1-10,14,0.1143
+phikon-v2,max,clean,jpeg:15,tumour tiles 11-50,11,0.0909
+phikon-v2,max,clean,jpeg:15,tumour tiles 51-200,11,0.2909
+phikon-v2,max,clean,jpeg:15,tumour tiles >200,13,0.8
+phikon-v2,max,clean,jpeg:15,macro,22,0.6091
+phikon-v2,max,clean,jpeg:15,micro,27,0.1037
+phikon-v2,max,clean,jpeg:30,all,49,0.3143
+phikon-v2,max,clean,jpeg:30,tumour tiles 1-10,14,0.1143
+phikon-v2,max,clean,jpeg:30,tumour tiles 11-50,11,0.0727
+phikon-v2,max,clean,jpeg:30,tumour tiles 51-200,11,0.3818
+phikon-v2,max,clean,jpeg:30,tumour tiles >200,13,0.6769
+phikon-v2,max,clean,jpeg:30,macro,22,0.5909
+phikon-v2,max,clean,jpeg:30,micro,27,0.0889
+phikon-v2,max,clean,stain:0.3,all,49,0.3388
+phikon-v2,max,clean,stain:0.3,tumour tiles 1-10,14,0.0429
+phikon-v2,max,clean,stain:0.3,tumour tiles 11-50,11,0.0909
+phikon-v2,max,clean,stain:0.3,tumour tiles 51-200,11,0.3636
+phikon-v2,max,clean,stain:0.3,tumour tiles >200,13,0.8462
+phikon-v2,max,clean,stain:0.3,macro,22,0.6636
+phikon-v2,max,clean,stain:0.3,micro,27,0.0741
+phikon-v2,max,mixed,blur:2,all,49,0.2367
+phikon-v2,max,mixed,blur:2,tumour tiles 1-10,14,0.0143
+phikon-v2,max,mixed,blur:2,tumour tiles 11-50,11,0.0545
+phikon-v2,max,mixed,blur:2,tumour tiles 51-200,11,0.3455
+phikon-v2,max,mixed,blur:2,tumour tiles >200,13,0.5385
+phikon-v2,max,mixed,blur:2,macro,22,0.4909
+phikon-v2,max,mixed,blur:2,micro,27,0.0296
+phikon-v2,max,mixed,blur:4,all,49,0.1388
+phikon-v2,max,mixed,blur:4,tumour tiles 1-10,14,0.0286
+phikon-v2,max,mixed,blur:4,tumour tiles 11-50,11,0.0545
+phikon-v2,max,mixed,blur:4,tumour tiles 51-200,11,0.2
+phikon-v2,max,mixed,blur:4,tumour tiles >200,13,0.2769
+phikon-v2,max,mixed,blur:4,macro,22,0.2636
+phikon-v2,max,mixed,blur:4,micro,27,0.037
+phikon-v2,max,mixed,clean,all,49,0.351
+phikon-v2,max,mixed,clean,tumour tiles 1-10,14,0.0429
+phikon-v2,max,mixed,clean,tumour tiles 11-50,11,0.1818
+phikon-v2,max,mixed,clean,tumour tiles 51-200,11,0.4545
+phikon-v2,max,mixed,clean,tumour tiles >200,13,0.7385
+phikon-v2,max,mixed,clean,macro,22,0.6545
+phikon-v2,max,mixed,clean,micro,27,0.1037
+phikon-v2,max,mixed,jpeg:10,all,49,0.298
+phikon-v2,max,mixed,jpeg:10,tumour tiles 1-10,14,0.1143
+phikon-v2,max,mixed,jpeg:10,tumour tiles 11-50,11,0.2
+phikon-v2,max,mixed,jpeg:10,tumour tiles 51-200,11,0.2727
+phikon-v2,max,mixed,jpeg:10,tumour tiles >200,13,0.6
+phikon-v2,max,mixed,jpeg:10,macro,22,0.4909
+phikon-v2,max,mixed,jpeg:10,micro,27,0.1407
+phikon-v2,max,mixed,jpeg:15,all,49,0.2898
+phikon-v2,max,mixed,jpeg:15,tumour tiles 1-10,14,0.1
+phikon-v2,max,mixed,jpeg:15,tumour tiles 11-50,11,0.1273
+phikon-v2,max,mixed,jpeg:15,tumour tiles 51-200,11,0.2182
+phikon-v2,max,mixed,jpeg:15,tumour tiles >200,13,0.6923
+phikon-v2,max,mixed,jpeg:15,macro,22,0.5182
+phikon-v2,max,mixed,jpeg:15,micro,27,0.1037
+phikon-v2,max,mixed,jpeg:30,all,49,0.2245
+phikon-v2,max,mixed,jpeg:30,tumour tiles 1-10,14,0.0429
+phikon-v2,max,mixed,jpeg:30,tumour tiles 11-50,11,0.1091
+phikon-v2,max,mixed,jpeg:30,tumour tiles 51-200,11,0.2182
+phikon-v2,max,mixed,jpeg:30,tumour tiles >200,13,0.5231
+phikon-v2,max,mixed,jpeg:30,macro,22,0.4182
+phikon-v2,max,mixed,jpeg:30,micro,27,0.0667
+phikon-v2,max,mixed,stain:0.3,all,49,0.3224
+phikon-v2,max,mixed,stain:0.3,tumour tiles 1-10,14,0.0714
+phikon-v2,max,mixed,stain:0.3,tumour tiles 11-50,11,0.0545
+phikon-v2,max,mixed,stain:0.3,tumour tiles 51-200,11,0.3455
+phikon-v2,max,mixed,stain:0.3,tumour tiles >200,13,0.8
+phikon-v2,max,mixed,stain:0.3,macro,22,0.6182
+phikon-v2,max,mixed,stain:0.3,micro,27,0.0815
+phikon-v2,mean,clean,blur:2,all,49,0.2122
+phikon-v2,mean,clean,blur:2,tumour tiles 1-10,14,0.1429
+phikon-v2,mean,clean,blur:2,tumour tiles 11-50,11,0.0727
+phikon-v2,mean,clean,blur:2,tumour tiles 51-200,11,0.1818
+phikon-v2,mean,clean,blur:2,tumour tiles >200,13,0.4308
+phikon-v2,mean,clean,blur:2,macro,22,0.3455
+phikon-v2,mean,clean,blur:2,micro,27,0.1037
+phikon-v2,mean,clean,blur:4,all,49,0.0857
+phikon-v2,mean,clean,blur:4,tumour tiles 1-10,14,0.1
+phikon-v2,mean,clean,blur:4,tumour tiles 11-50,11,0.0
+phikon-v2,mean,clean,blur:4,tumour tiles 51-200,11,0.0182
+phikon-v2,mean,clean,blur:4,tumour tiles >200,13,0.2
+phikon-v2,mean,clean,blur:4,macro,22,0.1273
+phikon-v2,mean,clean,blur:4,micro,27,0.0519
+phikon-v2,mean,clean,clean,all,49,0.2612
+phikon-v2,mean,clean,clean,tumour tiles 1-10,14,0.0857
+phikon-v2,mean,clean,clean,tumour tiles 11-50,11,0.0364
+phikon-v2,mean,clean,clean,tumour tiles 51-200,11,0.2545
+phikon-v2,mean,clean,clean,tumour tiles >200,13,0.6462
+phikon-v2,mean,clean,clean,macro,22,0.5091
+phikon-v2,mean,clean,clean,micro,27,0.0593
+phikon-v2,mean,clean,jpeg:10,all,49,0.1429
+phikon-v2,mean,clean,jpeg:10,tumour tiles 1-10,14,0.0857
+phikon-v2,mean,clean,jpeg:10,tumour tiles 11-50,11,0.1455
+phikon-v2,mean,clean,jpeg:10,tumour tiles 51-200,11,0.1455
+phikon-v2,mean,clean,jpeg:10,tumour tiles >200,13,0.2
+phikon-v2,mean,clean,jpeg:10,macro,22,0.1909
+phikon-v2,mean,clean,jpeg:10,micro,27,0.1037
+phikon-v2,mean,clean,jpeg:15,all,49,0.2245
+phikon-v2,mean,clean,jpeg:15,tumour tiles 1-10,14,0.1429
+phikon-v2,mean,clean,jpeg:15,tumour tiles 11-50,11,0.2
+phikon-v2,mean,clean,jpeg:15,tumour tiles 51-200,11,0.1818
+phikon-v2,mean,clean,jpeg:15,tumour tiles >200,13,0.3692
+phikon-v2,mean,clean,jpeg:15,macro,22,0.3091
+phikon-v2,mean,clean,jpeg:15,micro,27,0.1556
+phikon-v2,mean,clean,jpeg:30,all,49,0.2571
+phikon-v2,mean,clean,jpeg:30,tumour tiles 1-10,14,0.1286
+phikon-v2,mean,clean,jpeg:30,tumour tiles 11-50,11,0.2727
+phikon-v2,mean,clean,jpeg:30,tumour tiles 51-200,11,0.0727
+phikon-v2,mean,clean,jpeg:30,tumour tiles >200,13,0.5385
+phikon-v2,mean,clean,jpeg:30,macro,22,0.3545
+phikon-v2,mean,clean,jpeg:30,micro,27,0.1778
+phikon-v2,mean,clean,stain:0.3,all,49,0.2571
+phikon-v2,mean,clean,stain:0.3,tumour tiles 1-10,14,0.1143
+phikon-v2,mean,clean,stain:0.3,tumour tiles 11-50,11,0.0364
+phikon-v2,mean,clean,stain:0.3,tumour tiles 51-200,11,0.2182
+phikon-v2,mean,clean,stain:0.3,tumour tiles >200,13,0.6308
+phikon-v2,mean,clean,stain:0.3,macro,22,0.4727
+phikon-v2,mean,clean,stain:0.3,micro,27,0.0815
+phikon-v2,mean,mixed,blur:2,all,49,0.2408
+phikon-v2,mean,mixed,blur:2,tumour tiles 1-10,14,0.1143
+phikon-v2,mean,mixed,blur:2,tumour tiles 11-50,11,0.1273
+phikon-v2,mean,mixed,blur:2,tumour tiles 51-200,11,0.2182
+phikon-v2,mean,mixed,blur:2,tumour tiles >200,13,0.4923
+phikon-v2,mean,mixed,blur:2,macro,22,0.4
+phikon-v2,mean,mixed,blur:2,micro,27,0.1111
+phikon-v2,mean,mixed,blur:4,all,49,0.0776
+phikon-v2,mean,mixed,blur:4,tumour tiles 1-10,14,0.0857
+phikon-v2,mean,mixed,blur:4,tumour tiles 11-50,11,0.0
+phikon-v2,mean,mixed,blur:4,tumour tiles 51-200,11,0.0182
+phikon-v2,mean,mixed,blur:4,tumour tiles >200,13,0.1846
+phikon-v2,mean,mixed,blur:4,macro,22,0.1182
+phikon-v2,mean,mixed,blur:4,micro,27,0.0444
+phikon-v2,mean,mixed,clean,all,49,0.2816
+phikon-v2,mean,mixed,clean,tumour tiles 1-10,14,0.1
+phikon-v2,mean,mixed,clean,tumour tiles 11-50,11,0.0909
+phikon-v2,mean,mixed,clean,tumour tiles 51-200,11,0.2727
+phikon-v2,mean,mixed,clean,tumour tiles >200,13,0.6462
+phikon-v2,mean,mixed,clean,macro,22,0.5182
+phikon-v2,mean,mixed,clean,micro,27,0.0889
+phikon-v2,mean,mixed,jpeg:10,all,49,0.2571
+phikon-v2,mean,mixed,jpeg:10,tumour tiles 1-10,14,0.1429
+phikon-v2,mean,mixed,jpeg:10,tumour tiles 11-50,11,0.2182
+phikon-v2,mean,mixed,jpeg:10,tumour tiles 51-200,11,0.2545
+phikon-v2,mean,mixed,jpeg:10,tumour tiles >200,13,0.4154
+phikon-v2,mean,mixed,jpeg:10,macro,22,0.3545
+phikon-v2,mean,mixed,jpeg:10,micro,27,0.1778
+phikon-v2,mean,mixed,jpeg:15,all,49,0.2367
+phikon-v2,mean,mixed,jpeg:15,tumour tiles 1-10,14,0.1429
+phikon-v2,mean,mixed,jpeg:15,tumour tiles 11-50,11,0.1636
+phikon-v2,mean,mixed,jpeg:15,tumour tiles 51-200,11,0.2364
+phikon-v2,mean,mixed,jpeg:15,tumour tiles >200,13,0.4
+phikon-v2,mean,mixed,jpeg:15,macro,22,0.3545
+phikon-v2,mean,mixed,jpeg:15,micro,27,0.1407
+phikon-v2,mean,mixed,jpeg:30,all,49,0.3265
+phikon-v2,mean,mixed,jpeg:30,tumour tiles 1-10,14,0.2286
+phikon-v2,mean,mixed,jpeg:30,tumour tiles 11-50,11,0.1273
+phikon-v2,mean,mixed,jpeg:30,tumour tiles 51-200,11,0.2727
+phikon-v2,mean,mixed,jpeg:30,tumour tiles >200,13,0.6462
+phikon-v2,mean,mixed,jpeg:30,macro,22,0.5182
+phikon-v2,mean,mixed,jpeg:30,micro,27,0.1704
+phikon-v2,mean,mixed,stain:0.3,all,49,0.2735
+phikon-v2,mean,mixed,stain:0.3,tumour tiles 1-10,14,0.1
+phikon-v2,mean,mixed,stain:0.3,tumour tiles 11-50,11,0.0727
+phikon-v2,mean,mixed,stain:0.3,tumour tiles 51-200,11,0.1818
+phikon-v2,mean,mixed,stain:0.3,tumour tiles >200,13,0.7077
+phikon-v2,mean,mixed,stain:0.3,macro,22,0.5
+phikon-v2,mean,mixed,stain:0.3,micro,27,0.0889
+phikon-v2,tileprobe,clean,blur:2,all,49,0.5184
+phikon-v2,tileprobe,clean,blur:2,tumour tiles 1-10,14,0.2857
+phikon-v2,tileprobe,clean,blur:2,tumour tiles 11-50,11,0.2364
+phikon-v2,tileprobe,clean,blur:2,tumour tiles 51-200,11,0.5818
+phikon-v2,tileprobe,clean,blur:2,tumour tiles >200,13,0.9538
+phikon-v2,tileprobe,clean,blur:2,macro,22,0.8364
+phikon-v2,tileprobe,clean,blur:2,micro,27,0.2593
+phikon-v2,tileprobe,clean,blur:4,all,49,0.1347
+phikon-v2,tileprobe,clean,blur:4,tumour tiles 1-10,14,0.0571
+phikon-v2,tileprobe,clean,blur:4,tumour tiles 11-50,11,0.0545
+phikon-v2,tileprobe,clean,blur:4,tumour tiles 51-200,11,0.0182
+phikon-v2,tileprobe,clean,blur:4,tumour tiles >200,13,0.3846
+phikon-v2,tileprobe,clean,blur:4,macro,22,0.2364
+phikon-v2,tileprobe,clean,blur:4,micro,27,0.0519
+phikon-v2,tileprobe,clean,clean,all,49,0.8327
+phikon-v2,tileprobe,clean,clean,tumour tiles 1-10,14,0.6714
+phikon-v2,tileprobe,clean,clean,tumour tiles 11-50,11,0.7455
+phikon-v2,tileprobe,clean,clean,tumour tiles 51-200,11,0.9273
+phikon-v2,tileprobe,clean,clean,tumour tiles >200,13,1.0
+phikon-v2,tileprobe,clean,clean,macro,22,0.9636
+phikon-v2,tileprobe,clean,clean,micro,27,0.7259
+phikon-v2,tileprobe,clean,jpeg:10,all,49,0.4
+phikon-v2,tileprobe,clean,jpeg:10,tumour tiles 1-10,14,0.1286
+phikon-v2,tileprobe,clean,jpeg:10,tumour tiles 11-50,11,0.2
+phikon-v2,tileprobe,clean,jpeg:10,tumour tiles 51-200,11,0.4727
+phikon-v2,tileprobe,clean,jpeg:10,tumour tiles >200,13,0.8
+phikon-v2,tileprobe,clean,jpeg:10,macro,22,0.6455
+phikon-v2,tileprobe,clean,jpeg:10,micro,27,0.2
+phikon-v2,tileprobe,clean,jpeg:15,all,49,0.4163
+phikon-v2,tileprobe,clean,jpeg:15,tumour tiles 1-10,14,0.1
+phikon-v2,tileprobe,clean,jpeg:15,tumour tiles 11-50,11,0.2727
+phikon-v2,tileprobe,clean,jpeg:15,tumour tiles 51-200,11,0.5091
+phikon-v2,tileprobe,clean,jpeg:15,tumour tiles >200,13,0.8
+phikon-v2,tileprobe,clean,jpeg:15,macro,22,0.6727
+phikon-v2,tileprobe,clean,jpeg:15,micro,27,0.2074
+phikon-v2,tileprobe,clean,jpeg:30,all,49,0.6245
+phikon-v2,tileprobe,clean,jpeg:30,tumour tiles 1-10,14,0.4286
+phikon-v2,tileprobe,clean,jpeg:30,tumour tiles 11-50,11,0.3455
+phikon-v2,tileprobe,clean,jpeg:30,tumour tiles 51-200,11,0.7636
+phikon-v2,tileprobe,clean,jpeg:30,tumour tiles >200,13,0.9538
+phikon-v2,tileprobe,clean,jpeg:30,macro,22,0.8909
+phikon-v2,tileprobe,clean,jpeg:30,micro,27,0.4074
+phikon-v2,tileprobe,clean,stain:0.3,all,49,0.8041
+phikon-v2,tileprobe,clean,stain:0.3,tumour tiles 1-10,14,0.6143
+phikon-v2,tileprobe,clean,stain:0.3,tumour tiles 11-50,11,0.7636
+phikon-v2,tileprobe,clean,stain:0.3,tumour tiles 51-200,11,0.8545
+phikon-v2,tileprobe,clean,stain:0.3,tumour tiles >200,13,1.0
+phikon-v2,tileprobe,clean,stain:0.3,macro,22,0.9273
+phikon-v2,tileprobe,clean,stain:0.3,micro,27,0.7037
+phikon-v2,tileprobe,mixed,blur:2,all,49,0.6408
+phikon-v2,tileprobe,mixed,blur:2,tumour tiles 1-10,14,0.2571
+phikon-v2,tileprobe,mixed,blur:2,tumour tiles 11-50,11,0.5091
+phikon-v2,tileprobe,mixed,blur:2,tumour tiles 51-200,11,0.8364
+phikon-v2,tileprobe,mixed,blur:2,tumour tiles >200,13,1.0
+phikon-v2,tileprobe,mixed,blur:2,macro,22,0.9182
+phikon-v2,tileprobe,mixed,blur:2,micro,27,0.4148
+phikon-v2,tileprobe,mixed,blur:4,all,49,0.4571
+phikon-v2,tileprobe,mixed,blur:4,tumour tiles 1-10,14,0.0714
+phikon-v2,tileprobe,mixed,blur:4,tumour tiles 11-50,11,0.2364
+phikon-v2,tileprobe,mixed,blur:4,tumour tiles 51-200,11,0.5455
+phikon-v2,tileprobe,mixed,blur:4,tumour tiles >200,13,0.9846
+phikon-v2,tileprobe,mixed,blur:4,macro,22,0.8182
+phikon-v2,tileprobe,mixed,blur:4,micro,27,0.163
+phikon-v2,tileprobe,mixed,clean,all,49,0.7551
+phikon-v2,tileprobe,mixed,clean,tumour tiles 1-10,14,0.4571
+phikon-v2,tileprobe,mixed,clean,tumour tiles 11-50,11,0.7091
+phikon-v2,tileprobe,mixed,clean,tumour tiles 51-200,11,0.8909
+phikon-v2,tileprobe,mixed,clean,tumour tiles >200,13,1.0
+phikon-v2,tileprobe,mixed,clean,macro,22,0.9455
+phikon-v2,tileprobe,mixed,clean,micro,27,0.6
+phikon-v2,tileprobe,mixed,jpeg:10,all,49,0.5633
+phikon-v2,tileprobe,mixed,jpeg:10,tumour tiles 1-10,14,0.1286
+phikon-v2,tileprobe,mixed,jpeg:10,tumour tiles 11-50,11,0.4727
+phikon-v2,tileprobe,mixed,jpeg:10,tumour tiles 51-200,11,0.7818
+phikon-v2,tileprobe,mixed,jpeg:10,tumour tiles >200,13,0.9231
+phikon-v2,tileprobe,mixed,jpeg:10,macro,22,0.8455
+phikon-v2,tileprobe,mixed,jpeg:10,micro,27,0.3333
+phikon-v2,tileprobe,mixed,jpeg:15,all,49,0.6286
+phikon-v2,tileprobe,mixed,jpeg:15,tumour tiles 1-10,14,0.2714
+phikon-v2,tileprobe,mixed,jpeg:15,tumour tiles 11-50,11,0.4909
+phikon-v2,tileprobe,mixed,jpeg:15,tumour tiles 51-200,11,0.8182
+phikon-v2,tileprobe,mixed,jpeg:15,tumour tiles >200,13,0.9692
+phikon-v2,tileprobe,mixed,jpeg:15,macro,22,0.8909
+phikon-v2,tileprobe,mixed,jpeg:15,micro,27,0.4148
+phikon-v2,tileprobe,mixed,jpeg:30,all,49,0.6571
+phikon-v2,tileprobe,mixed,jpeg:30,tumour tiles 1-10,14,0.2857
+phikon-v2,tileprobe,mixed,jpeg:30,tumour tiles 11-50,11,0.5636
+phikon-v2,tileprobe,mixed,jpeg:30,tumour tiles 51-200,11,0.8182
+phikon-v2,tileprobe,mixed,jpeg:30,tumour tiles >200,13,1.0
+phikon-v2,tileprobe,mixed,jpeg:30,macro,22,0.9091
+phikon-v2,tileprobe,mixed,jpeg:30,micro,27,0.4519
+phikon-v2,tileprobe,mixed,stain:0.3,all,49,0.698
+phikon-v2,tileprobe,mixed,stain:0.3,tumour tiles 1-10,14,0.3143
+phikon-v2,tileprobe,mixed,stain:0.3,tumour tiles 11-50,11,0.7091
+phikon-v2,tileprobe,mixed,stain:0.3,tumour tiles 51-200,11,0.8182
+phikon-v2,tileprobe,mixed,stain:0.3,tumour tiles >200,13,1.0
+phikon-v2,tileprobe,mixed,stain:0.3,macro,22,0.9091
+phikon-v2,tileprobe,mixed,stain:0.3,micro,27,0.5259

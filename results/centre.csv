@@ -1,0 +1,1345 @@
+model,head,train_set,condition,measure,value
+dinov2-l,abmil,clean,blur:2,AUC within RUMC,0.767
+dinov2-l,abmil,clean,blur:2,AUC within UMCU,0.6755
+dinov2-l,abmil,clean,blur:2,micro AUC within RUMC,0.6291
+dinov2-l,abmil,clean,blur:2,micro AUC within UMCU,0.4979
+dinov2-l,abmil,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.0456
+dinov2-l,abmil,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.422
+dinov2-l,abmil,clean,blur:4,AUC within RUMC,0.4885
+dinov2-l,abmil,clean,blur:4,AUC within UMCU,0.6235
+dinov2-l,abmil,clean,blur:4,micro AUC within RUMC,0.4229
+dinov2-l,abmil,clean,blur:4,micro AUC within UMCU,0.4504
+dinov2-l,abmil,clean,blur:4,normal slides: rank correlation of score with tissue tiles,-0.1851
+dinov2-l,abmil,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.1784
+dinov2-l,abmil,clean,clean,AUC within RUMC,0.816
+dinov2-l,abmil,clean,clean,AUC within UMCU,0.724
+dinov2-l,abmil,clean,clean,micro AUC within RUMC,0.6375
+dinov2-l,abmil,clean,clean,micro AUC within UMCU,0.5692
+dinov2-l,abmil,clean,clean,normal slides: rank correlation of score with tissue tiles,0.2113
+dinov2-l,abmil,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.5137
+dinov2-l,abmil,clean,jpeg:10,AUC within RUMC,0.7665
+dinov2-l,abmil,clean,jpeg:10,AUC within UMCU,0.6928
+dinov2-l,abmil,clean,jpeg:10,micro AUC within RUMC,0.5996
+dinov2-l,abmil,clean,jpeg:10,micro AUC within UMCU,0.545
+dinov2-l,abmil,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,-0.0254
+dinov2-l,abmil,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.2687
+dinov2-l,abmil,clean,jpeg:15,AUC within RUMC,0.7898
+dinov2-l,abmil,clean,jpeg:15,AUC within UMCU,0.7077
+dinov2-l,abmil,clean,jpeg:15,micro AUC within RUMC,0.624
+dinov2-l,abmil,clean,jpeg:15,micro AUC within UMCU,0.5546
+dinov2-l,abmil,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,-0.0163
+dinov2-l,abmil,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.2448
+dinov2-l,abmil,clean,jpeg:30,AUC within RUMC,0.803
+dinov2-l,abmil,clean,jpeg:30,AUC within UMCU,0.6947
+dinov2-l,abmil,clean,jpeg:30,micro AUC within RUMC,0.6364
+dinov2-l,abmil,clean,jpeg:30,micro AUC within UMCU,0.5262
+dinov2-l,abmil,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.074
+dinov2-l,abmil,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.3219
+dinov2-l,abmil,clean,stain:0.3,AUC within RUMC,0.8105
+dinov2-l,abmil,clean,stain:0.3,AUC within UMCU,0.7403
+dinov2-l,abmil,clean,stain:0.3,micro AUC within RUMC,0.6287
+dinov2-l,abmil,clean,stain:0.3,micro AUC within UMCU,0.5946
+dinov2-l,abmil,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.1781
+dinov2-l,abmil,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.5096
+dinov2-l,abmil,mixed,blur:2,AUC within RUMC,0.7393
+dinov2-l,abmil,mixed,blur:2,AUC within UMCU,0.6872
+dinov2-l,abmil,mixed,blur:2,micro AUC within RUMC,0.5764
+dinov2-l,abmil,mixed,blur:2,micro AUC within UMCU,0.5383
+dinov2-l,abmil,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.1759
+dinov2-l,abmil,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.5691
+dinov2-l,abmil,mixed,blur:4,AUC within RUMC,0.641
+dinov2-l,abmil,mixed,blur:4,AUC within UMCU,0.5451
+dinov2-l,abmil,mixed,blur:4,micro AUC within RUMC,0.5567
+dinov2-l,abmil,mixed,blur:4,micro AUC within UMCU,0.3296
+dinov2-l,abmil,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,-0.0676
+dinov2-l,abmil,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.2651
+dinov2-l,abmil,mixed,clean,AUC within RUMC,0.785
+dinov2-l,abmil,mixed,clean,AUC within UMCU,0.7421
+dinov2-l,abmil,mixed,clean,micro AUC within RUMC,0.5949
+dinov2-l,abmil,mixed,clean,micro AUC within UMCU,0.6071
+dinov2-l,abmil,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.2853
+dinov2-l,abmil,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.5884
+dinov2-l,abmil,mixed,jpeg:10,AUC within RUMC,0.8008
+dinov2-l,abmil,mixed,jpeg:10,AUC within UMCU,0.7216
+dinov2-l,abmil,mixed,jpeg:10,micro AUC within RUMC,0.648
+dinov2-l,abmil,mixed,jpeg:10,micro AUC within UMCU,0.57
+dinov2-l,abmil,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.1454
+dinov2-l,abmil,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.3728
+dinov2-l,abmil,mixed,jpeg:15,AUC within RUMC,0.8168
+dinov2-l,abmil,mixed,jpeg:15,AUC within UMCU,0.7237
+dinov2-l,abmil,mixed,jpeg:15,micro AUC within RUMC,0.6629
+dinov2-l,abmil,mixed,jpeg:15,micro AUC within UMCU,0.5746
+dinov2-l,abmil,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.0876
+dinov2-l,abmil,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.3599
+dinov2-l,abmil,mixed,jpeg:30,AUC within RUMC,0.8258
+dinov2-l,abmil,mixed,jpeg:30,AUC within UMCU,0.7248
+dinov2-l,abmil,mixed,jpeg:30,micro AUC within RUMC,0.6858
+dinov2-l,abmil,mixed,jpeg:30,micro AUC within UMCU,0.5721
+dinov2-l,abmil,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.2205
+dinov2-l,abmil,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.4523
+dinov2-l,abmil,mixed,stain:0.3,AUC within RUMC,0.7822
+dinov2-l,abmil,mixed,stain:0.3,AUC within UMCU,0.7709
+dinov2-l,abmil,mixed,stain:0.3,micro AUC within RUMC,0.592
+dinov2-l,abmil,mixed,stain:0.3,micro AUC within UMCU,0.6483
+dinov2-l,abmil,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.3206
+dinov2-l,abmil,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.6577
+dinov2-l,max,clean,blur:2,AUC within RUMC,0.6995
+dinov2-l,max,clean,blur:2,AUC within UMCU,0.4779
+dinov2-l,max,clean,blur:2,micro AUC within RUMC,0.6498
+dinov2-l,max,clean,blur:2,micro AUC within UMCU,0.4446
+dinov2-l,max,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.4639
+dinov2-l,max,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.6715
+dinov2-l,max,clean,blur:4,AUC within RUMC,0.6935
+dinov2-l,max,clean,blur:4,AUC within UMCU,0.4571
+dinov2-l,max,clean,blur:4,micro AUC within RUMC,0.6538
+dinov2-l,max,clean,blur:4,micro AUC within UMCU,0.4242
+dinov2-l,max,clean,blur:4,normal slides: rank correlation of score with tissue tiles,0.6107
+dinov2-l,max,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.6009
+dinov2-l,max,clean,clean,AUC within RUMC,0.6712
+dinov2-l,max,clean,clean,AUC within UMCU,0.5189
+dinov2-l,max,clean,clean,micro AUC within RUMC,0.6124
+dinov2-l,max,clean,clean,micro AUC within UMCU,0.5042
+dinov2-l,max,clean,clean,normal slides: rank correlation of score with tissue tiles,0.3858
+dinov2-l,max,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.6339
+dinov2-l,max,clean,jpeg:10,AUC within RUMC,0.6483
+dinov2-l,max,clean,jpeg:10,AUC within UMCU,0.4744
+dinov2-l,max,clean,jpeg:10,micro AUC within RUMC,0.628
+dinov2-l,max,clean,jpeg:10,micro AUC within UMCU,0.4529
+dinov2-l,max,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.4535
+dinov2-l,max,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.6253
+dinov2-l,max,clean,jpeg:15,AUC within RUMC,0.6638
+dinov2-l,max,clean,jpeg:15,AUC within UMCU,0.3821
+dinov2-l,max,clean,jpeg:15,micro AUC within RUMC,0.6247
+dinov2-l,max,clean,jpeg:15,micro AUC within UMCU,0.3325
+dinov2-l,max,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.3952
+dinov2-l,max,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.5851
+dinov2-l,max,clean,jpeg:30,AUC within RUMC,0.6625
+dinov2-l,max,clean,jpeg:30,AUC within UMCU,0.4589
+dinov2-l,max,clean,jpeg:30,micro AUC within RUMC,0.6098
+dinov2-l,max,clean,jpeg:30,micro AUC within UMCU,0.4621
+dinov2-l,max,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.4101
+dinov2-l,max,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.6007
+dinov2-l,max,clean,stain:0.3,AUC within RUMC,0.6632
+dinov2-l,max,clean,stain:0.3,AUC within UMCU,0.4837
+dinov2-l,max,clean,stain:0.3,micro AUC within RUMC,0.5829
+dinov2-l,max,clean,stain:0.3,micro AUC within UMCU,0.4604
+dinov2-l,max,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.3641
+dinov2-l,max,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.5944
+dinov2-l,max,mixed,blur:2,AUC within RUMC,0.6897
+dinov2-l,max,mixed,blur:2,AUC within UMCU,0.6456
+dinov2-l,max,mixed,blur:2,micro AUC within RUMC,0.6102
+dinov2-l,max,mixed,blur:2,micro AUC within UMCU,0.6204
+dinov2-l,max,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.4353
+dinov2-l,max,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.4213
+dinov2-l,max,mixed,blur:4,AUC within RUMC,0.6617
+dinov2-l,max,mixed,blur:4,AUC within UMCU,0.5979
+dinov2-l,max,mixed,blur:4,micro AUC within RUMC,0.6062
+dinov2-l,max,mixed,blur:4,micro AUC within UMCU,0.5692
+dinov2-l,max,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.5484
+dinov2-l,max,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.5387
+dinov2-l,max,mixed,clean,AUC within RUMC,0.7348
+dinov2-l,max,mixed,clean,AUC within UMCU,0.5077
+dinov2-l,max,mixed,clean,micro AUC within RUMC,0.7055
+dinov2-l,max,mixed,clean,micro AUC within UMCU,0.5033
+dinov2-l,max,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.4652
+dinov2-l,max,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.5717
+dinov2-l,max,mixed,jpeg:10,AUC within RUMC,0.6283
+dinov2-l,max,mixed,jpeg:10,AUC within UMCU,0.5712
+dinov2-l,max,mixed,jpeg:10,micro AUC within RUMC,0.5811
+dinov2-l,max,mixed,jpeg:10,micro AUC within UMCU,0.5508
+dinov2-l,max,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.5014
+dinov2-l,max,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.5312
+dinov2-l,max,mixed,jpeg:15,AUC within RUMC,0.7158
+dinov2-l,max,mixed,jpeg:15,AUC within UMCU,0.5243
+dinov2-l,max,mixed,jpeg:15,micro AUC within RUMC,0.6447
+dinov2-l,max,mixed,jpeg:15,micro AUC within UMCU,0.4913
+dinov2-l,max,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.4883
+dinov2-l,max,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.5445
+dinov2-l,max,mixed,jpeg:30,AUC within RUMC,0.7103
+dinov2-l,max,mixed,jpeg:30,AUC within UMCU,0.5659
+dinov2-l,max,mixed,jpeg:30,micro AUC within RUMC,0.668
+dinov2-l,max,mixed,jpeg:30,micro AUC within UMCU,0.54
+dinov2-l,max,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.4376
+dinov2-l,max,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.5073
+dinov2-l,max,mixed,stain:0.3,AUC within RUMC,0.7328
+dinov2-l,max,mixed,stain:0.3,AUC within UMCU,0.6101
+dinov2-l,max,mixed,stain:0.3,micro AUC within RUMC,0.7069
+dinov2-l,max,mixed,stain:0.3,micro AUC within UMCU,0.6071
+dinov2-l,max,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.4574
+dinov2-l,max,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.5553
+dinov2-l,mean,clean,blur:2,AUC within RUMC,0.5532
+dinov2-l,mean,clean,blur:2,AUC within UMCU,0.5861
+dinov2-l,mean,clean,blur:2,micro AUC within RUMC,0.5298
+dinov2-l,mean,clean,blur:2,micro AUC within UMCU,0.4742
+dinov2-l,mean,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.1354
+dinov2-l,mean,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.8761
+dinov2-l,mean,clean,blur:4,AUC within RUMC,0.4322
+dinov2-l,mean,clean,blur:4,AUC within UMCU,0.4941
+dinov2-l,mean,clean,blur:4,micro AUC within RUMC,0.5022
+dinov2-l,mean,clean,blur:4,micro AUC within UMCU,0.5346
+dinov2-l,mean,clean,blur:4,normal slides: rank correlation of score with tissue tiles,-0.2839
+dinov2-l,mean,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.4403
+dinov2-l,mean,clean,clean,AUC within RUMC,0.5563
+dinov2-l,mean,clean,clean,AUC within UMCU,0.5387
+dinov2-l,mean,clean,clean,micro AUC within RUMC,0.3789
+dinov2-l,mean,clean,clean,micro AUC within UMCU,0.3554
+dinov2-l,mean,clean,clean,normal slides: rank correlation of score with tissue tiles,0.3859
+dinov2-l,mean,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.9108
+dinov2-l,mean,clean,jpeg:10,AUC within RUMC,0.5138
+dinov2-l,mean,clean,jpeg:10,AUC within UMCU,0.556
+dinov2-l,mean,clean,jpeg:10,micro AUC within RUMC,0.3905
+dinov2-l,mean,clean,jpeg:10,micro AUC within UMCU,0.4588
+dinov2-l,mean,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,-0.174
+dinov2-l,mean,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.4311
+dinov2-l,mean,clean,jpeg:15,AUC within RUMC,0.5387
+dinov2-l,mean,clean,jpeg:15,AUC within UMCU,0.5659
+dinov2-l,mean,clean,jpeg:15,micro AUC within RUMC,0.4185
+dinov2-l,mean,clean,jpeg:15,micro AUC within UMCU,0.46
+dinov2-l,mean,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,-0.0725
+dinov2-l,mean,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.5193
+dinov2-l,mean,clean,jpeg:30,AUC within RUMC,0.5355
+dinov2-l,mean,clean,jpeg:30,AUC within UMCU,0.5648
+dinov2-l,mean,clean,jpeg:30,micro AUC within RUMC,0.3804
+dinov2-l,mean,clean,jpeg:30,micro AUC within UMCU,0.4442
+dinov2-l,mean,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,-0.0012
+dinov2-l,mean,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.5525
+dinov2-l,mean,clean,stain:0.3,AUC within RUMC,0.5292
+dinov2-l,mean,clean,stain:0.3,AUC within UMCU,0.5168
+dinov2-l,mean,clean,stain:0.3,micro AUC within RUMC,0.3473
+dinov2-l,mean,clean,stain:0.3,micro AUC within UMCU,0.3304
+dinov2-l,mean,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.2979
+dinov2-l,mean,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.8449
+dinov2-l,mean,mixed,blur:2,AUC within RUMC,0.6022
+dinov2-l,mean,mixed,blur:2,AUC within UMCU,0.5453
+dinov2-l,mean,mixed,blur:2,micro AUC within RUMC,0.5945
+dinov2-l,mean,mixed,blur:2,micro AUC within UMCU,0.4054
+dinov2-l,mean,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.334
+dinov2-l,mean,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.9651
+dinov2-l,mean,mixed,blur:4,AUC within RUMC,0.5193
+dinov2-l,mean,mixed,blur:4,AUC within UMCU,0.4541
+dinov2-l,mean,mixed,blur:4,micro AUC within RUMC,0.5167
+dinov2-l,mean,mixed,blur:4,micro AUC within UMCU,0.4275
+dinov2-l,mean,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,-0.0595
+dinov2-l,mean,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.4757
+dinov2-l,mean,mixed,clean,AUC within RUMC,0.607
+dinov2-l,mean,mixed,clean,AUC within UMCU,0.4781
+dinov2-l,mean,mixed,clean,micro AUC within RUMC,0.4687
+dinov2-l,mean,mixed,clean,micro AUC within UMCU,0.3183
+dinov2-l,mean,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.4294
+dinov2-l,mean,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.8532
+dinov2-l,mean,mixed,jpeg:10,AUC within RUMC,0.5803
+dinov2-l,mean,mixed,jpeg:10,AUC within UMCU,0.6021
+dinov2-l,mean,mixed,jpeg:10,micro AUC within RUMC,0.4538
+dinov2-l,mean,mixed,jpeg:10,micro AUC within UMCU,0.4592
+dinov2-l,mean,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,-0.0194
+dinov2-l,mean,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.3892
+dinov2-l,mean,mixed,jpeg:15,AUC within RUMC,0.6272
+dinov2-l,mean,mixed,jpeg:15,AUC within UMCU,0.6307
+dinov2-l,mean,mixed,jpeg:15,micro AUC within RUMC,0.5149
+dinov2-l,mean,mixed,jpeg:15,micro AUC within UMCU,0.4854
+dinov2-l,mean,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.0099
+dinov2-l,mean,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.4372
+dinov2-l,mean,mixed,jpeg:30,AUC within RUMC,0.6298
+dinov2-l,mean,mixed,jpeg:30,AUC within UMCU,0.6048
+dinov2-l,mean,mixed,jpeg:30,micro AUC within RUMC,0.5062
+dinov2-l,mean,mixed,jpeg:30,micro AUC within UMCU,0.4371
+dinov2-l,mean,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.0979
+dinov2-l,mean,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.452
+dinov2-l,mean,mixed,stain:0.3,AUC within RUMC,0.5942
+dinov2-l,mean,mixed,stain:0.3,AUC within UMCU,0.4616
+dinov2-l,mean,mixed,stain:0.3,micro AUC within RUMC,0.4469
+dinov2-l,mean,mixed,stain:0.3,micro AUC within UMCU,0.2808
+dinov2-l,mean,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.3258
+dinov2-l,mean,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.7611
+dinov2-l,tileprobe,clean,blur:2,AUC within RUMC,0.798
+dinov2-l,tileprobe,clean,blur:2,AUC within UMCU,0.6283
+dinov2-l,tileprobe,clean,blur:2,micro AUC within RUMC,0.6436
+dinov2-l,tileprobe,clean,blur:2,micro AUC within UMCU,0.4333
+dinov2-l,tileprobe,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.5509
+dinov2-l,tileprobe,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.7171
+dinov2-l,tileprobe,clean,blur:4,AUC within RUMC,0.5592
+dinov2-l,tileprobe,clean,blur:4,AUC within UMCU,0.516
+dinov2-l,tileprobe,clean,blur:4,micro AUC within RUMC,0.4607
+dinov2-l,tileprobe,clean,blur:4,micro AUC within UMCU,0.3742
+dinov2-l,tileprobe,clean,blur:4,normal slides: rank correlation of score with tissue tiles,0.5593
+dinov2-l,tileprobe,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.5655
+dinov2-l,tileprobe,clean,clean,AUC within RUMC,0.849
+dinov2-l,tileprobe,clean,clean,AUC within UMCU,0.7192
+dinov2-l,tileprobe,clean,clean,micro AUC within RUMC,0.6927
+dinov2-l,tileprobe,clean,clean,micro AUC within UMCU,0.5613
+dinov2-l,tileprobe,clean,clean,normal slides: rank correlation of score with tissue tiles,0.471
+dinov2-l,tileprobe,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.5416
+dinov2-l,tileprobe,clean,jpeg:10,AUC within RUMC,0.8528
+dinov2-l,tileprobe,clean,jpeg:10,AUC within UMCU,0.6483
+dinov2-l,tileprobe,clean,jpeg:10,micro AUC within RUMC,0.7455
+dinov2-l,tileprobe,clean,jpeg:10,micro AUC within UMCU,0.4692
+dinov2-l,tileprobe,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.6695
+dinov2-l,tileprobe,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.8429
+dinov2-l,tileprobe,clean,jpeg:15,AUC within RUMC,0.8762
+dinov2-l,tileprobe,clean,jpeg:15,AUC within UMCU,0.6349
+dinov2-l,tileprobe,clean,jpeg:15,micro AUC within RUMC,0.7615
+dinov2-l,tileprobe,clean,jpeg:15,micro AUC within UMCU,0.4317
+dinov2-l,tileprobe,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.6628
+dinov2-l,tileprobe,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.7972
+dinov2-l,tileprobe,clean,jpeg:30,AUC within RUMC,0.832
+dinov2-l,tileprobe,clean,jpeg:30,AUC within UMCU,0.6933
+dinov2-l,tileprobe,clean,jpeg:30,micro AUC within RUMC,0.6524
+dinov2-l,tileprobe,clean,jpeg:30,micro AUC within UMCU,0.5208
+dinov2-l,tileprobe,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.5507
+dinov2-l,tileprobe,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.6687
+dinov2-l,tileprobe,clean,stain:0.3,AUC within RUMC,0.849
+dinov2-l,tileprobe,clean,stain:0.3,AUC within UMCU,0.7285
+dinov2-l,tileprobe,clean,stain:0.3,micro AUC within RUMC,0.7076
+dinov2-l,tileprobe,clean,stain:0.3,micro AUC within UMCU,0.5767
+dinov2-l,tileprobe,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.5709
+dinov2-l,tileprobe,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.6411
+dinov2-l,tileprobe,mixed,blur:2,AUC within RUMC,0.7802
+dinov2-l,tileprobe,mixed,blur:2,AUC within UMCU,0.6677
+dinov2-l,tileprobe,mixed,blur:2,micro AUC within RUMC,0.5589
+dinov2-l,tileprobe,mixed,blur:2,micro AUC within UMCU,0.4808
+dinov2-l,tileprobe,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.4485
+dinov2-l,tileprobe,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.4697
+dinov2-l,tileprobe,mixed,blur:4,AUC within RUMC,0.6247
+dinov2-l,tileprobe,mixed,blur:4,AUC within UMCU,0.5507
+dinov2-l,tileprobe,mixed,blur:4,micro AUC within RUMC,0.408
+dinov2-l,tileprobe,mixed,blur:4,micro AUC within UMCU,0.34
+dinov2-l,tileprobe,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.4139
+dinov2-l,tileprobe,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.4895
+dinov2-l,tileprobe,mixed,clean,AUC within RUMC,0.7993
+dinov2-l,tileprobe,mixed,clean,AUC within UMCU,0.712
+dinov2-l,tileprobe,mixed,clean,micro AUC within RUMC,0.5938
+dinov2-l,tileprobe,mixed,clean,micro AUC within UMCU,0.5504
+dinov2-l,tileprobe,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.3924
+dinov2-l,tileprobe,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.4259
+dinov2-l,tileprobe,mixed,jpeg:10,AUC within RUMC,0.8362
+dinov2-l,tileprobe,mixed,jpeg:10,AUC within UMCU,0.6747
+dinov2-l,tileprobe,mixed,jpeg:10,micro AUC within RUMC,0.6742
+dinov2-l,tileprobe,mixed,jpeg:10,micro AUC within UMCU,0.495
+dinov2-l,tileprobe,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.6151
+dinov2-l,tileprobe,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.6924
+dinov2-l,tileprobe,mixed,jpeg:15,AUC within RUMC,0.8337
+dinov2-l,tileprobe,mixed,jpeg:15,AUC within UMCU,0.6813
+dinov2-l,tileprobe,mixed,jpeg:15,micro AUC within RUMC,0.6731
+dinov2-l,tileprobe,mixed,jpeg:15,micro AUC within UMCU,0.5025
+dinov2-l,tileprobe,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.5973
+dinov2-l,tileprobe,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.5904
+dinov2-l,tileprobe,mixed,jpeg:30,AUC within RUMC,0.8085
+dinov2-l,tileprobe,mixed,jpeg:30,AUC within UMCU,0.6936
+dinov2-l,tileprobe,mixed,jpeg:30,micro AUC within RUMC,0.6047
+dinov2-l,tileprobe,mixed,jpeg:30,micro AUC within UMCU,0.5262
+dinov2-l,tileprobe,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.5112
+dinov2-l,tileprobe,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.5588
+dinov2-l,tileprobe,mixed,stain:0.3,AUC within RUMC,0.8173
+dinov2-l,tileprobe,mixed,stain:0.3,AUC within UMCU,0.7944
+dinov2-l,tileprobe,mixed,stain:0.3,micro AUC within RUMC,0.632
+dinov2-l,tileprobe,mixed,stain:0.3,micro AUC within UMCU,0.6792
+dinov2-l,tileprobe,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.4308
+dinov2-l,tileprobe,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.472
+kaiko-b16,abmil,clean,blur:2,AUC within RUMC,0.9675
+kaiko-b16,abmil,clean,blur:2,AUC within UMCU,0.9875
+kaiko-b16,abmil,clean,blur:2,micro AUC within RUMC,0.9462
+kaiko-b16,abmil,clean,blur:2,micro AUC within UMCU,0.9804
+kaiko-b16,abmil,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.3364
+kaiko-b16,abmil,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.5049
+kaiko-b16,abmil,clean,blur:4,AUC within RUMC,0.6067
+kaiko-b16,abmil,clean,blur:4,AUC within UMCU,0.5147
+kaiko-b16,abmil,clean,blur:4,micro AUC within RUMC,0.4033
+kaiko-b16,abmil,clean,blur:4,micro AUC within UMCU,0.3204
+kaiko-b16,abmil,clean,blur:4,normal slides: rank correlation of score with tissue tiles,-0.0879
+kaiko-b16,abmil,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.2849
+kaiko-b16,abmil,clean,clean,AUC within RUMC,0.9822
+kaiko-b16,abmil,clean,clean,AUC within UMCU,0.9917
+kaiko-b16,abmil,clean,clean,micro AUC within RUMC,0.9611
+kaiko-b16,abmil,clean,clean,micro AUC within UMCU,0.9871
+kaiko-b16,abmil,clean,clean,normal slides: rank correlation of score with tissue tiles,0.3442
+kaiko-b16,abmil,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.5757
+kaiko-b16,abmil,clean,jpeg:10,AUC within RUMC,0.7838
+kaiko-b16,abmil,clean,jpeg:10,AUC within UMCU,0.6987
+kaiko-b16,abmil,clean,jpeg:10,micro AUC within RUMC,0.624
+kaiko-b16,abmil,clean,jpeg:10,micro AUC within UMCU,0.5917
+kaiko-b16,abmil,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,-0.058
+kaiko-b16,abmil,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.1889
+kaiko-b16,abmil,clean,jpeg:15,AUC within RUMC,0.8193
+kaiko-b16,abmil,clean,jpeg:15,AUC within UMCU,0.7883
+kaiko-b16,abmil,clean,jpeg:15,micro AUC within RUMC,0.6731
+kaiko-b16,abmil,clean,jpeg:15,micro AUC within UMCU,0.7221
+kaiko-b16,abmil,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,-0.0931
+kaiko-b16,abmil,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.1748
+kaiko-b16,abmil,clean,jpeg:30,AUC within RUMC,0.9423
+kaiko-b16,abmil,clean,jpeg:30,AUC within UMCU,0.9635
+kaiko-b16,abmil,clean,jpeg:30,micro AUC within RUMC,0.8742
+kaiko-b16,abmil,clean,jpeg:30,micro AUC within UMCU,0.9475
+kaiko-b16,abmil,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.0344
+kaiko-b16,abmil,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.2579
+kaiko-b16,abmil,clean,stain:0.3,AUC within RUMC,0.9802
+kaiko-b16,abmil,clean,stain:0.3,AUC within UMCU,0.9917
+kaiko-b16,abmil,clean,stain:0.3,micro AUC within RUMC,0.9575
+kaiko-b16,abmil,clean,stain:0.3,micro AUC within UMCU,0.9871
+kaiko-b16,abmil,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.3724
+kaiko-b16,abmil,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.6209
+kaiko-b16,abmil,mixed,blur:2,AUC within RUMC,0.9843
+kaiko-b16,abmil,mixed,blur:2,AUC within UMCU,0.9792
+kaiko-b16,abmil,mixed,blur:2,micro AUC within RUMC,0.9662
+kaiko-b16,abmil,mixed,blur:2,micro AUC within UMCU,0.9675
+kaiko-b16,abmil,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.3875
+kaiko-b16,abmil,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.5309
+kaiko-b16,abmil,mixed,blur:4,AUC within RUMC,0.643
+kaiko-b16,abmil,mixed,blur:4,AUC within UMCU,0.5856
+kaiko-b16,abmil,mixed,blur:4,micro AUC within RUMC,0.5476
+kaiko-b16,abmil,mixed,blur:4,micro AUC within UMCU,0.415
+kaiko-b16,abmil,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.1277
+kaiko-b16,abmil,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.366
+kaiko-b16,abmil,mixed,clean,AUC within RUMC,0.986
+kaiko-b16,abmil,mixed,clean,AUC within UMCU,0.9936
+kaiko-b16,abmil,mixed,clean,micro AUC within RUMC,0.9713
+kaiko-b16,abmil,mixed,clean,micro AUC within UMCU,0.99
+kaiko-b16,abmil,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.2935
+kaiko-b16,abmil,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.4769
+kaiko-b16,abmil,mixed,jpeg:10,AUC within RUMC,0.8613
+kaiko-b16,abmil,mixed,jpeg:10,AUC within UMCU,0.7872
+kaiko-b16,abmil,mixed,jpeg:10,micro AUC within RUMC,0.7404
+kaiko-b16,abmil,mixed,jpeg:10,micro AUC within UMCU,0.7021
+kaiko-b16,abmil,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.2155
+kaiko-b16,abmil,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.4713
+kaiko-b16,abmil,mixed,jpeg:15,AUC within RUMC,0.906
+kaiko-b16,abmil,mixed,jpeg:15,AUC within UMCU,0.9085
+kaiko-b16,abmil,mixed,jpeg:15,micro AUC within RUMC,0.8029
+kaiko-b16,abmil,mixed,jpeg:15,micro AUC within UMCU,0.8988
+kaiko-b16,abmil,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.1743
+kaiko-b16,abmil,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.4241
+kaiko-b16,abmil,mixed,jpeg:30,AUC within RUMC,0.9631
+kaiko-b16,abmil,mixed,jpeg:30,AUC within UMCU,0.9787
+kaiko-b16,abmil,mixed,jpeg:30,micro AUC within RUMC,0.9205
+kaiko-b16,abmil,mixed,jpeg:30,micro AUC within UMCU,0.9667
+kaiko-b16,abmil,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.2934
+kaiko-b16,abmil,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.5201
+kaiko-b16,abmil,mixed,stain:0.3,AUC within RUMC,0.9813
+kaiko-b16,abmil,mixed,stain:0.3,AUC within UMCU,0.9912
+kaiko-b16,abmil,mixed,stain:0.3,micro AUC within RUMC,0.9625
+kaiko-b16,abmil,mixed,stain:0.3,micro AUC within UMCU,0.9863
+kaiko-b16,abmil,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.2856
+kaiko-b16,abmil,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.4419
+kaiko-b16,max,clean,blur:2,AUC within RUMC,0.7422
+kaiko-b16,max,clean,blur:2,AUC within UMCU,0.6243
+kaiko-b16,max,clean,blur:2,micro AUC within RUMC,0.5727
+kaiko-b16,max,clean,blur:2,micro AUC within UMCU,0.4383
+kaiko-b16,max,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.6517
+kaiko-b16,max,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.722
+kaiko-b16,max,clean,blur:4,AUC within RUMC,0.6498
+kaiko-b16,max,clean,blur:4,AUC within UMCU,0.7016
+kaiko-b16,max,clean,blur:4,micro AUC within RUMC,0.5513
+kaiko-b16,max,clean,blur:4,micro AUC within UMCU,0.6038
+kaiko-b16,max,clean,blur:4,normal slides: rank correlation of score with tissue tiles,0.2991
+kaiko-b16,max,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.3048
+kaiko-b16,max,clean,clean,AUC within RUMC,0.7977
+kaiko-b16,max,clean,clean,AUC within UMCU,0.7184
+kaiko-b16,max,clean,clean,micro AUC within RUMC,0.6542
+kaiko-b16,max,clean,clean,micro AUC within UMCU,0.5967
+kaiko-b16,max,clean,clean,normal slides: rank correlation of score with tissue tiles,0.5087
+kaiko-b16,max,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.6579
+kaiko-b16,max,clean,jpeg:10,AUC within RUMC,0.7363
+kaiko-b16,max,clean,jpeg:10,AUC within UMCU,0.5512
+kaiko-b16,max,clean,jpeg:10,micro AUC within RUMC,0.6055
+kaiko-b16,max,clean,jpeg:10,micro AUC within UMCU,0.3933
+kaiko-b16,max,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.4932
+kaiko-b16,max,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.6564
+kaiko-b16,max,clean,jpeg:15,AUC within RUMC,0.7695
+kaiko-b16,max,clean,jpeg:15,AUC within UMCU,0.6043
+kaiko-b16,max,clean,jpeg:15,micro AUC within RUMC,0.6455
+kaiko-b16,max,clean,jpeg:15,micro AUC within UMCU,0.4179
+kaiko-b16,max,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.4408
+kaiko-b16,max,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.4573
+kaiko-b16,max,clean,jpeg:30,AUC within RUMC,0.8095
+kaiko-b16,max,clean,jpeg:30,AUC within UMCU,0.7029
+kaiko-b16,max,clean,jpeg:30,micro AUC within RUMC,0.6887
+kaiko-b16,max,clean,jpeg:30,micro AUC within UMCU,0.5529
+kaiko-b16,max,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.3417
+kaiko-b16,max,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.3111
+kaiko-b16,max,clean,stain:0.3,AUC within RUMC,0.839
+kaiko-b16,max,clean,stain:0.3,AUC within UMCU,0.6941
+kaiko-b16,max,clean,stain:0.3,micro AUC within RUMC,0.7091
+kaiko-b16,max,clean,stain:0.3,micro AUC within UMCU,0.5625
+kaiko-b16,max,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.548
+kaiko-b16,max,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.6827
+kaiko-b16,max,mixed,blur:2,AUC within RUMC,0.7688
+kaiko-b16,max,mixed,blur:2,AUC within UMCU,0.5707
+kaiko-b16,max,mixed,blur:2,micro AUC within RUMC,0.608
+kaiko-b16,max,mixed,blur:2,micro AUC within UMCU,0.3621
+kaiko-b16,max,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.6467
+kaiko-b16,max,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.8325
+kaiko-b16,max,mixed,blur:4,AUC within RUMC,0.6927
+kaiko-b16,max,mixed,blur:4,AUC within UMCU,0.6275
+kaiko-b16,max,mixed,blur:4,micro AUC within RUMC,0.5971
+kaiko-b16,max,mixed,blur:4,micro AUC within UMCU,0.5121
+kaiko-b16,max,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.1922
+kaiko-b16,max,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.338
+kaiko-b16,max,mixed,clean,AUC within RUMC,0.8057
+kaiko-b16,max,mixed,clean,AUC within UMCU,0.6589
+kaiko-b16,max,mixed,clean,micro AUC within RUMC,0.6913
+kaiko-b16,max,mixed,clean,micro AUC within UMCU,0.5121
+kaiko-b16,max,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.5809
+kaiko-b16,max,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.8013
+kaiko-b16,max,mixed,jpeg:10,AUC within RUMC,0.7497
+kaiko-b16,max,mixed,jpeg:10,AUC within UMCU,0.6448
+kaiko-b16,max,mixed,jpeg:10,micro AUC within RUMC,0.6531
+kaiko-b16,max,mixed,jpeg:10,micro AUC within UMCU,0.4779
+kaiko-b16,max,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.3014
+kaiko-b16,max,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.4483
+kaiko-b16,max,mixed,jpeg:15,AUC within RUMC,0.7952
+kaiko-b16,max,mixed,jpeg:15,AUC within UMCU,0.6768
+kaiko-b16,max,mixed,jpeg:15,micro AUC within RUMC,0.6873
+kaiko-b16,max,mixed,jpeg:15,micro AUC within UMCU,0.5071
+kaiko-b16,max,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.4129
+kaiko-b16,max,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.5019
+kaiko-b16,max,mixed,jpeg:30,AUC within RUMC,0.8315
+kaiko-b16,max,mixed,jpeg:30,AUC within UMCU,0.6392
+kaiko-b16,max,mixed,jpeg:30,micro AUC within RUMC,0.7476
+kaiko-b16,max,mixed,jpeg:30,micro AUC within UMCU,0.4558
+kaiko-b16,max,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.4874
+kaiko-b16,max,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.5181
+kaiko-b16,max,mixed,stain:0.3,AUC within RUMC,0.798
+kaiko-b16,max,mixed,stain:0.3,AUC within UMCU,0.6541
+kaiko-b16,max,mixed,stain:0.3,micro AUC within RUMC,0.668
+kaiko-b16,max,mixed,stain:0.3,micro AUC within UMCU,0.5096
+kaiko-b16,max,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.5409
+kaiko-b16,max,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.736
+kaiko-b16,mean,clean,blur:2,AUC within RUMC,0.6922
+kaiko-b16,mean,clean,blur:2,AUC within UMCU,0.6843
+kaiko-b16,mean,clean,blur:2,micro AUC within RUMC,0.584
+kaiko-b16,mean,clean,blur:2,micro AUC within UMCU,0.5221
+kaiko-b16,mean,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.1608
+kaiko-b16,mean,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.3587
+kaiko-b16,mean,clean,blur:4,AUC within RUMC,0.3502
+kaiko-b16,mean,clean,blur:4,AUC within UMCU,0.4901
+kaiko-b16,mean,clean,blur:4,micro AUC within RUMC,0.2796
+kaiko-b16,mean,clean,blur:4,micro AUC within UMCU,0.4746
+kaiko-b16,mean,clean,blur:4,normal slides: rank correlation of score with tissue tiles,-0.3851
+kaiko-b16,mean,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.0137
+kaiko-b16,mean,clean,clean,AUC within RUMC,0.6702
+kaiko-b16,mean,clean,clean,AUC within UMCU,0.6307
+kaiko-b16,mean,clean,clean,micro AUC within RUMC,0.5313
+kaiko-b16,mean,clean,clean,micro AUC within UMCU,0.4358
+kaiko-b16,mean,clean,clean,normal slides: rank correlation of score with tissue tiles,-0.0052
+kaiko-b16,mean,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.3847
+kaiko-b16,mean,clean,jpeg:10,AUC within RUMC,0.6777
+kaiko-b16,mean,clean,jpeg:10,AUC within UMCU,0.5469
+kaiko-b16,mean,clean,jpeg:10,micro AUC within RUMC,0.5844
+kaiko-b16,mean,clean,jpeg:10,micro AUC within UMCU,0.3879
+kaiko-b16,mean,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.2909
+kaiko-b16,mean,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.7127
+kaiko-b16,mean,clean,jpeg:15,AUC within RUMC,0.679
+kaiko-b16,mean,clean,jpeg:15,AUC within UMCU,0.5451
+kaiko-b16,mean,clean,jpeg:15,micro AUC within RUMC,0.5775
+kaiko-b16,mean,clean,jpeg:15,micro AUC within UMCU,0.3633
+kaiko-b16,mean,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.2198
+kaiko-b16,mean,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.6916
+kaiko-b16,mean,clean,jpeg:30,AUC within RUMC,0.6455
+kaiko-b16,mean,clean,jpeg:30,AUC within UMCU,0.6059
+kaiko-b16,mean,clean,jpeg:30,micro AUC within RUMC,0.5011
+kaiko-b16,mean,clean,jpeg:30,micro AUC within UMCU,0.425
+kaiko-b16,mean,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.0795
+kaiko-b16,mean,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.4821
+kaiko-b16,mean,clean,stain:0.3,AUC within RUMC,0.7072
+kaiko-b16,mean,clean,stain:0.3,AUC within UMCU,0.6237
+kaiko-b16,mean,clean,stain:0.3,micro AUC within RUMC,0.6167
+kaiko-b16,mean,clean,stain:0.3,micro AUC within UMCU,0.4288
+kaiko-b16,mean,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.0781
+kaiko-b16,mean,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.5068
+kaiko-b16,mean,mixed,blur:2,AUC within RUMC,0.6968
+kaiko-b16,mean,mixed,blur:2,AUC within UMCU,0.6781
+kaiko-b16,mean,mixed,blur:2,micro AUC within RUMC,0.5815
+kaiko-b16,mean,mixed,blur:2,micro AUC within UMCU,0.5037
+kaiko-b16,mean,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.4541
+kaiko-b16,mean,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.7699
+kaiko-b16,mean,mixed,blur:4,AUC within RUMC,0.3943
+kaiko-b16,mean,mixed,blur:4,AUC within UMCU,0.4693
+kaiko-b16,mean,mixed,blur:4,micro AUC within RUMC,0.3109
+kaiko-b16,mean,mixed,blur:4,micro AUC within UMCU,0.4458
+kaiko-b16,mean,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,-0.338
+kaiko-b16,mean,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.0187
+kaiko-b16,mean,mixed,clean,AUC within RUMC,0.6723
+kaiko-b16,mean,mixed,clean,AUC within UMCU,0.6651
+kaiko-b16,mean,mixed,clean,micro AUC within RUMC,0.5291
+kaiko-b16,mean,mixed,clean,micro AUC within UMCU,0.4867
+kaiko-b16,mean,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.0913
+kaiko-b16,mean,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.4576
+kaiko-b16,mean,mixed,jpeg:10,AUC within RUMC,0.7152
+kaiko-b16,mean,mixed,jpeg:10,AUC within UMCU,0.5072
+kaiko-b16,mean,mixed,jpeg:10,micro AUC within RUMC,0.6033
+kaiko-b16,mean,mixed,jpeg:10,micro AUC within UMCU,0.3267
+kaiko-b16,mean,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.2895
+kaiko-b16,mean,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.7163
+kaiko-b16,mean,mixed,jpeg:15,AUC within RUMC,0.7103
+kaiko-b16,mean,mixed,jpeg:15,AUC within UMCU,0.5352
+kaiko-b16,mean,mixed,jpeg:15,micro AUC within RUMC,0.5684
+kaiko-b16,mean,mixed,jpeg:15,micro AUC within UMCU,0.3521
+kaiko-b16,mean,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.0867
+kaiko-b16,mean,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.5495
+kaiko-b16,mean,mixed,jpeg:30,AUC within RUMC,0.6575
+kaiko-b16,mean,mixed,jpeg:30,AUC within UMCU,0.5987
+kaiko-b16,mean,mixed,jpeg:30,micro AUC within RUMC,0.4985
+kaiko-b16,mean,mixed,jpeg:30,micro AUC within UMCU,0.4138
+kaiko-b16,mean,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,-0.1188
+kaiko-b16,mean,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.2499
+kaiko-b16,mean,mixed,stain:0.3,AUC within RUMC,0.6888
+kaiko-b16,mean,mixed,stain:0.3,AUC within UMCU,0.6509
+kaiko-b16,mean,mixed,stain:0.3,micro AUC within RUMC,0.5716
+kaiko-b16,mean,mixed,stain:0.3,micro AUC within UMCU,0.4675
+kaiko-b16,mean,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.0936
+kaiko-b16,mean,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.6471
+kaiko-b16,tileprobe,clean,blur:2,AUC within RUMC,0.8497
+kaiko-b16,tileprobe,clean,blur:2,AUC within UMCU,0.8352
+kaiko-b16,tileprobe,clean,blur:2,micro AUC within RUMC,0.7011
+kaiko-b16,tileprobe,clean,blur:2,micro AUC within UMCU,0.7425
+kaiko-b16,tileprobe,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.1455
+kaiko-b16,tileprobe,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.3536
+kaiko-b16,tileprobe,clean,blur:4,AUC within RUMC,0.5168
+kaiko-b16,tileprobe,clean,blur:4,AUC within UMCU,0.5827
+kaiko-b16,tileprobe,clean,blur:4,micro AUC within RUMC,0.496
+kaiko-b16,tileprobe,clean,blur:4,micro AUC within UMCU,0.415
+kaiko-b16,tileprobe,clean,blur:4,normal slides: rank correlation of score with tissue tiles,-0.0402
+kaiko-b16,tileprobe,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.1813
+kaiko-b16,tileprobe,clean,clean,AUC within RUMC,0.916
+kaiko-b16,tileprobe,clean,clean,AUC within UMCU,0.9107
+kaiko-b16,tileprobe,clean,clean,micro AUC within RUMC,0.8265
+kaiko-b16,tileprobe,clean,clean,micro AUC within UMCU,0.8604
+kaiko-b16,tileprobe,clean,clean,normal slides: rank correlation of score with tissue tiles,0.3316
+kaiko-b16,tileprobe,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.4483
+kaiko-b16,tileprobe,clean,jpeg:10,AUC within RUMC,0.879
+kaiko-b16,tileprobe,clean,jpeg:10,AUC within UMCU,0.7344
+kaiko-b16,tileprobe,clean,jpeg:10,micro AUC within RUMC,0.8505
+kaiko-b16,tileprobe,clean,jpeg:10,micro AUC within UMCU,0.6254
+kaiko-b16,tileprobe,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.5596
+kaiko-b16,tileprobe,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.7449
+kaiko-b16,tileprobe,clean,jpeg:15,AUC within RUMC,0.8987
+kaiko-b16,tileprobe,clean,jpeg:15,AUC within UMCU,0.8555
+kaiko-b16,tileprobe,clean,jpeg:15,micro AUC within RUMC,0.8545
+kaiko-b16,tileprobe,clean,jpeg:15,micro AUC within UMCU,0.8117
+kaiko-b16,tileprobe,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.5432
+kaiko-b16,tileprobe,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.6845
+kaiko-b16,tileprobe,clean,jpeg:30,AUC within RUMC,0.9257
+kaiko-b16,tileprobe,clean,jpeg:30,AUC within UMCU,0.8923
+kaiko-b16,tileprobe,clean,jpeg:30,micro AUC within RUMC,0.8749
+kaiko-b16,tileprobe,clean,jpeg:30,micro AUC within UMCU,0.8337
+kaiko-b16,tileprobe,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.549
+kaiko-b16,tileprobe,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.7077
+kaiko-b16,tileprobe,clean,stain:0.3,AUC within RUMC,0.9155
+kaiko-b16,tileprobe,clean,stain:0.3,AUC within UMCU,0.9229
+kaiko-b16,tileprobe,clean,stain:0.3,micro AUC within RUMC,0.8211
+kaiko-b16,tileprobe,clean,stain:0.3,micro AUC within UMCU,0.8796
+kaiko-b16,tileprobe,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.3945
+kaiko-b16,tileprobe,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.5367
+kaiko-b16,tileprobe,mixed,blur:2,AUC within RUMC,0.9325
+kaiko-b16,tileprobe,mixed,blur:2,AUC within UMCU,0.8565
+kaiko-b16,tileprobe,mixed,blur:2,micro AUC within RUMC,0.864
+kaiko-b16,tileprobe,mixed,blur:2,micro AUC within UMCU,0.7758
+kaiko-b16,tileprobe,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.3425
+kaiko-b16,tileprobe,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.4337
+kaiko-b16,tileprobe,mixed,blur:4,AUC within RUMC,0.794
+kaiko-b16,tileprobe,mixed,blur:4,AUC within UMCU,0.6232
+kaiko-b16,tileprobe,mixed,blur:4,micro AUC within RUMC,0.6509
+kaiko-b16,tileprobe,mixed,blur:4,micro AUC within UMCU,0.4308
+kaiko-b16,tileprobe,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.4067
+kaiko-b16,tileprobe,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.5633
+kaiko-b16,tileprobe,mixed,clean,AUC within RUMC,0.9002
+kaiko-b16,tileprobe,mixed,clean,AUC within UMCU,0.9019
+kaiko-b16,tileprobe,mixed,clean,micro AUC within RUMC,0.7985
+kaiko-b16,tileprobe,mixed,clean,micro AUC within UMCU,0.8467
+kaiko-b16,tileprobe,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.3809
+kaiko-b16,tileprobe,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.4757
+kaiko-b16,tileprobe,mixed,jpeg:10,AUC within RUMC,0.913
+kaiko-b16,tileprobe,mixed,jpeg:10,AUC within UMCU,0.8603
+kaiko-b16,tileprobe,mixed,jpeg:10,micro AUC within RUMC,0.8458
+kaiko-b16,tileprobe,mixed,jpeg:10,micro AUC within UMCU,0.7837
+kaiko-b16,tileprobe,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.6132
+kaiko-b16,tileprobe,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.8021
+kaiko-b16,tileprobe,mixed,jpeg:15,AUC within RUMC,0.9107
+kaiko-b16,tileprobe,mixed,jpeg:15,AUC within UMCU,0.8635
+kaiko-b16,tileprobe,mixed,jpeg:15,micro AUC within RUMC,0.8462
+kaiko-b16,tileprobe,mixed,jpeg:15,micro AUC within UMCU,0.7867
+kaiko-b16,tileprobe,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.5186
+kaiko-b16,tileprobe,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.7848
+kaiko-b16,tileprobe,mixed,jpeg:30,AUC within RUMC,0.9208
+kaiko-b16,tileprobe,mixed,jpeg:30,AUC within UMCU,0.8971
+kaiko-b16,tileprobe,mixed,jpeg:30,micro AUC within RUMC,0.8349
+kaiko-b16,tileprobe,mixed,jpeg:30,micro AUC within UMCU,0.8392
+kaiko-b16,tileprobe,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.4992
+kaiko-b16,tileprobe,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.6257
+kaiko-b16,tileprobe,mixed,stain:0.3,AUC within RUMC,0.9053
+kaiko-b16,tileprobe,mixed,stain:0.3,AUC within UMCU,0.8832
+kaiko-b16,tileprobe,mixed,stain:0.3,micro AUC within RUMC,0.8204
+kaiko-b16,tileprobe,mixed,stain:0.3,micro AUC within UMCU,0.8175
+kaiko-b16,tileprobe,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.4396
+kaiko-b16,tileprobe,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.5652
+phikon,abmil,clean,blur:2,AUC within RUMC,0.9115
+phikon,abmil,clean,blur:2,AUC within UMCU,0.8947
+phikon,abmil,clean,blur:2,micro AUC within RUMC,0.9345
+phikon,abmil,clean,blur:2,micro AUC within UMCU,0.8425
+phikon,abmil,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.2736
+phikon,abmil,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.5555
+phikon,abmil,clean,blur:4,AUC within RUMC,0.5747
+phikon,abmil,clean,blur:4,AUC within UMCU,0.6307
+phikon,abmil,clean,blur:4,micro AUC within RUMC,0.3495
+phikon,abmil,clean,blur:4,micro AUC within UMCU,0.4708
+phikon,abmil,clean,blur:4,normal slides: rank correlation of score with tissue tiles,-0.4003
+phikon,abmil,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.0251
+phikon,abmil,clean,clean,AUC within RUMC,0.9897
+phikon,abmil,clean,clean,AUC within UMCU,0.9984
+phikon,abmil,clean,clean,micro AUC within RUMC,0.9782
+phikon,abmil,clean,clean,micro AUC within UMCU,0.9975
+phikon,abmil,clean,clean,normal slides: rank correlation of score with tissue tiles,0.4069
+phikon,abmil,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.8229
+phikon,abmil,clean,jpeg:10,AUC within RUMC,0.6862
+phikon,abmil,clean,jpeg:10,AUC within UMCU,0.6421
+phikon,abmil,clean,jpeg:10,micro AUC within RUMC,0.5538
+phikon,abmil,clean,jpeg:10,micro AUC within UMCU,0.5025
+phikon,abmil,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,-0.2631
+phikon,abmil,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.2236
+phikon,abmil,clean,jpeg:15,AUC within RUMC,0.731
+phikon,abmil,clean,jpeg:15,AUC within UMCU,0.7717
+phikon,abmil,clean,jpeg:15,micro AUC within RUMC,0.6109
+phikon,abmil,clean,jpeg:15,micro AUC within UMCU,0.6696
+phikon,abmil,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,-0.0879
+phikon,abmil,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.3884
+phikon,abmil,clean,jpeg:30,AUC within RUMC,0.9085
+phikon,abmil,clean,jpeg:30,AUC within UMCU,0.8984
+phikon,abmil,clean,jpeg:30,micro AUC within RUMC,0.8404
+phikon,abmil,clean,jpeg:30,micro AUC within UMCU,0.8412
+phikon,abmil,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.284
+phikon,abmil,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.8212
+phikon,abmil,clean,stain:0.3,AUC within RUMC,0.9902
+phikon,abmil,clean,stain:0.3,AUC within UMCU,1.0
+phikon,abmil,clean,stain:0.3,micro AUC within RUMC,0.9796
+phikon,abmil,clean,stain:0.3,micro AUC within UMCU,1.0
+phikon,abmil,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.2559
+phikon,abmil,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.5801
+phikon,abmil,mixed,blur:2,AUC within RUMC,0.9628
+phikon,abmil,mixed,blur:2,AUC within UMCU,0.9539
+phikon,abmil,mixed,blur:2,micro AUC within RUMC,0.9524
+phikon,abmil,mixed,blur:2,micro AUC within UMCU,0.9279
+phikon,abmil,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.5132
+phikon,abmil,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.7697
+phikon,abmil,mixed,blur:4,AUC within RUMC,0.5878
+phikon,abmil,mixed,blur:4,AUC within UMCU,0.5285
+phikon,abmil,mixed,blur:4,micro AUC within RUMC,0.4815
+phikon,abmil,mixed,blur:4,micro AUC within UMCU,0.4075
+phikon,abmil,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,-0.1082
+phikon,abmil,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.3309
+phikon,abmil,mixed,clean,AUC within RUMC,0.987
+phikon,abmil,mixed,clean,AUC within UMCU,0.9968
+phikon,abmil,mixed,clean,micro AUC within RUMC,0.972
+phikon,abmil,mixed,clean,micro AUC within UMCU,0.995
+phikon,abmil,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.3493
+phikon,abmil,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.626
+phikon,abmil,mixed,jpeg:10,AUC within RUMC,0.8232
+phikon,abmil,mixed,jpeg:10,AUC within UMCU,0.7821
+phikon,abmil,mixed,jpeg:10,micro AUC within RUMC,0.6651
+phikon,abmil,mixed,jpeg:10,micro AUC within UMCU,0.69
+phikon,abmil,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.2678
+phikon,abmil,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.5561
+phikon,abmil,mixed,jpeg:15,AUC within RUMC,0.8678
+phikon,abmil,mixed,jpeg:15,AUC within UMCU,0.8587
+phikon,abmil,mixed,jpeg:15,micro AUC within RUMC,0.7229
+phikon,abmil,mixed,jpeg:15,micro AUC within UMCU,0.7883
+phikon,abmil,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.346
+phikon,abmil,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.6565
+phikon,abmil,mixed,jpeg:30,AUC within RUMC,0.9145
+phikon,abmil,mixed,jpeg:30,AUC within UMCU,0.944
+phikon,abmil,mixed,jpeg:30,micro AUC within RUMC,0.8145
+phikon,abmil,mixed,jpeg:30,micro AUC within UMCU,0.9125
+phikon,abmil,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.4765
+phikon,abmil,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.7169
+phikon,abmil,mixed,stain:0.3,AUC within RUMC,0.9895
+phikon,abmil,mixed,stain:0.3,AUC within UMCU,0.9981
+phikon,abmil,mixed,stain:0.3,micro AUC within RUMC,0.9771
+phikon,abmil,mixed,stain:0.3,micro AUC within UMCU,0.9971
+phikon,abmil,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.3251
+phikon,abmil,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.5359
+phikon,max,clean,blur:2,AUC within RUMC,0.8425
+phikon,max,clean,blur:2,AUC within UMCU,0.6885
+phikon,max,clean,blur:2,micro AUC within RUMC,0.7327
+phikon,max,clean,blur:2,micro AUC within UMCU,0.5363
+phikon,max,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.6221
+phikon,max,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.5947
+phikon,max,clean,blur:4,AUC within RUMC,0.6067
+phikon,max,clean,blur:4,AUC within UMCU,0.4475
+phikon,max,clean,blur:4,micro AUC within RUMC,0.5182
+phikon,max,clean,blur:4,micro AUC within UMCU,0.37
+phikon,max,clean,blur:4,normal slides: rank correlation of score with tissue tiles,0.6995
+phikon,max,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.6364
+phikon,max,clean,clean,AUC within RUMC,0.8418
+phikon,max,clean,clean,AUC within UMCU,0.7264
+phikon,max,clean,clean,micro AUC within RUMC,0.7225
+phikon,max,clean,clean,micro AUC within UMCU,0.575
+phikon,max,clean,clean,normal slides: rank correlation of score with tissue tiles,0.5661
+phikon,max,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.6027
+phikon,max,clean,jpeg:10,AUC within RUMC,0.7155
+phikon,max,clean,jpeg:10,AUC within UMCU,0.6144
+phikon,max,clean,jpeg:10,micro AUC within RUMC,0.5255
+phikon,max,clean,jpeg:10,micro AUC within UMCU,0.4612
+phikon,max,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.2027
+phikon,max,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.1831
+phikon,max,clean,jpeg:15,AUC within RUMC,0.7518
+phikon,max,clean,jpeg:15,AUC within UMCU,0.6528
+phikon,max,clean,jpeg:15,micro AUC within RUMC,0.568
+phikon,max,clean,jpeg:15,micro AUC within UMCU,0.4954
+phikon,max,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.2404
+phikon,max,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.1684
+phikon,max,clean,jpeg:30,AUC within RUMC,0.8082
+phikon,max,clean,jpeg:30,AUC within UMCU,0.6533
+phikon,max,clean,jpeg:30,micro AUC within RUMC,0.6385
+phikon,max,clean,jpeg:30,micro AUC within UMCU,0.4821
+phikon,max,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.3491
+phikon,max,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.2521
+phikon,max,clean,stain:0.3,AUC within RUMC,0.86
+phikon,max,clean,stain:0.3,AUC within UMCU,0.7149
+phikon,max,clean,stain:0.3,micro AUC within RUMC,0.7571
+phikon,max,clean,stain:0.3,micro AUC within UMCU,0.5708
+phikon,max,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.5
+phikon,max,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.5661
+phikon,max,mixed,blur:2,AUC within RUMC,0.8277
+phikon,max,mixed,blur:2,AUC within UMCU,0.7037
+phikon,max,mixed,blur:2,micro AUC within RUMC,0.7375
+phikon,max,mixed,blur:2,micro AUC within UMCU,0.5608
+phikon,max,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.6566
+phikon,max,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.8448
+phikon,max,mixed,blur:4,AUC within RUMC,0.6415
+phikon,max,mixed,blur:4,AUC within UMCU,0.428
+phikon,max,mixed,blur:4,micro AUC within RUMC,0.4487
+phikon,max,mixed,blur:4,micro AUC within UMCU,0.2971
+phikon,max,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.6491
+phikon,max,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.8248
+phikon,max,mixed,clean,AUC within RUMC,0.8337
+phikon,max,mixed,clean,AUC within UMCU,0.7776
+phikon,max,mixed,clean,micro AUC within RUMC,0.7538
+phikon,max,mixed,clean,micro AUC within UMCU,0.6621
+phikon,max,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.4774
+phikon,max,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.5516
+phikon,max,mixed,jpeg:10,AUC within RUMC,0.7413
+phikon,max,mixed,jpeg:10,AUC within UMCU,0.6504
+phikon,max,mixed,jpeg:10,micro AUC within RUMC,0.5996
+phikon,max,mixed,jpeg:10,micro AUC within UMCU,0.4983
+phikon,max,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.4873
+phikon,max,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.4549
+phikon,max,mixed,jpeg:15,AUC within RUMC,0.7852
+phikon,max,mixed,jpeg:15,AUC within UMCU,0.6608
+phikon,max,mixed,jpeg:15,micro AUC within RUMC,0.6233
+phikon,max,mixed,jpeg:15,micro AUC within UMCU,0.4912
+phikon,max,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.3604
+phikon,max,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.3775
+phikon,max,mixed,jpeg:30,AUC within RUMC,0.822
+phikon,max,mixed,jpeg:30,AUC within UMCU,0.6757
+phikon,max,mixed,jpeg:30,micro AUC within RUMC,0.6869
+phikon,max,mixed,jpeg:30,micro AUC within UMCU,0.5117
+phikon,max,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.5556
+phikon,max,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.4615
+phikon,max,mixed,stain:0.3,AUC within RUMC,0.819
+phikon,max,mixed,stain:0.3,AUC within UMCU,0.7952
+phikon,max,mixed,stain:0.3,micro AUC within RUMC,0.7335
+phikon,max,mixed,stain:0.3,micro AUC within UMCU,0.6946
+phikon,max,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.4613
+phikon,max,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.6063
+phikon,mean,clean,blur:2,AUC within RUMC,0.741
+phikon,mean,clean,blur:2,AUC within UMCU,0.5149
+phikon,mean,clean,blur:2,micro AUC within RUMC,0.6956
+phikon,mean,clean,blur:2,micro AUC within UMCU,0.3629
+phikon,mean,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.0775
+phikon,mean,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.6121
+phikon,mean,clean,blur:4,AUC within RUMC,0.394
+phikon,mean,clean,blur:4,AUC within UMCU,0.5045
+phikon,mean,clean,blur:4,micro AUC within RUMC,0.3367
+phikon,mean,clean,blur:4,micro AUC within UMCU,0.5183
+phikon,mean,clean,blur:4,normal slides: rank correlation of score with tissue tiles,-0.2332
+phikon,mean,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.2395
+phikon,mean,clean,clean,AUC within RUMC,0.6903
+phikon,mean,clean,clean,AUC within UMCU,0.6435
+phikon,mean,clean,clean,micro AUC within RUMC,0.5858
+phikon,mean,clean,clean,micro AUC within UMCU,0.4717
+phikon,mean,clean,clean,normal slides: rank correlation of score with tissue tiles,-0.0742
+phikon,mean,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.4543
+phikon,mean,clean,jpeg:10,AUC within RUMC,0.5747
+phikon,mean,clean,jpeg:10,AUC within UMCU,0.6061
+phikon,mean,clean,jpeg:10,micro AUC within RUMC,0.4822
+phikon,mean,clean,jpeg:10,micro AUC within UMCU,0.4808
+phikon,mean,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,-0.2791
+phikon,mean,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.1773
+phikon,mean,clean,jpeg:15,AUC within RUMC,0.6545
+phikon,mean,clean,jpeg:15,AUC within UMCU,0.62
+phikon,mean,clean,jpeg:15,micro AUC within RUMC,0.576
+phikon,mean,clean,jpeg:15,micro AUC within UMCU,0.4871
+phikon,mean,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,-0.1338
+phikon,mean,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.3356
+phikon,mean,clean,jpeg:30,AUC within RUMC,0.67
+phikon,mean,clean,jpeg:30,AUC within UMCU,0.6221
+phikon,mean,clean,jpeg:30,micro AUC within RUMC,0.5378
+phikon,mean,clean,jpeg:30,micro AUC within UMCU,0.4733
+phikon,mean,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,-0.0477
+phikon,mean,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.344
+phikon,mean,clean,stain:0.3,AUC within RUMC,0.7162
+phikon,mean,clean,stain:0.3,AUC within UMCU,0.6936
+phikon,mean,clean,stain:0.3,micro AUC within RUMC,0.6625
+phikon,mean,clean,stain:0.3,micro AUC within UMCU,0.5525
+phikon,mean,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,-0.1463
+phikon,mean,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.2855
+phikon,mean,mixed,blur:2,AUC within RUMC,0.7927
+phikon,mean,mixed,blur:2,AUC within UMCU,0.5429
+phikon,mean,mixed,blur:2,micro AUC within RUMC,0.7462
+phikon,mean,mixed,blur:2,micro AUC within UMCU,0.3821
+phikon,mean,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.4014
+phikon,mean,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.9191
+phikon,mean,mixed,blur:4,AUC within RUMC,0.4377
+phikon,mean,mixed,blur:4,AUC within UMCU,0.5035
+phikon,mean,mixed,blur:4,micro AUC within RUMC,0.3749
+phikon,mean,mixed,blur:4,micro AUC within UMCU,0.5238
+phikon,mean,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,-0.1072
+phikon,mean,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.2682
+phikon,mean,mixed,clean,AUC within RUMC,0.683
+phikon,mean,mixed,clean,AUC within UMCU,0.6703
+phikon,mean,mixed,clean,micro AUC within RUMC,0.5927
+phikon,mean,mixed,clean,micro AUC within UMCU,0.506
+phikon,mean,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.0271
+phikon,mean,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.4637
+phikon,mean,mixed,jpeg:10,AUC within RUMC,0.602
+phikon,mean,mixed,jpeg:10,AUC within UMCU,0.608
+phikon,mean,mixed,jpeg:10,micro AUC within RUMC,0.4738
+phikon,mean,mixed,jpeg:10,micro AUC within UMCU,0.4633
+phikon,mean,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,-0.2551
+phikon,mean,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.2055
+phikon,mean,mixed,jpeg:15,AUC within RUMC,0.6968
+phikon,mean,mixed,jpeg:15,AUC within UMCU,0.5667
+phikon,mean,mixed,jpeg:15,micro AUC within RUMC,0.5742
+phikon,mean,mixed,jpeg:15,micro AUC within UMCU,0.4125
+phikon,mean,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,-0.2327
+phikon,mean,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.3217
+phikon,mean,mixed,jpeg:30,AUC within RUMC,0.6555
+phikon,mean,mixed,jpeg:30,AUC within UMCU,0.5808
+phikon,mean,mixed,jpeg:30,micro AUC within RUMC,0.4665
+phikon,mean,mixed,jpeg:30,micro AUC within UMCU,0.4171
+phikon,mean,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,-0.1775
+phikon,mean,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.1739
+phikon,mean,mixed,stain:0.3,AUC within RUMC,0.6742
+phikon,mean,mixed,stain:0.3,AUC within UMCU,0.6896
+phikon,mean,mixed,stain:0.3,micro AUC within RUMC,0.6196
+phikon,mean,mixed,stain:0.3,micro AUC within UMCU,0.5321
+phikon,mean,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,-0.0563
+phikon,mean,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.4423
+phikon,tileprobe,clean,blur:2,AUC within RUMC,0.7978
+phikon,tileprobe,clean,blur:2,AUC within UMCU,0.7725
+phikon,tileprobe,clean,blur:2,micro AUC within RUMC,0.6647
+phikon,tileprobe,clean,blur:2,micro AUC within UMCU,0.6654
+phikon,tileprobe,clean,blur:2,normal slides: rank correlation of score with tissue tiles,-0.1222
+phikon,tileprobe,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.0924
+phikon,tileprobe,clean,blur:4,AUC within RUMC,0.6657
+phikon,tileprobe,clean,blur:4,AUC within UMCU,0.7011
+phikon,tileprobe,clean,blur:4,micro AUC within RUMC,0.5971
+phikon,tileprobe,clean,blur:4,micro AUC within UMCU,0.625
+phikon,tileprobe,clean,blur:4,normal slides: rank correlation of score with tissue tiles,-0.0009
+phikon,tileprobe,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.1304
+phikon,tileprobe,clean,clean,AUC within RUMC,0.948
+phikon,tileprobe,clean,clean,AUC within UMCU,0.9075
+phikon,tileprobe,clean,clean,micro AUC within RUMC,0.8927
+phikon,tileprobe,clean,clean,micro AUC within UMCU,0.8554
+phikon,tileprobe,clean,clean,normal slides: rank correlation of score with tissue tiles,0.369
+phikon,tileprobe,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.5136
+phikon,tileprobe,clean,jpeg:10,AUC within RUMC,0.8248
+phikon,tileprobe,clean,jpeg:10,AUC within UMCU,0.7245
+phikon,tileprobe,clean,jpeg:10,micro AUC within RUMC,0.7607
+phikon,tileprobe,clean,jpeg:10,micro AUC within UMCU,0.615
+phikon,tileprobe,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.0114
+phikon,tileprobe,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.1084
+phikon,tileprobe,clean,jpeg:15,AUC within RUMC,0.8475
+phikon,tileprobe,clean,jpeg:15,AUC within UMCU,0.7483
+phikon,tileprobe,clean,jpeg:15,micro AUC within RUMC,0.7545
+phikon,tileprobe,clean,jpeg:15,micro AUC within UMCU,0.645
+phikon,tileprobe,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.0872
+phikon,tileprobe,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.1555
+phikon,tileprobe,clean,jpeg:30,AUC within RUMC,0.903
+phikon,tileprobe,clean,jpeg:30,AUC within UMCU,0.8584
+phikon,tileprobe,clean,jpeg:30,micro AUC within RUMC,0.8051
+phikon,tileprobe,clean,jpeg:30,micro AUC within UMCU,0.815
+phikon,tileprobe,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.1374
+phikon,tileprobe,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.2385
+phikon,tileprobe,clean,stain:0.3,AUC within RUMC,0.9342
+phikon,tileprobe,clean,stain:0.3,AUC within UMCU,0.9072
+phikon,tileprobe,clean,stain:0.3,micro AUC within RUMC,0.8596
+phikon,tileprobe,clean,stain:0.3,micro AUC within UMCU,0.855
+phikon,tileprobe,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.2999
+phikon,tileprobe,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.4125
+phikon,tileprobe,mixed,blur:2,AUC within RUMC,0.9277
+phikon,tileprobe,mixed,blur:2,AUC within UMCU,0.8664
+phikon,tileprobe,mixed,blur:2,micro AUC within RUMC,0.8553
+phikon,tileprobe,mixed,blur:2,micro AUC within UMCU,0.7913
+phikon,tileprobe,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.1463
+phikon,tileprobe,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.2263
+phikon,tileprobe,mixed,blur:4,AUC within RUMC,0.7987
+phikon,tileprobe,mixed,blur:4,AUC within UMCU,0.5957
+phikon,tileprobe,mixed,blur:4,micro AUC within RUMC,0.6753
+phikon,tileprobe,mixed,blur:4,micro AUC within UMCU,0.4108
+phikon,tileprobe,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.4115
+phikon,tileprobe,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.6536
+phikon,tileprobe,mixed,clean,AUC within RUMC,0.9605
+phikon,tileprobe,mixed,clean,AUC within UMCU,0.8989
+phikon,tileprobe,mixed,clean,micro AUC within RUMC,0.9211
+phikon,tileprobe,mixed,clean,micro AUC within UMCU,0.8421
+phikon,tileprobe,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.0447
+phikon,tileprobe,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.2396
+phikon,tileprobe,mixed,jpeg:10,AUC within RUMC,0.926
+phikon,tileprobe,mixed,jpeg:10,AUC within UMCU,0.8389
+phikon,tileprobe,mixed,jpeg:10,micro AUC within RUMC,0.8862
+phikon,tileprobe,mixed,jpeg:10,micro AUC within UMCU,0.7492
+phikon,tileprobe,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.6328
+phikon,tileprobe,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.8388
+phikon,tileprobe,mixed,jpeg:15,AUC within RUMC,0.9142
+phikon,tileprobe,mixed,jpeg:15,AUC within UMCU,0.8336
+phikon,tileprobe,mixed,jpeg:15,micro AUC within RUMC,0.8495
+phikon,tileprobe,mixed,jpeg:15,micro AUC within UMCU,0.7408
+phikon,tileprobe,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.4807
+phikon,tileprobe,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.6249
+phikon,tileprobe,mixed,jpeg:30,AUC within RUMC,0.9305
+phikon,tileprobe,mixed,jpeg:30,AUC within UMCU,0.8733
+phikon,tileprobe,mixed,jpeg:30,micro AUC within RUMC,0.8647
+phikon,tileprobe,mixed,jpeg:30,micro AUC within UMCU,0.8021
+phikon,tileprobe,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.3696
+phikon,tileprobe,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.5219
+phikon,tileprobe,mixed,stain:0.3,AUC within RUMC,0.932
+phikon,tileprobe,mixed,stain:0.3,AUC within UMCU,0.9312
+phikon,tileprobe,mixed,stain:0.3,micro AUC within RUMC,0.8556
+phikon,tileprobe,mixed,stain:0.3,micro AUC within UMCU,0.8925
+phikon,tileprobe,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.1583
+phikon,tileprobe,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.3064
+phikon-v2,abmil,clean,blur:2,AUC within RUMC,0.8662
+phikon-v2,abmil,clean,blur:2,AUC within UMCU,0.8429
+phikon-v2,abmil,clean,blur:2,micro AUC within RUMC,0.788
+phikon-v2,abmil,clean,blur:2,micro AUC within UMCU,0.755
+phikon-v2,abmil,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.3433
+phikon-v2,abmil,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.6756
+phikon-v2,abmil,clean,blur:4,AUC within RUMC,0.5165
+phikon-v2,abmil,clean,blur:4,AUC within UMCU,0.4515
+phikon-v2,abmil,clean,blur:4,micro AUC within RUMC,0.3651
+phikon-v2,abmil,clean,blur:4,micro AUC within UMCU,0.2279
+phikon-v2,abmil,clean,blur:4,normal slides: rank correlation of score with tissue tiles,0.3594
+phikon-v2,abmil,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),1.0
+phikon-v2,abmil,clean,clean,AUC within RUMC,0.9605
+phikon-v2,abmil,clean,clean,AUC within UMCU,0.98
+phikon-v2,abmil,clean,clean,micro AUC within RUMC,0.9196
+phikon-v2,abmil,clean,clean,micro AUC within UMCU,0.9688
+phikon-v2,abmil,clean,clean,normal slides: rank correlation of score with tissue tiles,0.1952
+phikon-v2,abmil,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.4664
+phikon-v2,abmil,clean,jpeg:10,AUC within RUMC,0.6872
+phikon-v2,abmil,clean,jpeg:10,AUC within UMCU,0.6549
+phikon-v2,abmil,clean,jpeg:10,micro AUC within RUMC,0.5531
+phikon-v2,abmil,clean,jpeg:10,micro AUC within UMCU,0.5029
+phikon-v2,abmil,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.2696
+phikon-v2,abmil,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.6477
+phikon-v2,abmil,clean,jpeg:15,AUC within RUMC,0.7373
+phikon-v2,abmil,clean,jpeg:15,AUC within UMCU,0.6987
+phikon-v2,abmil,clean,jpeg:15,micro AUC within RUMC,0.6236
+phikon-v2,abmil,clean,jpeg:15,micro AUC within UMCU,0.5575
+phikon-v2,abmil,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.3079
+phikon-v2,abmil,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.6477
+phikon-v2,abmil,clean,jpeg:30,AUC within RUMC,0.8643
+phikon-v2,abmil,clean,jpeg:30,AUC within UMCU,0.8035
+phikon-v2,abmil,clean,jpeg:30,micro AUC within RUMC,0.7611
+phikon-v2,abmil,clean,jpeg:30,micro AUC within UMCU,0.695
+phikon-v2,abmil,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.4285
+phikon-v2,abmil,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.7947
+phikon-v2,abmil,clean,stain:0.3,AUC within RUMC,0.9743
+phikon-v2,abmil,clean,stain:0.3,AUC within UMCU,0.9672
+phikon-v2,abmil,clean,stain:0.3,micro AUC within RUMC,0.9469
+phikon-v2,abmil,clean,stain:0.3,micro AUC within UMCU,0.9488
+phikon-v2,abmil,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.3607
+phikon-v2,abmil,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.6201
+phikon-v2,abmil,mixed,blur:2,AUC within RUMC,0.9278
+phikon-v2,abmil,mixed,blur:2,AUC within UMCU,0.8347
+phikon-v2,abmil,mixed,blur:2,micro AUC within RUMC,0.8644
+phikon-v2,abmil,mixed,blur:2,micro AUC within UMCU,0.7417
+phikon-v2,abmil,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.2559
+phikon-v2,abmil,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.4473
+phikon-v2,abmil,mixed,blur:4,AUC within RUMC,0.5623
+phikon-v2,abmil,mixed,blur:4,AUC within UMCU,0.4637
+phikon-v2,abmil,mixed,blur:4,micro AUC within RUMC,0.4738
+phikon-v2,abmil,mixed,blur:4,micro AUC within UMCU,0.2662
+phikon-v2,abmil,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.2179
+phikon-v2,abmil,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.8364
+phikon-v2,abmil,mixed,clean,AUC within RUMC,0.9562
+phikon-v2,abmil,mixed,clean,AUC within UMCU,0.9491
+phikon-v2,abmil,mixed,clean,micro AUC within RUMC,0.9295
+phikon-v2,abmil,mixed,clean,micro AUC within UMCU,0.9204
+phikon-v2,abmil,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.0789
+phikon-v2,abmil,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.3253
+phikon-v2,abmil,mixed,jpeg:10,AUC within RUMC,0.7013
+phikon-v2,abmil,mixed,jpeg:10,AUC within UMCU,0.6645
+phikon-v2,abmil,mixed,jpeg:10,micro AUC within RUMC,0.6044
+phikon-v2,abmil,mixed,jpeg:10,micro AUC within UMCU,0.5225
+phikon-v2,abmil,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.2
+phikon-v2,abmil,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.546
+phikon-v2,abmil,mixed,jpeg:15,AUC within RUMC,0.7807
+phikon-v2,abmil,mixed,jpeg:15,AUC within UMCU,0.7533
+phikon-v2,abmil,mixed,jpeg:15,micro AUC within RUMC,0.6982
+phikon-v2,abmil,mixed,jpeg:15,micro AUC within UMCU,0.6529
+phikon-v2,abmil,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.1702
+phikon-v2,abmil,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.4825
+phikon-v2,abmil,mixed,jpeg:30,AUC within RUMC,0.844
+phikon-v2,abmil,mixed,jpeg:30,AUC within UMCU,0.8872
+phikon-v2,abmil,mixed,jpeg:30,micro AUC within RUMC,0.7371
+phikon-v2,abmil,mixed,jpeg:30,micro AUC within UMCU,0.8238
+phikon-v2,abmil,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.2044
+phikon-v2,abmil,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.4933
+phikon-v2,abmil,mixed,stain:0.3,AUC within RUMC,0.9568
+phikon-v2,abmil,mixed,stain:0.3,AUC within UMCU,0.9325
+phikon-v2,abmil,mixed,stain:0.3,micro AUC within RUMC,0.9364
+phikon-v2,abmil,mixed,stain:0.3,micro AUC within UMCU,0.8946
+phikon-v2,abmil,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.148
+phikon-v2,abmil,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.4104
+phikon-v2,max,clean,blur:2,AUC within RUMC,0.7495
+phikon-v2,max,clean,blur:2,AUC within UMCU,0.4781
+phikon-v2,max,clean,blur:2,micro AUC within RUMC,0.6196
+phikon-v2,max,clean,blur:2,micro AUC within UMCU,0.3067
+phikon-v2,max,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.6836
+phikon-v2,max,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.8899
+phikon-v2,max,clean,blur:4,AUC within RUMC,0.6248
+phikon-v2,max,clean,blur:4,AUC within UMCU,0.4888
+phikon-v2,max,clean,blur:4,micro AUC within RUMC,0.5142
+phikon-v2,max,clean,blur:4,micro AUC within UMCU,0.3533
+phikon-v2,max,clean,blur:4,normal slides: rank correlation of score with tissue tiles,0.6773
+phikon-v2,max,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.9557
+phikon-v2,max,clean,clean,AUC within RUMC,0.8312
+phikon-v2,max,clean,clean,AUC within UMCU,0.6627
+phikon-v2,max,clean,clean,micro AUC within RUMC,0.6982
+phikon-v2,max,clean,clean,micro AUC within UMCU,0.5071
+phikon-v2,max,clean,clean,normal slides: rank correlation of score with tissue tiles,0.5519
+phikon-v2,max,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.5785
+phikon-v2,max,clean,jpeg:10,AUC within RUMC,0.6943
+phikon-v2,max,clean,jpeg:10,AUC within UMCU,0.5968
+phikon-v2,max,clean,jpeg:10,micro AUC within RUMC,0.6324
+phikon-v2,max,clean,jpeg:10,micro AUC within UMCU,0.4646
+phikon-v2,max,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.4344
+phikon-v2,max,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.5924
+phikon-v2,max,clean,jpeg:15,AUC within RUMC,0.7868
+phikon-v2,max,clean,jpeg:15,AUC within UMCU,0.576
+phikon-v2,max,clean,jpeg:15,micro AUC within RUMC,0.6833
+phikon-v2,max,clean,jpeg:15,micro AUC within UMCU,0.3908
+phikon-v2,max,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.5085
+phikon-v2,max,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.6517
+phikon-v2,max,clean,jpeg:30,AUC within RUMC,0.7578
+phikon-v2,max,clean,jpeg:30,AUC within UMCU,0.5992
+phikon-v2,max,clean,jpeg:30,micro AUC within RUMC,0.6444
+phikon-v2,max,clean,jpeg:30,micro AUC within UMCU,0.4217
+phikon-v2,max,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.4302
+phikon-v2,max,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.3309
+phikon-v2,max,clean,stain:0.3,AUC within RUMC,0.7908
+phikon-v2,max,clean,stain:0.3,AUC within UMCU,0.6451
+phikon-v2,max,clean,stain:0.3,micro AUC within RUMC,0.636
+phikon-v2,max,clean,stain:0.3,micro AUC within UMCU,0.4875
+phikon-v2,max,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.647
+phikon-v2,max,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.6884
+phikon-v2,max,mixed,blur:2,AUC within RUMC,0.667
+phikon-v2,max,mixed,blur:2,AUC within UMCU,0.4853
+phikon-v2,max,mixed,blur:2,micro AUC within RUMC,0.4709
+phikon-v2,max,mixed,blur:2,micro AUC within UMCU,0.2792
+phikon-v2,max,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.7176
+phikon-v2,max,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.7599
+phikon-v2,max,mixed,blur:4,AUC within RUMC,0.6195
+phikon-v2,max,mixed,blur:4,AUC within UMCU,0.4624
+phikon-v2,max,mixed,blur:4,micro AUC within RUMC,0.4582
+phikon-v2,max,mixed,blur:4,micro AUC within UMCU,0.3263
+phikon-v2,max,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.6122
+phikon-v2,max,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.9243
+phikon-v2,max,mixed,clean,AUC within RUMC,0.853
+phikon-v2,max,mixed,clean,AUC within UMCU,0.6235
+phikon-v2,max,mixed,clean,micro AUC within RUMC,0.7273
+phikon-v2,max,mixed,clean,micro AUC within UMCU,0.4596
+phikon-v2,max,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.5911
+phikon-v2,max,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.7079
+phikon-v2,max,mixed,jpeg:10,AUC within RUMC,0.7985
+phikon-v2,max,mixed,jpeg:10,AUC within UMCU,0.5789
+phikon-v2,max,mixed,jpeg:10,micro AUC within RUMC,0.7335
+phikon-v2,max,mixed,jpeg:10,micro AUC within UMCU,0.4288
+phikon-v2,max,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.4889
+phikon-v2,max,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.6257
+phikon-v2,max,mixed,jpeg:15,AUC within RUMC,0.796
+phikon-v2,max,mixed,jpeg:15,AUC within UMCU,0.5437
+phikon-v2,max,mixed,jpeg:15,micro AUC within RUMC,0.716
+phikon-v2,max,mixed,jpeg:15,micro AUC within UMCU,0.3467
+phikon-v2,max,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.5045
+phikon-v2,max,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.6835
+phikon-v2,max,mixed,jpeg:30,AUC within RUMC,0.7255
+phikon-v2,max,mixed,jpeg:30,AUC within UMCU,0.4923
+phikon-v2,max,mixed,jpeg:30,micro AUC within RUMC,0.6716
+phikon-v2,max,mixed,jpeg:30,micro AUC within UMCU,0.2871
+phikon-v2,max,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.5509
+phikon-v2,max,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.54
+phikon-v2,max,mixed,stain:0.3,AUC within RUMC,0.808
+phikon-v2,max,mixed,stain:0.3,AUC within UMCU,0.6341
+phikon-v2,max,mixed,stain:0.3,micro AUC within RUMC,0.6538
+phikon-v2,max,mixed,stain:0.3,micro AUC within UMCU,0.4888
+phikon-v2,max,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.6429
+phikon-v2,max,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.7327
+phikon-v2,mean,clean,blur:2,AUC within RUMC,0.5715
+phikon-v2,mean,clean,blur:2,AUC within UMCU,0.4712
+phikon-v2,mean,clean,blur:2,micro AUC within RUMC,0.5025
+phikon-v2,mean,clean,blur:2,micro AUC within UMCU,0.3304
+phikon-v2,mean,clean,blur:2,normal slides: rank correlation of score with tissue tiles,0.0012
+phikon-v2,mean,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.6025
+phikon-v2,mean,clean,blur:4,AUC within RUMC,0.3475
+phikon-v2,mean,clean,blur:4,AUC within UMCU,0.3613
+phikon-v2,mean,clean,blur:4,micro AUC within RUMC,0.2782
+phikon-v2,mean,clean,blur:4,micro AUC within UMCU,0.3029
+phikon-v2,mean,clean,blur:4,normal slides: rank correlation of score with tissue tiles,-0.3011
+phikon-v2,mean,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.5017
+phikon-v2,mean,clean,clean,AUC within RUMC,0.6838
+phikon-v2,mean,clean,clean,AUC within UMCU,0.5648
+phikon-v2,mean,clean,clean,micro AUC within RUMC,0.5604
+phikon-v2,mean,clean,clean,micro AUC within UMCU,0.3929
+phikon-v2,mean,clean,clean,normal slides: rank correlation of score with tissue tiles,-0.1066
+phikon-v2,mean,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.3631
+phikon-v2,mean,clean,jpeg:10,AUC within RUMC,0.6163
+phikon-v2,mean,clean,jpeg:10,AUC within UMCU,0.5123
+phikon-v2,mean,clean,jpeg:10,micro AUC within RUMC,0.5884
+phikon-v2,mean,clean,jpeg:10,micro AUC within UMCU,0.4337
+phikon-v2,mean,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,-0.2534
+phikon-v2,mean,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.3055
+phikon-v2,mean,clean,jpeg:15,AUC within RUMC,0.5863
+phikon-v2,mean,clean,jpeg:15,AUC within UMCU,0.5189
+phikon-v2,mean,clean,jpeg:15,micro AUC within RUMC,0.5236
+phikon-v2,mean,clean,jpeg:15,micro AUC within UMCU,0.4225
+phikon-v2,mean,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,-0.2136
+phikon-v2,mean,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.5019
+phikon-v2,mean,clean,jpeg:30,AUC within RUMC,0.665
+phikon-v2,mean,clean,jpeg:30,AUC within UMCU,0.5299
+phikon-v2,mean,clean,jpeg:30,micro AUC within RUMC,0.5705
+phikon-v2,mean,clean,jpeg:30,micro AUC within UMCU,0.4175
+phikon-v2,mean,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.2207
+phikon-v2,mean,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.8876
+phikon-v2,mean,clean,stain:0.3,AUC within RUMC,0.6173
+phikon-v2,mean,clean,stain:0.3,AUC within UMCU,0.5285
+phikon-v2,mean,clean,stain:0.3,micro AUC within RUMC,0.4964
+phikon-v2,mean,clean,stain:0.3,micro AUC within UMCU,0.3467
+phikon-v2,mean,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,-0.1085
+phikon-v2,mean,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.3533
+phikon-v2,mean,mixed,blur:2,AUC within RUMC,0.6078
+phikon-v2,mean,mixed,blur:2,AUC within UMCU,0.4752
+phikon-v2,mean,mixed,blur:2,micro AUC within RUMC,0.5455
+phikon-v2,mean,mixed,blur:2,micro AUC within UMCU,0.3117
+phikon-v2,mean,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.1066
+phikon-v2,mean,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.7803
+phikon-v2,mean,mixed,blur:4,AUC within RUMC,0.3685
+phikon-v2,mean,mixed,blur:4,AUC within UMCU,0.3064
+phikon-v2,mean,mixed,blur:4,micro AUC within RUMC,0.2905
+phikon-v2,mean,mixed,blur:4,micro AUC within UMCU,0.2625
+phikon-v2,mean,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.0507
+phikon-v2,mean,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.8024
+phikon-v2,mean,mixed,clean,AUC within RUMC,0.7445
+phikon-v2,mean,mixed,clean,AUC within UMCU,0.5733
+phikon-v2,mean,mixed,clean,micro AUC within RUMC,0.6865
+phikon-v2,mean,mixed,clean,micro AUC within UMCU,0.3896
+phikon-v2,mean,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.0892
+phikon-v2,mean,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.3808
+phikon-v2,mean,mixed,jpeg:10,AUC within RUMC,0.692
+phikon-v2,mean,mixed,jpeg:10,AUC within UMCU,0.4952
+phikon-v2,mean,mixed,jpeg:10,micro AUC within RUMC,0.6575
+phikon-v2,mean,mixed,jpeg:10,micro AUC within UMCU,0.3688
+phikon-v2,mean,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.0061
+phikon-v2,mean,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.441
+phikon-v2,mean,mixed,jpeg:15,AUC within RUMC,0.6608
+phikon-v2,mean,mixed,jpeg:15,AUC within UMCU,0.5181
+phikon-v2,mean,mixed,jpeg:15,micro AUC within RUMC,0.6244
+phikon-v2,mean,mixed,jpeg:15,micro AUC within UMCU,0.3871
+phikon-v2,mean,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,-0.2786
+phikon-v2,mean,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.272
+phikon-v2,mean,mixed,jpeg:30,AUC within RUMC,0.7137
+phikon-v2,mean,mixed,jpeg:30,AUC within UMCU,0.5656
+phikon-v2,mean,mixed,jpeg:30,micro AUC within RUMC,0.6615
+phikon-v2,mean,mixed,jpeg:30,micro AUC within UMCU,0.4525
+phikon-v2,mean,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,-0.1881
+phikon-v2,mean,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.1825
+phikon-v2,mean,mixed,stain:0.3,AUC within RUMC,0.7033
+phikon-v2,mean,mixed,stain:0.3,AUC within UMCU,0.5944
+phikon-v2,mean,mixed,stain:0.3,micro AUC within RUMC,0.648
+phikon-v2,mean,mixed,stain:0.3,micro AUC within UMCU,0.4146
+phikon-v2,mean,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.1439
+phikon-v2,mean,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.4477
+phikon-v2,tileprobe,clean,blur:2,AUC within RUMC,0.8912
+phikon-v2,tileprobe,clean,blur:2,AUC within UMCU,0.8224
+phikon-v2,tileprobe,clean,blur:2,micro AUC within RUMC,0.7931
+phikon-v2,tileprobe,clean,blur:2,micro AUC within UMCU,0.7279
+phikon-v2,tileprobe,clean,blur:2,normal slides: rank correlation of score with tissue tiles,-0.0081
+phikon-v2,tileprobe,clean,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.1436
+phikon-v2,tileprobe,clean,blur:4,AUC within RUMC,0.5617
+phikon-v2,tileprobe,clean,blur:4,AUC within UMCU,0.4931
+phikon-v2,tileprobe,clean,blur:4,micro AUC within RUMC,0.4087
+phikon-v2,tileprobe,clean,blur:4,micro AUC within UMCU,0.3433
+phikon-v2,tileprobe,clean,blur:4,normal slides: rank correlation of score with tissue tiles,0.4916
+phikon-v2,tileprobe,clean,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.9585
+phikon-v2,tileprobe,clean,clean,AUC within RUMC,0.953
+phikon-v2,tileprobe,clean,clean,AUC within UMCU,0.9077
+phikon-v2,tileprobe,clean,clean,micro AUC within RUMC,0.9116
+phikon-v2,tileprobe,clean,clean,micro AUC within UMCU,0.8558
+phikon-v2,tileprobe,clean,clean,normal slides: rank correlation of score with tissue tiles,0.1507
+phikon-v2,tileprobe,clean,clean,normal slides: score separates UMCU from RUMC (AUC),0.4604
+phikon-v2,tileprobe,clean,jpeg:10,AUC within RUMC,0.8068
+phikon-v2,tileprobe,clean,jpeg:10,AUC within UMCU,0.7101
+phikon-v2,tileprobe,clean,jpeg:10,micro AUC within RUMC,0.74
+phikon-v2,tileprobe,clean,jpeg:10,micro AUC within UMCU,0.5775
+phikon-v2,tileprobe,clean,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.5677
+phikon-v2,tileprobe,clean,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.9055
+phikon-v2,tileprobe,clean,jpeg:15,AUC within RUMC,0.8338
+phikon-v2,tileprobe,clean,jpeg:15,AUC within UMCU,0.7128
+phikon-v2,tileprobe,clean,jpeg:15,micro AUC within RUMC,0.7524
+phikon-v2,tileprobe,clean,jpeg:15,micro AUC within UMCU,0.5871
+phikon-v2,tileprobe,clean,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.4564
+phikon-v2,tileprobe,clean,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.6663
+phikon-v2,tileprobe,clean,jpeg:30,AUC within RUMC,0.9212
+phikon-v2,tileprobe,clean,jpeg:30,AUC within UMCU,0.7925
+phikon-v2,tileprobe,clean,jpeg:30,micro AUC within RUMC,0.8647
+phikon-v2,tileprobe,clean,jpeg:30,micro AUC within UMCU,0.68
+phikon-v2,tileprobe,clean,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.3942
+phikon-v2,tileprobe,clean,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.4788
+phikon-v2,tileprobe,clean,stain:0.3,AUC within RUMC,0.9548
+phikon-v2,tileprobe,clean,stain:0.3,AUC within UMCU,0.9069
+phikon-v2,tileprobe,clean,stain:0.3,micro AUC within RUMC,0.9211
+phikon-v2,tileprobe,clean,stain:0.3,micro AUC within UMCU,0.8546
+phikon-v2,tileprobe,clean,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.336
+phikon-v2,tileprobe,clean,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.6664
+phikon-v2,tileprobe,mixed,blur:2,AUC within RUMC,0.8817
+phikon-v2,tileprobe,mixed,blur:2,AUC within UMCU,0.7909
+phikon-v2,tileprobe,mixed,blur:2,micro AUC within RUMC,0.7724
+phikon-v2,tileprobe,mixed,blur:2,micro AUC within UMCU,0.6733
+phikon-v2,tileprobe,mixed,blur:2,normal slides: rank correlation of score with tissue tiles,0.186
+phikon-v2,tileprobe,mixed,blur:2,normal slides: score separates UMCU from RUMC (AUC),0.3476
+phikon-v2,tileprobe,mixed,blur:4,AUC within RUMC,0.7518
+phikon-v2,tileprobe,mixed,blur:4,AUC within UMCU,0.6341
+phikon-v2,tileprobe,mixed,blur:4,micro AUC within RUMC,0.5215
+phikon-v2,tileprobe,mixed,blur:4,micro AUC within UMCU,0.4313
+phikon-v2,tileprobe,mixed,blur:4,normal slides: rank correlation of score with tissue tiles,0.3933
+phikon-v2,tileprobe,mixed,blur:4,normal slides: score separates UMCU from RUMC (AUC),0.6564
+phikon-v2,tileprobe,mixed,clean,AUC within RUMC,0.9062
+phikon-v2,tileprobe,mixed,clean,AUC within UMCU,0.8565
+phikon-v2,tileprobe,mixed,clean,micro AUC within RUMC,0.8338
+phikon-v2,tileprobe,mixed,clean,micro AUC within UMCU,0.7758
+phikon-v2,tileprobe,mixed,clean,normal slides: rank correlation of score with tissue tiles,0.1687
+phikon-v2,tileprobe,mixed,clean,normal slides: score separates UMCU from RUMC (AUC),0.334
+phikon-v2,tileprobe,mixed,jpeg:10,AUC within RUMC,0.8602
+phikon-v2,tileprobe,mixed,jpeg:10,AUC within UMCU,0.7651
+phikon-v2,tileprobe,mixed,jpeg:10,micro AUC within RUMC,0.7905
+phikon-v2,tileprobe,mixed,jpeg:10,micro AUC within UMCU,0.6333
+phikon-v2,tileprobe,mixed,jpeg:10,normal slides: rank correlation of score with tissue tiles,0.5973
+phikon-v2,tileprobe,mixed,jpeg:10,normal slides: score separates UMCU from RUMC (AUC),0.6815
+phikon-v2,tileprobe,mixed,jpeg:15,AUC within RUMC,0.882
+phikon-v2,tileprobe,mixed,jpeg:15,AUC within UMCU,0.8165
+phikon-v2,tileprobe,mixed,jpeg:15,micro AUC within RUMC,0.7938
+phikon-v2,tileprobe,mixed,jpeg:15,micro AUC within UMCU,0.7137
+phikon-v2,tileprobe,mixed,jpeg:15,normal slides: rank correlation of score with tissue tiles,0.5731
+phikon-v2,tileprobe,mixed,jpeg:15,normal slides: score separates UMCU from RUMC (AUC),0.6432
+phikon-v2,tileprobe,mixed,jpeg:30,AUC within RUMC,0.878
+phikon-v2,tileprobe,mixed,jpeg:30,AUC within UMCU,0.8389
+phikon-v2,tileprobe,mixed,jpeg:30,micro AUC within RUMC,0.7789
+phikon-v2,tileprobe,mixed,jpeg:30,micro AUC within UMCU,0.7483
+phikon-v2,tileprobe,mixed,jpeg:30,normal slides: rank correlation of score with tissue tiles,0.5909
+phikon-v2,tileprobe,mixed,jpeg:30,normal slides: score separates UMCU from RUMC (AUC),0.7179
+phikon-v2,tileprobe,mixed,stain:0.3,AUC within RUMC,0.8733
+phikon-v2,tileprobe,mixed,stain:0.3,AUC within UMCU,0.8971
+phikon-v2,tileprobe,mixed,stain:0.3,micro AUC within RUMC,0.7647
+phikon-v2,tileprobe,mixed,stain:0.3,micro AUC within UMCU,0.8392
+phikon-v2,tileprobe,mixed,stain:0.3,normal slides: rank correlation of score with tissue tiles,0.225
+phikon-v2,tileprobe,mixed,stain:0.3,normal slides: score separates UMCU from RUMC (AUC),0.4132
