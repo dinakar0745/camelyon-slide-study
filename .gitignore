@@ -10,3 +10,6 @@ data/
 
 # Local interpreter paths
 envs.json
+
+# Console logs
+*.log
